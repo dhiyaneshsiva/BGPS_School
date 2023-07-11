@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+/* Nav Bar Header */
+.nav-flex {
+    display: flex;
+    padding: 10px 40px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Nav Bar Header End */
+
+/* Nav Logo */
+.Nav-logo img {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Nav Logo End */
+
+/* Nav List */
+.Nav-list ul {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    padding: 10px 0;
+    margin-right: 20rem;
+}
+
+.Nav-list ul li {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font: normal bold 20px 'Poppins';
+    padding: 10px 0;
+    cursor: pointer;
+    color: white;
+}
+
+.Nav-list ul li:nth-child(3) {
+    gap: 0.5rem;
+}
+
+/* Nav List End */
+
+
+/* Drop Down Css */
+
+.drop-down {
+    background: #4527a0;
+    padding: 40px 20px;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 5rem;
+    color: white;
+}
+
+.drop-down ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.drop-down h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.drop-down ul li {
+    list-style-type: none;
+    padding: 1rem 0 1rem 1rem;
+    display: flex;
+    align-items: center;
+    font: normal 18px 'Poppins';
+    cursor: pointer;
+}
+
+.hide-drop-down {
+    display: none;
+}
+
+/* Drop Down Css End */
+
+
+.router-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: fit-content;
+    color: white;
+}
+
+/* Marquee CSS */
+
+.marquee {
+    background-color: white;
+    padding: 1rem;
+    font: normal bold 20px 'Poppins';
+}
+
+/* Marquee CSS End */
+
+
+/* Media Query */
+
+@media (max-width:768px) {
+    .nav-flex {
+        flex-direction: row-reverse;
+        padding: 10px;
+    }
+
+    .Nav-list {
+        display: none;
+    }
+
+    .marquee {
+        background-color: white;
+        padding: 0.2rem;
+        font: normal bold 15px 'Poppins';
+    }
+}

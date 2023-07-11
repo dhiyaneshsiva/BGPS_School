@@ -1,0 +1,79 @@
+/* Side Nav Css */
+
+.side-nav-list {
+    margin-top: 0%;
+    background-color: #4527a0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    margin-bottom: 5rem;
+    z-index: 999;
+}
+
+
+.side-nav-list li {
+    list-style-type: none;
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+
+}
+
+/* Drop Down Css */
+
+.drop-down-show {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.Side-Nav-Drop h5 {
+    padding: 0.5rem;
+    background-color: black;
+    margin-left: 2rem;
+}
+
+.Side-Nav-Drop li {
+    cursor: pointer;
+    margin-left: 4rem;
+}
+
+.Side-Nav-Drop {
+    margin-top: -7.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.drop-hide {
+    display: none;
+}
+
+/* Drop Down Css End */
+
+
+/* Media Query */
+
+@media(max-width:500px) {
+    .Side-Nav-Drop h5 {
+        padding: 0.5rem;
+        background-color: black;
+        margin-left: 0.5rem;
+    }
+
+    .Side-Nav-Drop li {
+        cursor: pointer;
+        margin-left: 1rem;
+    }
+}
+
+/* Media Query End */
+
+
+
+/* Side Nav Css End */

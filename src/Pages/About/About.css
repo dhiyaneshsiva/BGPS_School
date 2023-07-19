@@ -1,230 +1,189 @@
 /* Section 1  */
 
-
-.about-sec-1-container {
-    width: 100%;
-    background-color: #F2F5FE;
-}
-
-.about-sec-1 {
+.about-head {
     display: flex;
     align-items: center;
-    gap: 2rem;
     justify-content: space-evenly;
-    padding: 5rem 10rem;
-    width: 80%;
-    margin: auto;
-}
-
-.about-sec-1-left {
-    width: 50%;
-    height: 60vh;
-    display: flex;
+    gap: 4rem;
+    padding: 8rem 10rem;
+    background-color: #f2f5fe;
     position: relative;
 }
 
-
-.about-sec-1-left-box {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
-    width: 300px;
-    height: 31vh;
-    padding: 20px;
+.about-head-right h3 {
+    font: normal bold 65px/1 "Montserrat ";
+    text-transform: uppercase;
+    margin-bottom: 8px;
 }
 
-.about-sec-1-left-box img {
-    position: absolute;
+.about-head-right h2 {
+    font: normal bold 120px/1 "Montserrat";
+    text-transform: uppercase;
+    margin-bottom: 25px;
 }
 
-.about-sec-1-left-box img:nth-child(1) {
-    position: absolute;
-    top: 25%;
-    width: 100px;
-    height: 10vh;
-    z-index: 1;
+.about-head-right p {
+    width: 590px;
+    font: normal 17px/20px "Helvetica Neue";
+    margin-bottom: 15px;
+    color: #707070;
 }
 
-.about-sec-1-left-box img:nth-child(2) {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.about-sec-1-left-avatar {
+.head {
+    width: 260px;
     position: absolute;
     bottom: 0;
-}
-
-.about-sec-1-left-avatar img {
-    position: relative;
-    width: 250px;
-    height: 350px;
-    bottom: 0%;
-    left: 0;
+    left: 21rem;
     z-index: 2;
 }
 
-
-.about-sec-1-right {
-    width: 50%;
+.green {
+    width: 220px;
+    background-color: white;
+    padding: 18px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.about-sec-1-right-title {
-    line-height: 1rem;
-
+.green-div {
+    position: relative;
+    margin-bottom: 125px;
 }
 
-.about-sec-1-right h1:nth-child(1) {
-    font: normal 700 65px/1 Montserrat\;
+.bgs {
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    width: 130px;
 }
 
-.about-sec-1-right h1:nth-child(2) {
-    font: normal 700 120px/1 "Poppins";
+/* Section 1 ENd */
+
+/* Section 2  */
+
+.about-sec-2 {
+    justify-content: center;
+    display: flex;
+    width: 100%;
 }
 
-/* Section 1  End */
 
-
-
-/* Section 2 */
-
-.about-sec-2-container {
+.about-section-two {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    gap: 14rem;
+    padding: 7rem 0;
     margin: auto;
-    padding: 5rem 8rem;
+}
+
+.school-left h3 {
+    font: normal bold 45px/1 "Montserrat";
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.school-left p {
+    width: 600px;
+    font: normal 19px/24px "Helvetica Neue";
+}
+
+.green-div-two {
+    position: relative;
+}
+
+.green-two {
+    width: 240px;
+    height: 150px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.top-img-div {
+    margin-bottom: 4rem;
+}
+
+.yellow {
+    position: absolute;
+    width: 270px;
+    top: -50px;
+    right: -120px;
+    z-index: -111;
+}
+
+/* Section 2 ENd */
+
+
+/* section 3  */
+
+.about-logo-section {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+    margin: 5rem 0;
+}
+
+.logo-main {
+    position: relative;
+}
+
+.logo-main-img {
+    width: 680px;
+}
+
+.logo-body {
+    position: absolute;
+    bottom: 0;
+    left: 45px;
+    width: 620px;
+}
+
+.logo-circle {
+    width: 150px;
+    position: absolute;
+    left: 278px;
+    top: 90px;
+}
+
+/* section 3 End */
+
+
+/* Section 4 */
+
+.vision-mission-main {
+    margin: 3rem 0;
+    background-color: #171717;
+    padding: 7rem 0;
+}
+
+.vision-mission-flex {
+    display: flex;
+    justify-content: center;
     gap: 3rem;
 }
 
-.about-sec-2-container-left {
-    width: 50%;
+.flex-card {
+    background-color: #212121;
+    width: 250px;
+    padding: 30px 20px;
+    color: white;
+    text-align: center;
 }
 
-
-.about-sec-2-container-left-title  {
-    font: normal 100 30px/1 "Poppins";
-    padding-bottom: 1rem;
+.flex-card h4 {
+    font: normal bold 25px/1 "Montserrat";
+    margin-bottom: 15px;
+    text-align: left !important;
 }
 
-.about-sec-2-container-left-para {
-    font: normal 100 20px "Poppins";
-
+.flex-card p {
+    font: normal 15px/19px "Helvetica Neue";
+    text-align: left !important;
+    color: #b5b5b5;
 }
 
-.about-sec-2-container-right {
-    width: 50%;
-}
-
-.about-sec-2-container-right-circle-box {
-    padding: 20px;
-    position: relative;
-    width: 100%;
-}
-
-.about-sec-2-container-right-circle-box img:nth-child(1) {
-    position: absolute;
-    z-index: 2;
+.flex-card img {
     width: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    top: 30%;
-    left: 18%;
-
+    margin-bottom: 25px;
 }
 
-.about-sec-2-container-right-circle-box img:nth-child(2) {
-    background-color: white;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    position: relative;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
-    width: 300px;
-    height: 200px;
-    padding: 10px;
-    z-index: 1;
-}
-
-.about-sec-2-container-right-circle-box img:nth-child(3) {
-    z-index: 0;
-    position: absolute;
-    top: -8%;
-    right: 15%;
-}
-
-
-/* Section 2  End */
-
-
-
-/* Media Query */
-
-@media(max-width:1700px) {
-    .about-sec-1 {
-        gap: 1rem;
-        padding: 5rem 5rem;
-        width: 90%;
-    }
-    .about-sec-2-container {
-        width: 90%;
-        padding: 5rem 5rem;
-        gap: 4rem;
-    }
-}
-
-
-@media(max-width:1200px) {
-    .about-sec-1 {
-        flex-wrap: wrap;
-        width: 100%;
-    }
-    .about-sec-2-container {
-        flex-direction: column-reverse;
-        width: 100%;
-        align-items: center;
-    }
-
-    .about-sec-1-right-title {
-        text-align: center;
-    }
-
-    .about-sec-1-left,
-    .about-sec-1-right {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .about-sec-1-right {
-        text-align: center;
-    }
-
-    .about-sec-2-container-left,
-    .about-sec-2-container-right {
-        width: 100%;
-        margin: auto;
-        text-align: center;
-    }
-}
-
-@media(max-width:768px) {
-    .about-sec-1-right h1:nth-child(1) {
-        font: normal 700 45px/1 Montserrat\;
-    }
-
-    .about-sec-1-right h1:nth-child(2) {
-        font: normal 700 60px/1 "Poppins";
-    }
-
-    .about-sec-1 {
-        padding: 10px;
-    }
-}
-
-/* Media Query End */
+/* Section 4 End */

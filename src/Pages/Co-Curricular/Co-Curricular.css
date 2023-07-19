@@ -1,0 +1,221 @@
+/* Section 1 */
+
+.co-curricular-head {
+    background-color: #26202E;
+    position: relative;
+}
+
+.co-curricular-head-content {
+    color: white;
+    max-width: 900px;
+    margin: auto;
+    padding: 5rem 1rem 1rem 1rem;
+    z-index: 10;
+}
+
+.co-curricular-head-content-title {
+    font: normal bold 87px 'Montserrat';
+}
+
+.co-curricular-head-content-para h5 {
+    font: normal bold 19px 'Helvetica Neue';
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.co-curricular-head-content-para p {
+    max-width: 500px;
+    text-align: justify;
+}
+
+
+.co-curricular-head-content-grid ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+.co-curricular-head-content-grid ul li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+    font: normal 21px 'Helvetica';
+    color: #413C48;
+    z-index: 10;
+}
+
+.co-curricular-head-content-grid ul li img {
+    margin-bottom: 1.5rem;
+    z-index: 10;
+}
+
+.co-curricular-head .Avatar {
+    position: absolute;
+    bottom: 0;
+    max-width: 200px;
+    left: 6%;
+    z-index: 0;
+}
+
+.co-curricular-head .Feather {
+    position: absolute;
+    bottom: 0;
+    right: 1%;
+    max-width: 250px;
+    z-index: 0;
+}
+
+/* Section 1 End */
+
+
+/* Section 2  */
+
+.co-curricular-container {
+    width: 80%;
+    margin: auto;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 6px 14px -8px rgba(0,0,0,0.67);
+}
+
+.co-curricular-container-display:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.co-curricular-container-display {
+    display: flex;
+    gap: 2rem;
+}
+
+.co-curricular-container-img {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.co-curricular-container-img img {
+    max-width: 100%;
+    box-shadow: 0px 6px 14px -8px rgba(0,0,0,0.67);
+}
+
+.co-curricular-container-content {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.co-curricular-container-content h2 {
+    font: normal bold 46px 'Montserrat';
+}
+
+.co-curricular-container-content p {
+    max-width: 400px;
+    margin-top: 1rem;
+    text-align: justify;
+    font: normal 15px/1.5 'Montserrat';
+    color: rgba(0, 0, 0, 0.426);
+}
+
+/* Section 2 End */
+
+
+/* Media Query */
+
+@media(max-width:1000px) {
+    .co-curricular-container-content p {
+        margin-top: 0.5rem;
+        font: normal 12px/1.5 'Montserrat';
+    }
+}
+
+@media(max-width:768px) {
+
+    .co-curricular-head-content-title {
+        font: normal bold 47px 'Montserrat';
+    }
+
+    .co-curricular-head .Avatar {
+        opacity: 0.5 !important;
+    }
+
+    .co-curricular-container-display:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .co-curricular-head-content-grid ul li {
+        margin-top: 2rem;
+    }
+
+    .co-curricular-container {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .co-curricular-container-img {
+        max-width: 100%;
+    }
+    
+    .co-curricular-container-img img {
+        max-width: 50%;
+    }
+    
+    .co-curricular-container-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .co-curricular-container-content p {
+        max-width: 80%;
+        padding-top: 1rem;
+        margin: auto;
+        font: normal 15px/1.5 'Montserrat';
+    }
+
+    .co-curricular-container-display {
+        flex-direction: column;
+    }
+}
+
+
+@media(max-width:500px) {
+    .co-curricular-head .Feather {
+        display: none;
+    }
+
+    .co-curricular-container-content p {
+        max-width: 90%;
+        padding-top: 0.5rem;
+        margin: auto;
+        font: normal 15px/1.5 'Montserrat';
+    }
+
+    .co-curricular-container-img img {
+        max-width: 80%;
+    }
+
+    .co-curricular-container {
+        gap: 3rem;
+    }
+
+    .co-curricular-container-display {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .co-curricular-head-content-grid ul {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+/* Media Query End */

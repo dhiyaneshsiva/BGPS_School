@@ -1,0 +1,229 @@
+.studentlife-container-top {
+    background-color: #2CBDB0;
+    padding: 5rem 15rem;
+}
+
+.studentlife-container-top-div1 h1 {
+    text-transform: uppercase;
+    font: normal bold 100px 'Poppins';
+    color: white;
+}
+
+.studentlife-container-top-div1 p {
+    max-width: 750px;
+    text-align: justify;
+    color: white;
+}
+
+.studentlife-container-top-div2 ul {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.studentlife-container-top-div2 ul li {
+    list-style-type: none;
+    text-align: center;
+    color: white;
+}
+
+.studentlife-container-top-div2 ul li h2 {
+    font: normal bold 50px 'Poppins';
+}
+
+
+
+/* Section 2 Grid  */
+
+.student-life-sec-2-grid {
+    background-color: black;
+    padding: 5rem 8rem;
+}
+
+.student-life-sec-2-grid-card-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
+    margin: auto;
+}
+
+.student-life-sec-2-grid-cards {
+    text-align: center;
+    background-color: #292929;
+    color: white;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.student-life-sec-2-grid-cards h2 {
+    padding: 1rem 0;
+    transform: translateZ(30px);
+}
+
+.student-life-sec-2-grid-cards p {
+    text-align: justify;
+    transform: translateZ(30px);
+}
+
+.grid-image {
+    width: 200px;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 1rem;
+}
+
+.student-life-sec-2-grid-cards {
+    transition: 1000ms all ease-in-out;
+    position: relative;
+    bottom: 0rem;
+}
+
+.student-life-sec-2-grid-cards:nth-child(1):hover {
+    background-color: #807E7E;
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-shadow: 3px 6px 20px #807e7ec9;
+    bottom: 3rem;
+}
+
+.student-life-sec-2-grid-cards:nth-child(2):hover {
+    background-color: #2835B8;
+    border: 1px solid rgba(0, 0, 0, 0.121);
+    box-shadow: 3px 6px 20px #2835B8;
+    bottom: 3rem;
+}
+
+.student-life-sec-2-grid-cards:nth-child(3):hover {
+    background-color: #B9DD34;
+    border: 1px solid rgba(0, 0, 0, 0.121);
+    box-shadow: 3px 6px 20px #B9DD34;
+    bottom: 3rem;
+}
+
+.student-life-sec-2-grid-cards:nth-child(4):hover {
+    background-color: #FFED0F;
+    border: 1px solid rgba(0, 0, 0, 0.121);
+    box-shadow: 3px 6px 20px #FFED0F;
+    bottom: 3rem;
+    color: black;
+}
+
+
+
+
+/* Section 2 Grid End*/
+
+
+
+/* Sec - 3 */
+
+
+.student-life-sec-3-container {
+    background: linear-gradient(to right, black 65%, white 35%);
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.student-life-sec-3-container-left {
+    color: white;
+    padding: 5rem 8rem;
+}
+
+.student-life-sec-3-container-left p {
+    color: rgba(255, 255, 255, 0.326);
+    /* color: linear-gradient(to right,white 65%,black 35%); */
+    max-width: 600px;
+}
+
+.student-life-sec-3-container-left h1 {
+    font: normal bold 60px 'Poppins';
+    padding-bottom: 1rem;
+}
+
+.student-life-sec-3-container .shadow {
+    height: 45vh;
+    max-width: 200px;
+    position: absolute;
+    left: 65% !important;
+    bottom: 0;
+    display: flex;
+}
+
+.StudentAvatar {
+    height: 50vh;
+    max-width: 300px;
+    z-index: 20;
+    position: absolute;
+    left: 55%;
+    bottom: 0%;
+}
+
+
+/* Sec - 3 End */
+
+@media (max-width:1400px) {
+    .student-life-sec-2-grid {
+        padding: 5rem 3rem;
+    }
+}
+
+@media (max-width:1100px) {
+    .studentlife-container-top {
+        padding: 5rem;
+    }
+
+    .student-life-sec-2-grid-card-container {
+        grid-template-columns: auto auto;
+    }
+}
+
+
+@media (max-width:768px) {
+    .studentlife-container-top-div1 h1 {
+        font: normal bold 60px 'Poppins';
+    }
+
+    .studentlife-container-top-div2 ul {
+        justify-content: space-evenly;
+        grid-template-columns: auto auto;
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+
+    .student-life-sec-2-grid-card-container {
+        grid-template-columns: auto;
+    }
+
+    .student-life-sec-2-grid {
+        padding: 1rem 1.5rem;
+    }
+
+    .student-life-sec-2-grid-cards:nth-child(2) {
+        padding-top: 2rem;
+    }
+
+    .student-life-sec-2-grid-cards h2 {
+        padding: 2rem 0 1rem 0;
+    }
+
+    .student-life-sec-3-container-left {
+        color: white;
+        padding: 2rem 2rem;
+    }
+}
+
+@media (max-width:500px) {
+    .studentlife-container-top {
+        padding: 2rem;
+    }
+
+    .studentlife-container-top-div1 h1 {
+        font: normal bold 50px 'Poppins';
+    }
+}

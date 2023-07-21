@@ -88,7 +88,7 @@ const About_Founder = () => {
                         </h2>
                         <ul>
                             {
-                                List.map((value, index) => {
+                                List?.map((value, index) => {
                                     return (
                                         <li key={index}>
                                             {value}
@@ -104,7 +104,7 @@ const About_Founder = () => {
                         </h1>
                         <div className="about-founder-container-bottom-grid">
                             {
-                                Founders.map((value, index) => {
+                                Founders?.map((value, index) => {
                                     return (
                                         <>
                                             <div key={index} className="about-founder-container-bottom-grid-box">

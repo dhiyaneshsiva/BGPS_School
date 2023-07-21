@@ -1,0 +1,144 @@
+/* Sec1 */
+
+.schoolsports-sec-1-container {
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+
+.schoolsports-sec-1-content {
+    color: white;
+    padding: 10rem 15rem;
+}
+
+.schoolsports-sec-1-content h2 {
+    font: normal bold 100px/1 'Poppins';
+    text-transform: uppercase;
+}
+
+.schoolsports-sec-1-content h1 {
+    font: normal bold 150px/1 'Poppins';
+    text-transform: uppercase;
+}
+
+.schoolsports-sec-1-content-para1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.schoolsports-sec-1-content-para2 {
+    max-width: 600px;
+}
+
+
+.schoolsports-sec-1-container .sports-bottle,
+.schoolsports-sec-1-container .sports-whistle,
+.schoolsports-sec-1-container .sports-alarm,
+.schoolsports-sec-1-container .sports-weight {
+    position: absolute;
+}
+
+.schoolsports-sec-1-container .sports-bottle {
+    left: -2.5%;
+    bottom: -15%;
+}
+
+
+.schoolsports-sec-1-container .sports-whistle {
+    top: 20%;
+    right: 30%;
+}
+
+.schoolsports-sec-1-container .sports-alarm {
+    bottom: -10%;
+    right: 20%;
+}
+
+.schoolsports-sec-1-container .sports-weight {
+    top: 40%;
+    right: 2%;
+}
+
+
+
+/* Sec1 End */
+
+
+
+/* Sec2 */
+
+.schoolsports-sec-2-container {
+    background-color: rgba(255, 255, 255, 0.605);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 10rem 20rem;
+}
+
+.schoolsports-sec-2-content>h1 {
+    text-transform: uppercase;
+    font: normal bold 60px/1 'Poppins';
+    margin: 2rem 0;
+}
+
+.schoolsports-sec-2-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: auto auto auto auto auto;
+    text-align: center;
+}
+
+.schoolsports-sec-2-grid-card {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.127);
+    cursor: pointer;
+}
+
+.schoolsports-sec-2-grid-div:nth-child(1) .schoolsports-sec-2-grid-card {
+    background-color: #BFE5F7;
+    padding: 5rem 2rem;
+}
+
+.schoolsports-sec-2-grid-div:nth-child(2) .schoolsports-sec-2-grid-card {
+    background-color: #D7BAFD;
+    padding: 5rem 2rem;
+}
+
+.schoolsports-sec-2-grid-div:nth-child(3) .schoolsports-sec-2-grid-card {
+    background-color: #F8DF9C;
+    padding: 5rem 2rem;
+}
+
+.schoolsports-sec-2-grid-div:nth-child(4) .schoolsports-sec-2-grid-card {
+    background-color: #FFD3D9;
+    padding: 5rem 2rem;
+}
+
+.schoolsports-sec-2-grid-div:nth-child(5) .schoolsports-sec-2-grid-card {
+    background-color: #8DECBA;
+    padding: 5rem 2rem;
+}
+
+
+.schoolsports-sec-2-grid-div h1 {
+    margin: 2rem 0;
+    text-transform: uppercase;
+    font: normal bold 20px/1 "Poppins";
+}
+
+.schoolsports-sec-2-grid-div p {
+    width: 60%;
+    margin: auto;
+    height: 3vh;
+    background-color: #237BFF;
+    border-radius: 5px;
+}
+
+.schoolsports-sec-2-content>p {
+    padding: 3rem 0;
+    width: 90%;
+    margin: auto;
+}
+
+/* Sec2 End */

@@ -1,0 +1,239 @@
+/* Sec1 */
+
+.guideline-sec-1-container {
+    background-color: #4D97F0;
+    position: relative;
+    padding: 10rem;
+
+}
+
+
+.guideline-sec-1-content {
+    padding: 5rem;
+    color: white;
+}
+
+.guideline-sec-1-content h3 {
+    font: normal bold 30px/1 "Poppins";
+    text-transform: uppercase;
+}
+
+.guideline-sec-1-content h1 {
+    font: normal bold 130px/1 "Poppins";
+    padding: 1rem 0;
+    text-transform: uppercase;
+}
+
+.guideline-sec-1-content p {
+    max-width: 700px;
+}
+
+.guideline-sec-1-content .stepper {
+    max-width: 500px;
+    margin-top: 5rem;
+}
+
+.admission,
+.calender,
+.badge {
+    position: absolute;
+}
+
+.admission {
+    bottom: 0;
+    right: 0;
+}
+
+.calender {
+    top: 15%;
+    right: 25%;
+}
+
+.badge {
+    top: 25%;
+    right: 12%;
+}
+
+/* Sec1 End */
+
+/* Sec2 */
+
+.guideline-sec-2-container {
+    width: 100%;
+    background: linear-gradient(to left, black 60%, #0073ffa4 40%);
+    display: flex;
+    position: relative;
+}
+
+.guideline-sec-2-container .enrollment {
+    position: absolute;
+    bottom: -7%;
+    left: 15%;
+}
+
+.guideline-sec-2-content-left {
+    width: 40%;
+}
+
+.guideline-sec-2-content-left h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font: normal bold 70px/1.2 'Poppins';
+    color: white;
+    letter-spacing: 2px;
+    margin-top: 7rem;
+}
+
+.guideline-sec-2-content-right {
+    width: 60%;
+    color: white;
+    padding: 10rem 10rem;
+}
+
+.guideline-sec-2-content-right h2 {
+    text-align: start;
+    max-width: 600px;
+    font: normal bold 50px/1.2 'Poppins';
+}
+
+.guideline-sec-2-content-right p {
+    max-width: 700px;
+    margin-top: 2rem;
+}
+
+/* Sec2 End */
+
+/* Sec3 */
+
+.guideline-sec-3-container {
+    background-color: #f4f4f4b7;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    padding: 15rem 10rem;
+}
+
+.guideline-sec-3-div {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    gap: 0.2rem;
+    background-color: rgba(255, 255, 255, 0.331);
+}
+
+.guideline-sec-3-div .guideline-sec-3-div-hover-img1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.guideline-sec-3-div .guideline-sec-3-div-hover-img2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.guideline-sec-3-div .guideline-sec-3-div-hover-img3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.guideline-sec-3-div .guideline-sec-3-div-hover-img1 .hand,
+.guideline-sec-3-div .guideline-sec-3-div-hover-img2 .guideline-sec-3-div-hover-img2-badge,
+.guideline-sec-3-div .guideline-sec-3-div-hover-img3 .guideline-sec-3-div-hover-img3-calender {
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    transition: 1000ms all ease-in-out;
+    top: 0;
+}
+
+.guideline-sec-3-div .guideline-sec-3-div-hover-img1 .hand {
+    height: 20vh;
+}
+
+
+.guideline-sec-3-div-hover-img1-content,
+.guideline-sec-3-div-hover-img2-content,
+.guideline-sec-3-div-hover-img3-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.655);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.guideline-sec-3-div-hover-img1-content h1,
+.guideline-sec-3-div-hover-img2-content h1,
+.guideline-sec-3-div-hover-img3-content h1 {
+    padding: 5rem 2rem 2rem 2rem;
+    min-height: 20vh;
+    max-height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.guideline-sec-3-div-hover-img1-content ul,
+.guideline-sec-3-div-hover-img2-content ul,
+.guideline-sec-3-div-hover-img3-content ul {
+    width: 100%;
+}
+
+
+.guideline-sec-3-div-hover-img1-content ul li,
+.guideline-sec-3-div-hover-img2-content ul li,
+.guideline-sec-3-div-hover-img3-content ul li {
+    list-style-type: none;
+    text-align: start;
+    padding: 1rem 2rem;
+    margin: auto;
+}
+
+.guideline-sec-3-div-hover-img1-content ul li:nth-child(odd),
+.guideline-sec-3-div-hover-img2-content ul li:nth-child(odd),
+.guideline-sec-3-div-hover-img3-content ul li:nth-child(odd) {
+    background-color: #F4F4F4;
+}
+
+.guideline-sec-3-div-hover-img1:hover .hand {
+    top: -8rem;
+}
+
+.guideline-sec-3-div-hover-img2:hover .guideline-sec-3-div-hover-img2-badge {
+    top: -8rem;
+}
+
+.guideline-sec-3-div-hover-img3:hover .guideline-sec-3-div-hover-img3-calender {
+    top: -8rem;
+}
+
+.guideline-sec-3-div2 {
+    width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.guideline-sec-3-div2 h2 {
+    color: #3482F5;
+    padding: 1rem 0;
+}
+
+.guideline-sec-3-div2-para1{
+    padding-bottom: 1rem ;
+}
+
+
+/* Sec3 End */

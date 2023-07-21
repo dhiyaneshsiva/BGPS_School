@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import "./Studentlife.css"
 
 // Images
@@ -12,7 +12,29 @@ import StudentAvatar from "../../Assets/student_toy.png"
 // Mantine UI 
 import { Card } from '@mantine/core'
 
+// Vannila Tilt
+import VanillaTilt from 'vanilla-tilt';
+import SchoolHouse from '../../Components/SchoolHouse/SchoolHouse'
+
 const Studentlife = () => {
+
+    const listNumber = useRef([
+        React.createRef(),
+        React.createRef(),
+        React.createRef(),
+        React.createRef(),
+    ])
+
+    const GridValue1 = useRef([
+        React.createRef(),
+        React.createRef(),
+        React.createRef(),
+        React.createRef(),
+        React.createRef(),
+        React.createRef(),
+        React.createRef(),
+        React.createRef(),
+    ])
 
     const list = [
         {
@@ -33,7 +55,24 @@ const Studentlife = () => {
         },
     ]
 
+    const [currentNumberList, setCurrentNumberList] = useState(0)
+    const [currentGrid1, setcurrentGrid1] = useState(0)
 
+
+    useEffect(() => {
+        VanillaTilt.init(listNumber.current[currentNumberList].current, {
+            max: 30,
+            speed: 1000,
+            scale: 1.2,
+            glare: false,
+        })
+    }, [currentNumberList])
+    VanillaTilt.init(GridValue1.current[currentGrid1].current, {
+        max: 30,
+        speed: 1000,
+        scale: 1.2,
+        glare: false,
+    })
     const GridData = [
         {
             title: 'Air',
@@ -80,6 +119,89 @@ const Studentlife = () => {
             icon: Grid4
         },
     ]
+
+    const DataGrid = [
+        {
+            title: 'DIGITAL NATIVES',
+            para: `It depicts commitment, 
+            strength and bravery, which 
+            inculcates in students that 
+            they should not fear any given 
+            situation in life and should 
+            face all the situation upfront 
+            and with utmost bravery.`
+        },
+        {
+            title: 'Incredibles',
+            para: `It depicts commitment, 
+            strength and bravery, which 
+            inculcates in students that 
+            they should not fear any given 
+            situation in life and should 
+            face all the situation upfront 
+            and with utmost bravery.`
+        },
+        {
+            title: 'DIGITAL NATIVES',
+            para: `It depicts commitment, 
+            strength and bravery, which 
+            inculcates in students that 
+            they should not fear any given 
+            situation in life and should 
+            face all the situation upfront 
+            and with utmost bravery.`
+        },
+        {
+            title: 'Incredibles',
+            para: `It depicts commitment, 
+            strength and bravery, which 
+            inculcates in students that 
+            they should not fear any given 
+            situation in life and should 
+            face all the situation upfront 
+            and with utmost bravery.`
+        },
+        {
+            title: 'DIGITAL NATIVES',
+            para: `It depicts commitment, 
+            strength and bravery, which 
+            inculcates in students that 
+            they should not fear any given 
+            situation in life and should 
+            face all the situation upfront 
+            and with utmost bravery.`
+        },
+        {
+            title: 'Incredibles',
+            para: `It depicts commitment, 
+            strength and bravery, which 
+            inculcates in students that 
+            they should not fear any given 
+            situation in life and should 
+            face all the situation upfront 
+            and with utmost bravery.`
+        },
+        {
+            title: 'DIGITAL NATIVES',
+            para: `It depicts commitment, 
+            strength and bravery, which 
+            inculcates in students that 
+            they should not fear any given 
+            situation in life and should 
+            face all the situation upfront 
+            and with utmost bravery.`
+        },
+        {
+            title: 'Incredibles',
+            para: `It depicts commitment, 
+            strength and bravery, which 
+            inculcates in students that 
+            they should not fear any given 
+            situation in life and should 
+            face all the situation upfront 
+            and with utmost bravery.`
+        },
+    ]
     return (
         <div>
             <div className="studentlife-page">
@@ -103,9 +225,11 @@ const Studentlife = () => {
                             <div className="studentlife-container-top-div2">
                                 <ul>
                                     {
-                                        list.map((value, index) => {
+                                        list?.map((value, index) => {
                                             return (
-                                                <li key={index}>
+                                                <li key={index}
+                                                    ref={listNumber.current[index]}
+                                                    onMouseOver={() => setCurrentNumberList(index)}>
                                                     <h2>
                                                         {value.title}
                                                     </h2>
@@ -124,28 +248,7 @@ const Studentlife = () => {
 
                     {/* section 2 */}
                     <section>
-                        <div className="student-life-sec-2-grid">
-                            <h1>School Houses</h1>
-                            <div className="student-life-sec-2-grid-card-container">
-                                {
-                                    GridData.map((value, index) => {
-                                        return (
-                                            <Card key={index} className='student-life-sec-2-grid-cards'>
-                                                <Card.Section className='grid-image'>
-                                                    <img src={value.icon} alt="Grid-Image" />
-                                                </Card.Section>
-                                                <h2>
-                                                    {value.title}
-                                                </h2>
-                                                <p>
-                                                    {value.para}
-                                                </p>
-                                            </Card>
-                                        )
-                                    })
-                                }
-                            </div>
-                        </div>
+                        <SchoolHouse GridData={GridData} />
                     </section>
                     {/* section 2 End */}
 
@@ -183,6 +286,75 @@ const Studentlife = () => {
                         </div>
                     </section>
                     {/* Section 3 End */}
+
+                    {/* section4  */}
+
+                    <section>
+                        <div className='student-life-sec-4-container'>
+                            <div className='student-life-sec-4-container-grid'>
+                                {DataGrid?.map((values, index) => {
+                                    return (
+                                        <Card
+                                            // ref={GridValue1.current[index]}
+                                            // onMouseOver={() => setcurrentGrid1(index)}
+                                            className='student-life-sec-4-container-grid-card'
+                                            key={index}>
+                                            <h1>
+                                                {values.title}
+                                            </h1>
+                                            <p>
+                                                {values.para}
+                                            </p>
+                                        </Card>
+                                    )
+                                })}
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* section4 End */}
+
+                    {/* Section 5 */}
+
+                    <section>
+                        <div className='student-life-sec-5-container'>
+                            <div className='student-life-sec-5-container-grid'>
+                                {DataGrid?.map((values, index) => {
+                                    return (
+                                        <Card className='student-life-sec-5-container-grid-card' key={index}>
+                                            <h1>
+                                                {values.title}
+                                            </h1>
+                                            <p>
+                                                {values.para}
+                                            </p>
+                                        </Card>
+                                    )
+                                })}
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Section 5 End */}
+
+                    {/* Section 6  */}
+
+                    <section>
+                        <div className='student-life-sec-6-container'>
+                            <div className='student-life-sec-6-content'>
+                                <h1> School Teams</h1>
+                                <p>
+                                    Our Admissions team will ensure the
+                                    smoothest possible transition for your family.
+                                    Kindly refer to the age-matrix for admission.
+                                    This matrix is created as per the National Educational
+                                    Policy and the circular issued by the Karnataka
+                                    State Board of Education. (Click Age-matrix circular-2023-24.pdf for the circular)
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    {/* Section 6 End */}
                 </div>
             </div>
         </div>

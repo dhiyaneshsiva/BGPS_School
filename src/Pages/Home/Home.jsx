@@ -29,7 +29,10 @@ import Polygan from "../../Assets/Polygon.png"
 
 
 // Mantine Query
-import { useMediaQuery } from '@mantine/hooks'
+import { useMediaQuery, useDisclosure } from '@mantine/hooks'
+import { Input, Modal } from '@mantine/core'
+import { User } from 'tabler-icons-react'
+// import { DateInput } from '@mantine/dates';
 
 const Home = () => {
 
@@ -104,8 +107,40 @@ const Home = () => {
 
   const [marquee, setMarquee] = useState(`Admission's Open Register Now`)
   const Query = useMediaQuery('(max-width:400px)')
+  // const [value, setValue] = useState<Date | null>(null);
+  const [opened, { open, close }] = useDisclosure(true);
   return (
     <div>
+      <Modal opened={opened} onClose={close}>
+        <Input.Wrapper
+          label="Name"
+          withAsterisk>
+          <Input
+            icon={<User />}
+            placeholder="Your email"
+          />
+        </Input.Wrapper>
+
+        {/* DOB */}
+
+        {/* <DateInput
+          value={value}
+          onChange={setValue}
+          label="Date input"
+          placeholder="Date input"
+          maw={400}
+          mx="auto"
+        /> */}
+        {/* DOB ENd */}
+        <Input.Wrapper
+          label="Name"
+          withAsterisk>
+          <Input
+            icon={<User />}
+            placeholder="Your email"
+          />
+        </Input.Wrapper>
+      </Modal>
 
       <marquee direction="left" className="marquee">
         {marquee} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -257,7 +292,7 @@ const Home = () => {
           <div className='sec-3-bottom'>
             <div className='sec-3-bottom-top3'>
               {
-                data.map((value, index) => {
+                data?.map((value, index) => {
                   return (
                     <>
                       <div key={index}
@@ -279,7 +314,7 @@ const Home = () => {
             </div>
             <div className='sec-3-bottom-toppers-2'>
               {
-                list.map((value, index) => {
+                list?.map((value, index) => {
                   return (
                     <>
                       <div

@@ -21,7 +21,6 @@ const NavBar = () => {
     setHide(false)
   }
 
-
   // Nav List
   const ulList = [
     {
@@ -52,30 +51,72 @@ const NavBar = () => {
     {
       title: "About",
       li: [
-        'About School',
-        'Legacy',
-        'Sri Adichunchanagiri Shikshana Trust',
-        'Message From The Management Members',
-        'Message From The Principal'
-      ]
+        {
+          title: 'About School',
+          path: `/about_founder`
+        },
+        {
+          title: 'Legacy',
+          path: `/legacy`
+        },
+        {
+          title: 'Sri Adichunchanagiri Shikshana Trust',
+          path: `/sast`
+        },
+        {
+          title: 'Message From The Management Members',
+          path: `/message`
+        },
+        {
+          title: 'Message From The Principal',
+          path: `/principal`
+        },
+      ],
+      handler: hidden
     },
     {
       title: 'Page Group two',
       li: [
-        'Mandatory Disclosures',
-        'Academics',
-        'Co-Curriculam',
-        'School Zone'
-      ]
+        {
+          title: `Mandatory Disclosures`,
+          path: `/mandatory`
+        },
+        {
+          title: 'Academics',
+          path: ``
+        },
+        {
+          title: 'Co-Curriculam',
+          path: `/co_curriculam`
+        },
+        {
+          title: 'School Zone',
+          path: ``
+        },
+      ],
+      handler: hidden
     },
     {
       title: 'Page Group three',
       li: [
-        'Students Buzz',
-        'Student Life',
-        'Accolades',
-        'Admissions'
-      ]
+        {
+          title: 'Sports',
+          path: `/sports`
+        },
+        {
+          title: 'Student Life',
+          path: `/student_life`
+        },
+        {
+          title: 'Accolades',
+          path: `/accolades`
+        },
+        {
+          title: 'Admissions',
+          path: ``
+        },
+      ],
+      handler: hidden
     }
   ]
 
@@ -105,7 +146,7 @@ const NavBar = () => {
         <div className='Nav-list'>
           <ul>
             {
-              ulList.map((value, index) => {
+              ulList?.map((value, index) => {
                 return (
                   <>
                     <li onClick={value.handler} key={index} className='Nav-lists'>
@@ -126,18 +167,20 @@ const NavBar = () => {
           data-aos-delay="2000ms"
           data-aos-duration="2000ms">
           {
-            dropDown.map((value, index) => {
+            dropDown?.map((value, index) => {
               return (
                 <div key={index}>
                   <h2>
                     {value.title}
                   </h2>
-                  {value.li.map((list, index) => {
+                  {value?.li?.map((list, index) => {
                     return (
                       <>
-                        <li key={index}>
-                          <BrandCodesandbox /> {list}
-                        </li>
+                        <Link to={list.path} className="router-link" onClick={value.handler}>
+                          <li key={index}>
+                            <BrandCodesandbox /> {list.title}
+                          </li>
+                        </Link>
                       </>
                     )
                   })}

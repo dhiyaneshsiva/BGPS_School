@@ -1,0 +1,44 @@
+/* Sec1 */
+.Accolades-sec-1-container {
+    background-color: #84A1FF;
+    padding: 5rem 10rem 3rem 10rem;
+}
+
+.Accolades-sec-1-content {
+    display: flex;
+}
+
+.Accolades-sec-1-content-left {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.Accolades-sec-1-content-left h1 {
+    font: normal bold 150px/1 'Poppins';
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+/* Sec1 End */
+
+
+/* Sec2 */
+
+.Accolades-sec-2-container {
+    padding: 5rem 10rem;
+}
+
+.Accolades-sec-2-container-para {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 5rem;
+    padding-bottom: 20rem;
+}
+.Accolades-sec-2-container-para p:nth-child(2){
+    margin-top: 2rem;
+}
+
+/* Sec2 End */

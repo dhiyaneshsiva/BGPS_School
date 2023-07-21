@@ -141,7 +141,7 @@ const Co_Curricular = () => {
                             </div>
                             <div className="co-curricular-head-content-grid">
                                 <ul>
-                                    {ListGrid.map((value, index) => {
+                                    {ListGrid?.map((value, index) => {
                                         return (
                                             <>
                                                 <li key={index}>
@@ -167,7 +167,7 @@ const Co_Curricular = () => {
                 <section>
                     <div className="co-curricular-container">
                         {
-                            Grid.map((value, index) => {
+                            Grid?.map((value, index) => {
                                 return (
                                     <div key={index} className='co-curricular-container-display'>
                                         <div className="co-curricular-container-img">

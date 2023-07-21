@@ -43,12 +43,14 @@
 }
 
 .mandatory-bottom-grid-img {
-    max-width: 400px;
+    /* max-width: 450px;
+    min-height: 30vh; */
     cursor: pointer;
 }
 
 .grid-image {
-    width: 100%;
+    width: 100% !important;
+    height: 100% !important;
     z-index: -2;
 }
 

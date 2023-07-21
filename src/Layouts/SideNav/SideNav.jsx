@@ -49,8 +49,6 @@ const SideNav = ({ setOpened }) => {
             ]
         }
     ]
-
-    console.log(indexDrop);
     return (
         <div>
 
@@ -70,13 +68,13 @@ const SideNav = ({ setOpened }) => {
                 </li>
                 <ul className={`Side-Nav-Drop ${open ? "" : 'drop-hide'}`}>
                     {
-                        dropDown.map((value, index) => {
+                        dropDown?.map((value, index) => {
                             return (
                                 <div key={index}>
                                     <h5 onClick={() => setIndexDrop(index)}>
                                         {value.title}
                                     </h5>
-                                    {value.li.map((data, ind) => {
+                                    {value?.li?.map((data, ind) => {
                                         return (
                                             <li key={ind}>
                                                 <BrandCodesandbox />   {data}
@@ -91,32 +89,6 @@ const SideNav = ({ setOpened }) => {
                 <li onClick={hidden}>
                     Contact
                 </li>
-                {/* {
-                    ulList.map((value, index) => {
-                        return (
-                            <>
-                            <li className='side-lists' key={index} onClick={value.handler}>
-                            {value.title} {value.icon}
-                            </li>
-                            <ul className='Side-Nav-Drop-Hide'>
-                            {Array.isArray(value.dropDown) ?
-                                value.dropDown.map((data, index) => {
-                                    return (
-                                        <>
-                                        <li>
-                                        {data.li}
-                                        </li>
-                                        </>
-                                            )
-                                        }) : ""}
-                                        <li>
-                                        
-                                        </li>
-                                        </ul>
-                                        </>
-                                        )
-                                    })
-                                } */}
             </ul>
         </div>
     )

@@ -92,7 +92,7 @@ const Mandatory = () => {
 
                     <div className="mandatory-bottom-grid">
                         {
-                            gridImages.map((value, index) => {
+                            gridImages?.map((value, index) => {
                                 return (
                                     <div className="mandatory-bottom-grid-img" key={index}>
                                         <img

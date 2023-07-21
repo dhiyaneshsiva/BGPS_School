@@ -58,7 +58,7 @@ const Sast = () => {
                         <div className="sast-container-top-list">
                             <ul>
                                 {
-                                    listTop.map((value, index) => {
+                                    listTop?.map((value, index) => {
                                         return (
                                             <li key={index}>
                                                 {value}
@@ -81,7 +81,7 @@ const Sast = () => {
                         <div className="sast-container-bottom-list">
                             <ul>
                                 {
-                                    listBottom.map((value, index) => {
+                                    listBottom?.map((value, index) => {
                                         return (
                                             <li key={index}>
                                                 {value}

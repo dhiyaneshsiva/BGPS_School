@@ -17,7 +17,7 @@ const Founder_Details = ({ data }) => {
                                 {data.title}
                             </h1>
                             <ul>
-                                {data?.list.map((value, index) => {
+                                {data?.list?.map((value, index) => {
                                     return (
                                         <li key={index}>
                                             {value}

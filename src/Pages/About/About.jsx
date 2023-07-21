@@ -143,7 +143,7 @@ const About = () => {
 
             <div className="vision-mission-main">
                 <div className="vision-mission-flex">
-                    {data.map((item, index) => (
+                    {data?.map((item, index) => (
                         <div key={index} className="flex-card">
                             <img src={item.icon} />
                             <h4>{item.title}</h4>

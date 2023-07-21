@@ -3,7 +3,6 @@ import "./Founders.css"
 
 
 const Founders = ({ data }) => {
-    console.log(data);
     return (
         <div>
             <div className="founders-page">

@@ -25,6 +25,9 @@ import VanillaTilt from 'vanilla-tilt';
 
 
 const Mandatory = () => {
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
 
     const image1 = useRef([
         React.createRef(),

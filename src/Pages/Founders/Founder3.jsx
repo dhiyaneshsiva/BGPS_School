@@ -7,49 +7,19 @@ import Founders from '../../Components/Founders/Founders'
 import FounderImage from "../../Assets/profileone.png"
 
 const Founder3 = () => {
+    window.scroll(0, 0)
     const Data = {
-        title: `Bhairavaikya  His Holiness Jagadguru 
-        Sri  Sri  Sri Dr. Balagangadharanatha 
-        Mahaswamiji   (1954-2013) `,
+        title: `Sri Sri Dr. Prakashnatha Swamiji, Managing Director, BGS Group of Institutions and Hospitals `,
         icon: FounderImage,
         list: [
-            `It is rightly said that “A dream 
-            becomes a goal when action is taken 
-            towards its achievement”. In order 
-            to achieve this ambitious dream of 
-            every child, the facilitators at 
-            BGS Public School are committed 
-            to take constructive and purposeful 
-            actions in order to produce optimistic, 
-            independent, compassionate, life-long 
-            learners, future leaders and role models 
-            of the society. `,
-            `Our motto has always been the 3Ds – 
-            Determination, Dedication and Discipline 
-            in the work you do, in order to ensure an 
-            outstanding, enjoyable and conducive 
-            learning environment to students. `,
-            `Being experienced as an organized 
-            professional with proven teaching, 
-            guidance and counselling skills, I 
-            firmly believe a person should possess 
-            both intelligence and virtue and have 
-            training in the five aspects of education 
-            namely, the moral, the intellectual, 
-            physical, social and aesthetic aspects. 
-            Only then can students achieve a holistic 
-            development before they can contribute 
-            to the well-being of the community.  
+            ` “Knowledge gives discipline, from discipline comes worthiness, from worthiness one gets wealth, from wealth (one does) good deeds, from that (comes) joy.”    `,
+            `“Education is the most powerful tool so use it wisely”. If you are a privileged person, help others by enlightening them, by teaching them the difference between right and wrong and imparting moral values. If education is based on values and ethics, strengthened by sound moral principles, then our generation will grow up as good human beings.  `,
+            ` Education doesn’t come on its own as there has got to be an intermediary who can impart knowledge and show them the right path. This is certainly the role a teacher plays in our lives, and he/she is the one who comes as an experienced person and helps children differentiate between right and wrong. BGS Public School imparts knowledge in various fields and ensures that the students grow up as responsible citizens. The school does not believe in bookish knowledge; it teaches values and helps the students to know how to live their lives with dignity, conduct themselves, how to be humble and how to treat others.   
             `,
             `
-            I expect myself to be frank, 
-            sincere and modest with others and 
-            spare no effort in doing things. 
-            Along with this, it is very important 
-            to have the spirit of cooperation 
-            between the school and the parents, our 
-            main stakeholders, to make the upbringing 
-            of children beneficial.`
+            BGS Public School believes in fun filled and stress-free learning. Every single child is given the opportunity to share and express his/her view freely. I noticed in every event, there was maximum participation of the students. The school not just focuses on academics but also takes care of the all-round development of the students. It could be sports, cultural events, competitive exams, etc. Therefore, I believe education is something not just restricted to books or classroom teaching, but it’s about acquiring skills, realizing our inner strengths and polishing those strengths.  `,
+            `
+            So, it is important to impart good values to our future generation and never lose sight of the primary aim of education, i.e., to become good and responsible global citizens. I wish all the teachers, students and parents of BGS Public School all the best. `
         ]
     }
     return (

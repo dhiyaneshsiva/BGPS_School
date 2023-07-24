@@ -7,7 +7,7 @@ import Founder2 from "../../Assets/profilethree.png"
 import Founder3 from "../../Assets/profileone.png"
 
 const About_Founder = () => {
-
+    window.scroll(0, 0)
 
     const List = [
         `

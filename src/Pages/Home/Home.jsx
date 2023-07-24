@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Home.css"
 
 // Images
@@ -30,13 +30,14 @@ import Polygan from "../../Assets/Polygon.png"
 
 // Mantine Query
 import { useMediaQuery, useDisclosure } from '@mantine/hooks'
-import { Input, Modal } from '@mantine/core'
-import { User } from 'tabler-icons-react'
-// import { DateInput } from '@mantine/dates';
+import { DateInput } from '@mantine/dates';
+import { Button, Center, Input, Modal, Select } from '@mantine/core'
+import { ChevronDown, DiscountCheck, FaceIdError } from 'tabler-icons-react'
+import { Link } from 'react-router-dom/cjs/react-router-dom'
 
 const Home = () => {
 
-
+  window.scroll(0, 0)
   // Toppers Data
   const data = [
     {
@@ -107,39 +108,143 @@ const Home = () => {
 
   const [marquee, setMarquee] = useState(`Admission's Open Register Now`)
   const Query = useMediaQuery('(max-width:400px)')
-  // const [value, setValue] = useState<Date | null>(null);
-  const [opened, { open, close }] = useDisclosure(true);
+  const [formModal, setFormModal] = useState(true)
+  const [modalOpened, { open, close }] = useDisclosure(true);
+  const [formResultModal, setFormResultModal] = useState(false);
+  const [errors, setErrors] = useState(false)
+
+  const [studentsData, setStudentsData] = useState({
+    name: '',
+    classStandard: '',
+    parentsName: '',
+    dateOfBirth: '',
+    emailId: '',
+    number: ''
+  })
+
+
+  const submitForm = (e) => {
+    e.preventDefault()
+    if (studentsData.name === '' || studentsData.parentsName === '' || studentsData.classStandard === '' || studentsData.dateOfBirth === ''
+      || studentsData.emailId === '' || studentsData.number === '') {
+      setErrors(true)
+      setFormResultModal(true)
+      setInterval(() => {
+        setFormResultModal(false)
+      }, 3000)
+    }
+    else {
+      setErrors(false)
+      setFormResultModal(true)
+      setFormModal(false)
+      setInterval(() => {
+        setFormResultModal(false)
+      }, 3000)
+      setInterval(() => {
+        localStorage.removeItem('form')
+      }, 60 * 60 * 1000)
+      window.localStorage.setItem('form', true)
+    }
+  }
+
+  useEffect(() => {
+    if (window.localStorage.getItem('form')) {
+      setFormModal(false)
+    }
+  })
   return (
     <div>
-      <Modal opened={opened} onClose={close}>
-        <Input.Wrapper
-          label="Name"
-          withAsterisk>
-          <Input
-            icon={<User />}
-            placeholder="Your email"
-          />
-        </Input.Wrapper>
-
-        {/* DOB */}
-
-        {/* <DateInput
-          value={value}
-          onChange={setValue}
-          label="Date input"
-          placeholder="Date input"
-          maw={400}
-          mx="auto"
-        /> */}
-        {/* DOB ENd */}
-        <Input.Wrapper
-          label="Name"
-          withAsterisk>
-          <Input
-            icon={<User />}
-            placeholder="Your email"
-          />
-        </Input.Wrapper>
+      <Modal zIndex={1099} onClose={close} opened={formResultModal} centered withCloseButton={false} className='Error-modal' >
+        <Center>
+          {
+            errors ? (
+              <FaceIdError size={'15rem'} strokeWidth={1} color="red" />
+            ) : (
+              <DiscountCheck size={'15rem'} strokeWidth={1} color="Green" />
+            )
+          }
+        </Center>
+        <Center>
+          {
+            errors ? (
+              <div style={{ color: 'red' }}>
+                Please Fill all Inputs
+              </div>
+            ) : (
+              <div style={{ color: 'green' }}>
+                Send Successfully
+              </div>
+            )
+          }
+        </Center>
+      </Modal>
+      <Modal
+        size={800}
+        opened={formModal}
+        onClose={() => (setFormModal(false), close)}
+        title="Admission Form"
+        className='pop-up-modal'
+        centered>
+        <div className='modal-form'>
+          <form onSubmit={submitForm}>
+            <Input
+              placeholder="Child's Name"
+              size="md"
+              onChange={(e) => setStudentsData({ ...studentsData, name: e.target.value })}
+            />
+            <br />
+            <DateInput
+              placeholder="Child's Date of Birth"
+              miw={410}
+              mx="auto"
+              size="md"
+              valueFormat="DD MMM YYYY"
+              minDate='2000-02-26'
+              maxDate={new Date()}
+              onChange={(e) =>
+                setStudentsData({ ...studentsData, dateOfBirth: new Date(e).toLocaleDateString() })
+              }
+            />
+            <br />
+            <Select
+              clearable
+              miw={410}
+              onChange={(e) =>
+                setStudentsData({ ...studentsData, classStandard: e })
+              }
+              size="md"
+              rightSection={<ChevronDown size="1rem"
+                strokeWidth={0.5} />}
+              dropdownPosition="bottom"
+              placeholder="Admission for Class"
+              data={['Nursery', 'LKG', 'UKG', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII',
+                'VIII', 'IX', 'X', 'XI']}
+              className='modal-form-autocomplete'
+            />
+            <br />
+            <Input
+              placeholder="Parent's Name"
+              size="md"
+              onChange={(e) => setStudentsData({ ...studentsData, parentsName: e.target.value })}
+            />
+            <br />
+            <Input
+              placeholder="Email Id"
+              size="md"
+              onChange={(e) => setStudentsData({ ...studentsData, emailId: e.target.value })}
+            />
+            <br />
+            <Input
+              placeholder="Contact Number"
+              size="md"
+              onChange={(e) => setStudentsData({ ...studentsData, number: e.target.value })}
+            />
+            <br />
+            <Center>
+              <Button onClick={submitForm}>Submit</Button>
+            </Center>
+          </form>
+        </div>
       </Modal>
 
       <marquee direction="left" className="marquee">
@@ -219,7 +324,9 @@ const Home = () => {
             </div>
             <div className='sec-2-left-button'>
               <button>
-                See More
+                <Link style={{ textDecoration: "none", color: "black" }} to='/about'>
+                  See More
+                </Link>
               </button>
             </div>
           </div>

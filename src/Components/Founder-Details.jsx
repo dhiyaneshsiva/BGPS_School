@@ -9,12 +9,12 @@ const Founder_Details = ({ data }) => {
                     <div className="founder-details-content">
                         <div className="founder-details-content-left">
                             <div className="founder-details-content-left-img">
-                                <img src={data.icon} alt="" />
+                                <img src={data?.icon} alt="" />
                             </div>
                         </div>
                         <div className="founder-details-content-para">
                             <h1>
-                                {data.title}
+                                {data?.title}
                             </h1>
                             <ul>
                                 {data?.list?.map((value, index) => {

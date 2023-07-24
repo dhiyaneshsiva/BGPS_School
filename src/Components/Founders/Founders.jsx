@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Founders.css"
+import { Center } from '@mantine/core'
 
 
 const Founders = ({ data }) => {
@@ -22,7 +23,7 @@ const Founders = ({ data }) => {
                         </h1>
                         <ul>
                             {
-                                data?.list?.map((value,index)=>{
+                                data?.list?.map((value, index) => {
                                     return (
                                         <li key={index}>
                                             {value}

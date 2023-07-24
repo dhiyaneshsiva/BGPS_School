@@ -17,6 +17,7 @@ import VanillaTilt from 'vanilla-tilt';
 import SchoolHouse from '../../Components/SchoolHouse/SchoolHouse'
 
 const Studentlife = () => {
+    window.scroll(0, 0)
 
     const listNumber = useRef([
         React.createRef(),
@@ -76,46 +77,22 @@ const Studentlife = () => {
     const GridData = [
         {
             title: 'Air',
-            para: `It depicts commitment, 
-            strength and bravery, which 
-            inculcates in students that 
-            they should not fear any given 
-            situation in life and should 
-            face all the situation upfront 
-            and with utmost bravery.`,
+            para: `It depicts commitment, strength and bravery, which inculcates in students that they should not fear any given situation in life and should face all the situation upfront and with utmost bravery.`,
             icon: Grid1
         },
         {
             title: 'Water',
-            para: `It depicts commitment, 
-            strength and bravery, which 
-            inculcates in students that 
-            they should not fear any given 
-            situation in life and should 
-            face all the situation upfront 
-            and with utmost bravery.`,
+            para: `It depicts the infinite and the immeasurable. The values given here are that the students have unlimited and vast opportunities in life and should strive towards progress.`,
             icon: Grid2
         },
         {
             title: 'Earth',
-            para: `It depicts commitment, 
-            strength and bravery, which 
-            inculcates in students that 
-            they should not fear any given 
-            situation in life and should 
-            face all the situation upfront 
-            and with utmost bravery.`,
+            para: `It depicts happiness, peace and harmony which imbibes in students to do all the given duties with harmony and should not deceive anybody in life.`,
             icon: Grid3
         },
         {
             title: 'Fire',
-            para: `It depicts commitment, 
-            strength and bravery, which 
-            inculcates in students that 
-            they should not fear any given 
-            situation in life and should 
-            face all the situation upfront 
-            and with utmost bravery.`,
+            para: `It depicts purity and victory, The values given here are that students should have a competitive spirit and should try and win all the tasks given to them. Like they should have a competitive spirit in life. `,
             icon: Grid4
         },
     ]

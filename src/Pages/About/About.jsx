@@ -17,8 +17,10 @@ import logo_circle from "../../Assets/logo_circle.png";
 import mission from "../../Assets/mission.png"
 import vision from "../../Assets/vision.png"
 import tick2 from "../../Assets/tick2.png"
+import { Center } from '@mantine/core'
 
 const About = () => {
+    window.scroll(0, 0)
 
     // Mantine Query
     const Query = useMediaQuery('(max-width:1200px)')
@@ -74,8 +76,15 @@ const About = () => {
                             present-day world.
                         </p>
                         <p>
-                            The curriculam here is aimed at providing excellent education in
-                            scholastic subjects, co-
+                            The curriculum here is aimed at providing excellent education in scholastic
+                            subjects, co-curricular activities, value education, games and sports,
+                            yoga, music, art & craft and dance. Equal importance has been laid to
+                            develop the rounded personalities of the children through Personality
+                            development programmes, emotional and spiritual development, artistic
+                            and aesthetic development of the children. A number of opportunities
+                            are provided to the children to develop scientific thinking and keep
+                            themselves abreast of current events through quizzes and extension
+                            lectures.
                         </p>
                     </div>
                 </div>
@@ -134,6 +143,21 @@ const About = () => {
                         <img className="logo-body" src={logo_body}></img>
                     </div>
                 </div>
+                <Center>
+                    <div className='about-logo-content'>
+                        <p>
+                            The PEACOCK, the TRISHUL and the SUN are the symbols
+                            in the design of the Logo which in unity, symbolizes
+                            strength and gentleness, pride and humility and the
+                            sustenance of life and growth.
+                            The design of the logo describes quintessentially in
+                            the myriad colors of the PEACOCK, the TRISHUL, ancient
+                            weapons of the Gods and the eternal SUN – the Indian
+                            ethos blending together its traditions, culture,
+                            ideologies and philosophies.
+                        </p>
+                    </div>
+                </Center>
             </section>
 
 

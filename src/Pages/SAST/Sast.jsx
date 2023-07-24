@@ -1,7 +1,11 @@
 import React from 'react'
 import "./Sast.css"
+import { List, ThemeIcon } from '@mantine/core'
+import { CircleCheck } from 'tabler-icons-react'
+import BoldSpecificWord from '../../Components/BoldText/BoldSpecificWords'
 
 const Sast = () => {
+    window.scroll(0, 0)
 
     const listTop = [
         `
@@ -44,6 +48,20 @@ const Sast = () => {
         `To provide medical and health facilities to the people 
         of the area by starting hospitals and dispensaries.`
     ]
+
+    const wordsToBold = [
+        'Sri',
+        'Adichunchanagiri',
+        'Shikshana',
+        'Trust®',
+        'SAST',
+        'Jagadguru',
+        'Padmabhushana',
+        'Balagangadharanatha',
+        'Maha',
+        'Swamiji',
+        '500+',
+    ]
     return (
         <div>
             <div className="sast-page">
@@ -63,6 +81,7 @@ const Sast = () => {
                                             <li key={index}>
                                                 {value}
                                             </li>
+                                            // <BoldSpecificWord key={index} text={value} wordsToBold={wordsToBold} />
                                         )
                                     })
                                 }
@@ -79,17 +98,22 @@ const Sast = () => {
                             </h1>
                         </div>
                         <div className="sast-container-bottom-list">
-                            <ul>
+                            <List
+                                icon={
+                                    <ThemeIcon color="teal" size={24} radius="xl">
+                                        <CircleCheck size="1rem" />
+                                    </ThemeIcon>
+                                }>
                                 {
                                     listBottom?.map((value, index) => {
                                         return (
-                                            <li key={index}>
+                                            <List.Item key={index}>
                                                 {value}
-                                            </li>
+                                            </List.Item>
                                         )
                                     })
                                 }
-                            </ul>
+                            </List>
                         </div>
                     </div>
 

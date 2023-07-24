@@ -13,6 +13,7 @@ import Hands from "../../Assets/Hands.png"
 import { Stepper } from '@mantine/core'
 
 const Guidelines = () => {
+    window.scroll(0, 0)
     return (
         <div>
             <div className='Guidelines-page'>
@@ -28,17 +29,22 @@ const Guidelines = () => {
                                 Guidelines
                             </h1>
                             <p>
-                                Being one of the best CBSE schools in
-                                Kengeri and R.R. Nagar surroundings, we
-                                not only focus on academic excellence,
-                                but also extend learning beyond the
-                                classroom. The school delivers a
-                                holistic approach towards education
-                                where students at BGS PS are encouraged
-                                to broaden their horizons by exploring
-                                their passions in the field of arts and sports.
+                                <b style={{ fontSize: "25px" }}> BGS & SJB Group of Institutions </b>are
+                                leading education institutions across
+                                the nation. It has a legacy of more
+                                than 40 decades with 500 education
+                                institutions under its banner and
+                                is run by Sri Adichunchanagiri
+                                Shikshana Trust®.
                             </p>
-
+                            <br />
+                            <p>
+                                <b style={{ fontSize: "25px" }}> BGS & SJB Group of Institutions </b>has
+                                laid considerable emphasis on imparting quality education, cutting across
+                                professional and general institutions.
+                                All its institutions have a reputation for their
+                                unwavering commitment to excellence and expanding the horizons of knowledge.
+                            </p>
                             <Stepper className='stepper'>
                                 <Stepper.Step>1</Stepper.Step>
                                 <Stepper.Step>2</Stepper.Step>

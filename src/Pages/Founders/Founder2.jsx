@@ -7,49 +7,23 @@ import Founders from '../../Components/Founders/Founders'
 import FounderImage from "../../Assets/profilethree.png"
 
 const Founder2 = () => {
+    window.scroll(0, 0)
     const Data = {
-        title: `Bhairavaikya  His Holiness Jagadguru 
-        Sri  Sri  Sri Dr. Balagangadharanatha 
-        Mahaswamiji   (1954-2013) `,
+        title: `Sri Sri Sri Dr. Nirmalanandanatha Mahaswamiji, President, Adichunchanagiri Shikshana Trust `,
         icon: FounderImage,
         list: [
-            `It is rightly said that “A dream 
-            becomes a goal when action is taken 
-            towards its achievement”. In order 
-            to achieve this ambitious dream of 
-            every child, the facilitators at 
-            BGS Public School are committed 
-            to take constructive and purposeful 
-            actions in order to produce optimistic, 
-            independent, compassionate, life-long 
-            learners, future leaders and role models 
-            of the society. `,
-            `Our motto has always been the 3Ds – 
-            Determination, Dedication and Discipline 
-            in the work you do, in order to ensure an 
-            outstanding, enjoyable and conducive 
-            learning environment to students. `,
-            `Being experienced as an organized 
-            professional with proven teaching, 
-            guidance and counselling skills, I 
-            firmly believe a person should possess 
-            both intelligence and virtue and have 
-            training in the five aspects of education 
-            namely, the moral, the intellectual, 
-            physical, social and aesthetic aspects. 
-            Only then can students achieve a holistic 
-            development before they can contribute 
-            to the well-being of the community.  
+            ` “I salute to that Sadguru who is the source of eternal bliss, supreme happiness, who has true wisdom, who is beyond the dualities, who is infinite, whose attention is always on the divine, who is unique, eternal, pure, steady, and who sees with the eyes of wisdom who is beyond thoughts and beyond three gunas”.`,
+            `The aim of education should be to teach one how to think, rather than what to think. `,
+            `“Education would be much more effective if its purpose is to ensure that by the time, they leave school every boy and girl should know how much they do not know and be imbued with a lifelong desire to know it.” BGS Public School has proven its effectiveness in imparting knowledge to each student and built a desire to know what they do not know.  
             `,
             `
-            I expect myself to be frank, 
-            sincere and modest with others and 
-            spare no effort in doing things. 
-            Along with this, it is very important 
-            to have the spirit of cooperation 
-            between the school and the parents, our 
-            main stakeholders, to make the upbringing 
-            of children beneficial.`
+            The focus of BGS Public School is to develop the personality of the individual and to make the children understand the significance of their life to themselves and to others. The teachers of this prestigious institution under the support and guidance of their mentors strive hard to make docile and inquisitive citizens who are the Nation Builders. School is driven by the belief that every child deserves a high-quality education, and that educational opportunity is a basic human right. Providing ample educational opportunities is one of the most fundamental obligations each generation owes to the ones that follow. BGS Public School provides a lot of opportunities to students in every field of education to prepare a skillful, wise, intelligent, creative and confident future generation.`,
+            `
+            The school environment is designed for the 21st century and technology continues to support the students to develop their skills. The dedicated faculties have produced many future leaders, doctors, engineers, politicians etc. Teachers and students are provided with lots of opportunities. Opportunities carry responsibilities. You must accept these responsibilities, seize and grow. In this competitive world, you will be able to make your future bright only with decisive approach, firm determination and committed focus on your set goals.
+            `,
+            `
+            I hope that all of you get lots of fame and achieve greater distinction. Wishing you lots of luck and good wishes for your future.
+            `
         ]
     }
     return (

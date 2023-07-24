@@ -7,6 +7,7 @@ import Founder_Details from '../../Components/Founder-Details'
 import PrincipalImg from "../../Assets/principal.png"
 
 const Principal = () => {
+    window.scroll(0, 0)
 
     const Founder =
     {

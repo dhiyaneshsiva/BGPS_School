@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Co-Curricular.css"
+import { Link } from "react-router-dom"
 
 // Images
 import Play1 from "../../Assets/play2.png"
@@ -14,7 +15,13 @@ import Music from "../../Assets/music.png"
 import Karate from "../../Assets/karate.png"
 import Yoga from "../../Assets/karate2.png"
 
+// Mantine UI
+import { Button, Center } from '@mantine/core'
+
 const Co_Curricular = () => {
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
 
     const ListGrid = [
         {
@@ -52,7 +59,8 @@ const Co_Curricular = () => {
             creatively. The skills learnt during 
             their Art classes encourage them to 
             integrate their learnings in other subjects.            `,
-            icon: Visual
+            icon: Visual,
+            path: '/virtualarts'
         },
         {
             title: 'Dance',
@@ -67,7 +75,8 @@ const Co_Curricular = () => {
             encourage them to integrate their learnings 
             in other subjects. 
             `,
-            icon: Dance
+            icon: Dance,
+            path: '/dance'
         },
         {
             title: 'Music',
@@ -83,7 +92,8 @@ const Co_Curricular = () => {
             encourage them to integrate their 
             learnings in other subjects. 
             `,
-            icon: Music
+            icon: Music,
+            path: '/music'
         },
         {
             title: 'Karate',
@@ -99,7 +109,8 @@ const Co_Curricular = () => {
             classes encourage them to integrate 
             their learnings in other subjects.
             `,
-            icon: Karate
+            icon: Karate,
+            path: '/karate'
         },
         {
             title: 'Yoga',
@@ -114,7 +125,8 @@ const Co_Curricular = () => {
             encourage them to integrate their 
             learnings in other subjects. 
             `,
-            icon: Yoga
+            icon: Yoga,
+            path: '/yoga'
         },
     ]
     return (
@@ -171,7 +183,7 @@ const Co_Curricular = () => {
                                 return (
                                     <div key={index} className='co-curricular-container-display'>
                                         <div className="co-curricular-container-img">
-                                            <img src={value.icon} alt="Content-Image" />
+                                            <img src={value.icon} alt="Content" />
                                         </div>
                                         <div className="co-curricular-container-content">
                                             <div>
@@ -182,6 +194,14 @@ const Co_Curricular = () => {
                                                 <p>
                                                     {value.para}
                                                 </p>
+                                                <br />
+                                                <Center>
+                                                    <Button className='co-curricular-container-see-more-btn'>
+                                                        <Link className="router-link" to={value.path}>
+                                                            See More
+                                                        </Link>
+                                                    </Button>
+                                                </Center>
                                             </div>
                                         </div>
                                     </div>

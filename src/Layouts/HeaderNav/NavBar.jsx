@@ -37,7 +37,7 @@ const NavBar = () => {
       title: 'School',
       icon: <ChevronDown />,
       handler: handleClick,
-      route: ''
+      route:'/about'
     },
     {
       title: 'Contact',
@@ -150,7 +150,7 @@ const NavBar = () => {
                 return (
                   <>
                     <li onClick={value.handler} key={index} className='Nav-lists'>
-                      <Link to={value.route} className='router-link'>
+                      <Link to={value?.route} className='router-link'>
                         {value.title} {value.icon}
                       </Link>
                     </li>

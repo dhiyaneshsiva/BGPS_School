@@ -8,6 +8,7 @@ import FounderImage from '../../Assets/profiletwo.png'
 import Yellow from "../../Assets/yellow.png"
 
 const Founder1 = () => {
+    window.scroll(0, 0)
     const Data = {
         title: `Bhairavaikya  His Holiness Jagadguru 
         Sri  Sri  Sri Dr. Balagangadharanatha 
@@ -15,43 +16,10 @@ const Founder1 = () => {
         icon: FounderImage,
         img: Yellow,
         list: [
-            `It is rightly said that “A dream 
-            becomes a goal when action is taken 
-            towards its achievement”. In order 
-            to achieve this ambitious dream of 
-            every child, the facilitators at 
-            BGS Public School are committed 
-            to take constructive and purposeful 
-            actions in order to produce optimistic, 
-            independent, compassionate, life-long 
-            learners, future leaders and role models 
-            of the society. `,
-            `Our motto has always been the 3Ds – 
-            Determination, Dedication and Discipline 
-            in the work you do, in order to ensure an 
-            outstanding, enjoyable and conducive 
-            learning environment to students. `,
-            `Being experienced as an organized 
-            professional with proven teaching, 
-            guidance and counselling skills, I 
-            firmly believe a person should possess 
-            both intelligence and virtue and have 
-            training in the five aspects of education 
-            namely, the moral, the intellectual, 
-            physical, social and aesthetic aspects. 
-            Only then can students achieve a holistic 
-            development before they can contribute 
-            to the well-being of the community.  
-            `,
-            `
-            I expect myself to be frank, 
-            sincere and modest with others and 
-            spare no effort in doing things. 
-            Along with this, it is very important 
-            to have the spirit of cooperation 
-            between the school and the parents, our 
-            main stakeholders, to make the upbringing 
-            of children beneficial.`
+            `On 24 Sept 1974 he became the 71st pontiff of the Adichunchanagiri Dharma Peetha and worked tirelessly to realize his vision of revolutionizing Society through Spiritual, Educational, Social, Cultural activities of the Mutt. He travelled all around the world understanding the needs of the people.  `,
+            `His Holiness was truly an enlightened and realized soul for he treated all the people alike, without discriminating based on caste, creed, sex or status. His approach towards handling different problems was truly scientific and logical.  `,
+            `This led to the establishment of Sri Adichunchanagiri Shikshana Trust.  At present nearly 500 such institutions are functioning across the Nation aiding the Government in educating the rural and semi-rural children. Also, Mahaswamiji has made free boarding and lodging facilities for Civil services aspirants in the premises of the Mutt in Bangalore.   `,
+            `Sri Sri Sri Dr. Balagangadharanatha Mahaswamiji not only emphasized modern system of Education but also advocated traditional teaching system.  It is the collective responsibility of the community to continue and preserve the devoted services of His Holiness Jagadguru Sri Sri Sri Dr. Balagangadharanatha Mahaswamiji, during whose era the Mutt reached the maximum grandeur. The consistent efforts of this 71st pontiff should be ideal for the forthcoming successors to work for Humanity selflessly and exhibit more zeal than before in achieving the dreams and visions of the former come to reality. `
         ]
     }
     return (

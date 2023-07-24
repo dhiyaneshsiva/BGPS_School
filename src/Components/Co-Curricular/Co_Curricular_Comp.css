@@ -1,0 +1,36 @@
+/* ul */
+
+.co-curricular-comp-ul {
+    padding: 2rem 0;
+    width: 90%;
+    margin: auto;
+
+}
+
+.co-curricular-comp-ul ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.co-curricular-comp-ul li {
+    list-style-type: none;
+    font: normal 20px 'Poppins';
+}
+
+.co-curricular-comp-grid {
+    display: grid;
+    margin: auto;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+}
+
+.co-curricular-comp-grid-image {
+    max-width: 500px;
+}
+
+.co-curricular-comp-grid-image img {
+    width: 100%;
+}
+
+/* ul End */

@@ -102,6 +102,50 @@
 /* Sec - 3 End */
 
 
+/* Student grid */
+
+.student-council-image-gallery-title {
+    font: normal bold 60px 'Poppins';
+    padding-top: 5rem;
+    /* color: #130E3D; */
+    background: linear-gradient(to right, #130E3D, #281B87);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.student-council-image-gallery-grid {
+    width: 90%;
+    margin: auto;
+}
+
+/* Student grid End */
+
+/* Student Club */
+
+.student-club-conatiner {
+    background-color: #000000;
+    padding: 5rem 4rem;
+}
+
+.student-club-conatiner-title {
+    color: white;
+    font: normal bold 60px 'Poppins';
+    padding: 2rem;
+}
+
+.student-club-content {
+    max-width: 1200px;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+.student-club-content p {
+    color: rgba(255, 255, 255, 0.326);
+}
+
+/* Student Club ENd */
+
 /* Sec4  */
 
 .student-life-sec-4-container {
@@ -110,7 +154,7 @@
 
 .student-life-sec-4-container-grid {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     gap: 1rem;
     margin: auto;
     width: 100%;
@@ -127,8 +171,13 @@
 }
 
 .student-life-sec-4-container-grid-card h1 {
-    margin-top: 4rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
+}
+
+.student-life-sec-4-container-grid-card-img {
+    border-radius: 10px !important;
+    max-width: 500px;
 }
 
 .student-life-sec-4-container-grid-card h1,
@@ -147,7 +196,7 @@
 
 .student-life-sec-5-container-grid {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     gap: 1rem;
 }
 
@@ -198,6 +247,7 @@
 /* Sec6 End */
 
 @media (max-width:1400px) {
+
     .student-life-sec-4-container,
     .student-life-sec-5-container {
         padding: 5rem 2rem;
@@ -231,6 +281,7 @@
         margin-top: 2rem;
         gap: 1rem;
     }
+
     .student-life-sec-3-container-left {
         color: white;
         padding: 2rem 2rem;
@@ -239,6 +290,18 @@
     .student-life-sec-4-container-grid,
     .student-life-sec-5-container-grid {
         grid-template-columns: auto auto;
+    }
+
+    .student-council-image-gallery-title {
+        padding-top: 2rem;
+        text-align: center;
+    }
+
+    .student-club-conatiner {
+        padding: 2rem;
+    }
+    .studentlife-council {
+        padding: 0rem;
     }
 }
 
@@ -255,4 +318,6 @@
     .student-life-sec-5-container-grid {
         grid-template-columns: auto;
     }
+
+
 }

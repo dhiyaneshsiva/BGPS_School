@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import "./NavBar.css"
-import { Link } from "react-router-dom"
+import { Link, useHistory } from "react-router-dom"
 
 // Images
 import Logo from "../../Assets/logo.png"
@@ -12,6 +12,7 @@ const NavBar = () => {
 
   // UseState
   const [hide, setHide] = useState(false)
+  const [servicePath, setServicePath] = useState('')
 
   // Handler
   const handleClick = () => {
@@ -20,6 +21,8 @@ const NavBar = () => {
   const hidden = () => {
     setHide(false)
   }
+
+  const History = useHistory()
 
   // Nav List
   const ulList = [
@@ -37,7 +40,7 @@ const NavBar = () => {
       title: 'School',
       icon: <ChevronDown />,
       handler: handleClick,
-      route:'/about'
+      route: servicePath
     },
     {
       title: 'Contact',
@@ -113,7 +116,7 @@ const NavBar = () => {
         },
         {
           title: 'Admissions',
-          path: ``
+          path: `/admission`
         },
       ],
       handler: hidden
@@ -126,6 +129,7 @@ const NavBar = () => {
 
   // HandleOutClick
   useEffect(() => {
+    setServicePath(History.location.pathname)
     const handleOutClick = (e) => {
       if (!refValue.current.contains(e.target)) {
         setHide(false)

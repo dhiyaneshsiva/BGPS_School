@@ -196,11 +196,11 @@ const Co_Curricular = () => {
                                                 </p>
                                                 <br />
                                                 <Center>
-                                                    <Button className='co-curricular-container-see-more-btn'>
-                                                        <Link className="router-link" to={value.path}>
+                                                    <Link className="router-link" to={value.path}>
+                                                        <Button className='co-curricular-container-see-more-btn'>
                                                             See More
-                                                        </Link>
-                                                    </Button>
+                                                        </Button>
+                                                    </Link>
                                                 </Center>
                                             </div>
                                         </div>

@@ -1,5 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Route, Switch } from 'react-router-dom'
+
+// Image
+import ScrollTop from "./Assets/ScrollTop.png"
 
 // Pages
 import Home from "./Pages/Home/Home"
@@ -22,8 +25,27 @@ import Karate from './Pages/Co-Curricular-Gallery/Karate/Karate'
 import Music from './Pages/Co-Curricular-Gallery/Music/Music'
 
 const Router = () => {
+
+    // Window Scroll
+    const Scroll = () => window.scrollTo(0, 0)
+
+    window.addEventListener('scroll', () => {
+        const AddClass = document.querySelector('.scroll-btn-fixed')
+        const Value = window.scrollY
+        if (Value > 1000) {
+            AddClass.classList.add('show-icon')
+        }
+        else {
+            AddClass.classList.remove('show-icon')
+        }
+    })
     return (
         <div>
+            <div onClick={Scroll} className='scroll-btn-fixed'>
+                <div className='scroll-btn-img'>
+                    <img src={ScrollTop} alt="Top" />
+                </div>
+            </div>
             <Switch>
                 <Route exact path="/">
                     <Home />
@@ -78,6 +100,9 @@ const Router = () => {
                 </Route>
                 <Route path="/karate">
                     <Karate />
+                </Route>
+                <Route path="/admission">
+                    <Guidelines />
                 </Route>
             </Switch>
         </div>

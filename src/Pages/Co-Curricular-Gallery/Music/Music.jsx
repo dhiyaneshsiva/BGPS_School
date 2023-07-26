@@ -7,6 +7,8 @@ import Co_Curricular_Comp from '../../../Components/Co-Curricular/Co_Curricular_
 
 // Images
 import Image1 from "../../../Assets/music.png"
+import Image2 from "../../../Assets/Music/Image1.png"
+import Image3 from "../../../Assets/Music/Image2.png"
 
 const Music = () => {
 
@@ -21,7 +23,7 @@ const Music = () => {
     ]
 
     const ImageData = [
-        Image1, Image1, Image1
+        Image1, Image2, Image3
     ]
     return (
         <div>

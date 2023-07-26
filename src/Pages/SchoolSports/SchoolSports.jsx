@@ -6,9 +6,11 @@ import Whistle from "../../Assets/whistle.png"
 import Bottle from "../../Assets/bottle.png"
 import Alarm from "../../Assets/alarm.png"
 import Weight from "../../Assets/weight.png"
-import Play1 from "../../Assets/play1.png"
-import Play2 from "../../Assets/play4.png"
-import Play3 from "../../Assets/play3.png"
+import Play1 from "../../Assets/Sports/Volleyball.png"
+import Play2 from "../../Assets/Sports/Football.png"
+import Play3 from "../../Assets/Sports/Basketball.png"
+import Play4 from "../../Assets/Sports/Cricket.png"
+import Play5 from "../../Assets/Sports/Tennis.png"
 import Grid1 from "../../Assets/school1.png"
 import Grid2 from "../../Assets/school2.png"
 import Grid3 from "../../Assets/school3.png"
@@ -39,11 +41,11 @@ const SchoolSports = () => {
         },
         {
             title: "Cricket",
-            icon: Play1
+            icon: Play4
         },
         {
             title: "Tennis",
-            icon: Play2
+            icon: Play5
         },
     ]
 

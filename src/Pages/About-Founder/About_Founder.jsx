@@ -66,15 +66,11 @@ const About_Founder = () => {
             icon: Founder1
         },
         {
-            title: `Bhairavaikya  His Holiness Jagadguru 
-            Sri  Sri  Sri Dr. Balagangadharanatha 
-            Mahaswamiji   (1954-2013) `,
+            title: `Sri Sri Sri Dr. Nirmalanandanatha Mahaswamiji, President, Adichunchanagiri Shikshana Trust`,
             icon: Founder2
         },
         {
-            title: `Bhairavaikya  His Holiness Jagadguru 
-            Sri  Sri  Sri Dr. Balagangadharanatha 
-            Mahaswamiji   (1954-2013) `,
+            title: `Sri Sri Dr. Prakashnatha Swamiji, Managing Director, BGS Group of Institutions and Hospitals`,
             icon: Founder3
         },
     ]

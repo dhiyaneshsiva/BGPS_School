@@ -231,6 +231,11 @@
         display: grid;
         grid-template-columns: auto auto;
     }
+
+
+    .co-curricular-head-content {
+        padding: 2rem 1rem 1rem 1rem;
+    }
 }
 
 /* Media Query End */

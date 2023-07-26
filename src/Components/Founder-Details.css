@@ -14,17 +14,44 @@
     gap: 3rem;
 }
 
-.founder-details-content-para h1{
+.founder-details-content-para h1 {
     font: normal bold 40px 'Montserrat';
     padding: 2rem 0;
 }
 
-.founder-details-content-para ul{
+.founder-details-content-para ul {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
+
 .founder-details-content-para ul li {
     list-style-type: none;
-    font: normal  15px 'Montserrat';
+    font: normal 15px 'Montserrat';
+}
+
+@media (max-width:1400px) {
+    .founder-details-container {
+        background-color: white;
+        width: 98%;
+        margin: auto;
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    .founder-details-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .founder-details-content-left-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .founder-details-content-para h1 {
+        font: normal bold 25px 'Montserrat';
+        padding: 1rem 0;
+    }
 }

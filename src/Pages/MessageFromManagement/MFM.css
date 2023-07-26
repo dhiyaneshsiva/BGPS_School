@@ -6,3 +6,9 @@
 .mfm-page h1 {
     text-align: center;
 }
+
+@media(max-width:768px){
+    .mfm-page {
+        padding: 2rem 0;
+    }
+}

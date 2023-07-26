@@ -10,3 +10,12 @@
 }
 
 /* End */
+@media(max-width:500px){
+    .virtual-arts-page {
+        padding: 5rem 2rem;
+    }
+    .virtual-arts-conatiner-title {
+        font: normal bold 25px/1 'Poppins';
+        color:#17104A;
+    }
+}

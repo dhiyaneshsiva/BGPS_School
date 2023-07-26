@@ -10,7 +10,10 @@ import Hands from "../../Assets/Hands.png"
 
 
 // Mantine UI
-import { Stepper } from '@mantine/core'
+import { Stepper, ThemeIcon } from '@mantine/core'
+
+// Tabler Icons
+import { BrightnessDown } from 'tabler-icons-react';
 
 const Guidelines = () => {
     window.scroll(0, 0)
@@ -29,21 +32,15 @@ const Guidelines = () => {
                                 Guidelines
                             </h1>
                             <p>
-                                <b style={{ fontSize: "25px" }}> BGS & SJB Group of Institutions </b>are
-                                leading education institutions across
-                                the nation. It has a legacy of more
-                                than 40 decades with 500 education
-                                institutions under its banner and
-                                is run by Sri Adichunchanagiri
-                                Shikshana Trust®.
+                                Being one of the best CBSE schools in Kengeri and R.R. Nagar surroundings,
+                                we not only focus on academic excellence, but also extend learning beyond
+                                the classroom.
                             </p>
                             <br />
                             <p>
-                                <b style={{ fontSize: "25px" }}> BGS & SJB Group of Institutions </b>has
-                                laid considerable emphasis on imparting quality education, cutting across
-                                professional and general institutions.
-                                All its institutions have a reputation for their
-                                unwavering commitment to excellence and expanding the horizons of knowledge.
+                                The school delivers a holistic approach towards education where students at
+                                BGS PS are encouraged to broaden their horizons by exploring their passions
+                                in the field of arts and sports.
                             </p>
                             <Stepper className='stepper'>
                                 <Stepper.Step>1</Stepper.Step>
@@ -161,10 +158,10 @@ const Guidelines = () => {
                                 Please Note
                             </h2>
                             <p className='guideline-sec-3-div2-para1'>
-                                Admission to other grades will be applicable based on the age-limit to Grade I.
+                                <BrightnessDown size={"2rem"} />  Admission to other grades will be applicable based on the age-limit to Grade I.
                             </p>
                             <p className='guideline-sec-3-div2-para2'>
-                                Preference will be given to the students from the neighborhood, siblings of the
+                                <BrightnessDown size={"2rem"} />  Preference will be given to the students from the neighborhood, siblings of the
                                 students and those who are transferred from one state to another.
                             </p>
                         </div>

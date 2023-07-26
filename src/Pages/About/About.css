@@ -194,3 +194,41 @@
 }
 
 /* Section 4 End */
+
+/* Media Query */
+
+@media(max-width:1400px) {
+    .about-section-two {
+        gap: 7rem;
+        padding: 7rem 0;
+    }
+
+    .head {
+        width: 260px;
+        position: absolute;
+        bottom: 0;
+        left: 21rem;
+        z-index: 0;
+    }
+
+    .about-head-right {
+        z-index: 1;
+    }
+}
+
+@media(max-width:1200px) {
+    .school-left {
+        max-width: 300px;
+    }
+
+    .school-left p {
+        z-index: 1111;
+        position: relative;
+    }
+
+    .school-right {
+        z-index: 0;
+    }
+}
+
+/* Media Query End */

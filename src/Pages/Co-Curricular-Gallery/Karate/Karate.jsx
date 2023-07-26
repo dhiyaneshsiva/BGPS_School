@@ -6,7 +6,17 @@ import { Center } from '@mantine/core'
 import Co_Curricular_Comp from '../../../Components/Co-Curricular/Co_Curricular_Comp'
 
 // Images
-import Image1 from "../../../Assets/karate.png"
+import Image1 from "../../../Assets/Karate/Image1.png"
+import Image2 from "../../../Assets/Karate/Image2.png"
+import Image3 from "../../../Assets/Karate/Image3.png"
+import Image4 from "../../../Assets/Karate/Image4.png"
+import Image5 from "../../../Assets/Karate/Image5.png"
+import Image6 from "../../../Assets/Karate/Image6.jpg"
+import Image7 from "../../../Assets/Karate/Image7.png"
+import Image8 from "../../../Assets/Karate/Image8.png"
+import Image9 from "../../../Assets/Karate/Image9.png"
+import Image10 from "../../../Assets/Karate/Image10.png"
+import Image11 from "../../../Assets/Karate/Image11.png"
 
 const Karate = () => {
 
@@ -20,7 +30,10 @@ const Karate = () => {
     ]
 
     const ImageData = [
-        Image1, Image1, Image1
+        Image1, Image2, Image3,
+        Image4, Image5, Image6,
+        Image7, Image8, Image9,
+        Image10, Image11
     ]
     return (
         <div>

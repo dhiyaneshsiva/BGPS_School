@@ -82,21 +82,25 @@
 
 
 @media (max-width:1400px) {
+    .schoolhouse {
+        padding: 5rem 2rem 1rem 2rem;
+    }
+
     .schoolhouse-cards {
-        padding: 5rem 3rem;
+        padding: 2rem 2rem;
     }
 }
 
 
 @media (max-width:1100px) {
-    .schoolhouse-cards-card-container {
+    .schoolhouse-card-container {
         grid-template-columns: auto auto;
     }
 }
 
 
 @media (max-width:768px) {
-    .schoolhouse-cards-card-container {
+    .schoolhouse-card-container {
         grid-template-columns: auto;
     }
 
@@ -112,4 +116,39 @@
         padding: 2rem 0 1rem 0;
     }
 
+    .student-life-sec-3-container {
+        background: linear-gradient(to right, black 65%, black 35%);
+    }
+
+    .student-life-sec-3-container .shadow {
+        display: none;
+    }
+
+    .StudentAvatar {
+        z-index: 0;
+        left: 10%;
+    }
+
+    .student-life-sec-3-container-left {
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.501);
+    }
+
+    .student-life-sec-3-container-left p {
+        color: rgba(255, 255, 255, 0.705);
+    }
+
+    .student-life-sec-3-container-left h1 {
+        font: normal bold 40px 'Poppins';
+    }
+
+    .student-council-image-gallery-title {
+        font: normal bold 40px 'Poppins';
+    }
+
+    .schoolhouse {
+        padding: 2rem;
+    }
 }
+
+@media (max-width:500px) {}

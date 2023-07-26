@@ -1,6 +1,12 @@
 import React from 'react'
 import "./Co_Curricular_Comp.css"
-import { Grid } from '@mantine/core'
+
+// Mantine UI
+import { Grid, List, ThemeIcon } from '@mantine/core'
+
+// Tabler Icons
+import { ApiApp } from 'tabler-icons-react';
+
 
 
 
@@ -8,15 +14,16 @@ const Co_Curricular_Comp = ({ data, Image }) => {
     return (
         <div>
             <div className='co-curricular-comp-ul'>
-                <ul>
+                <List
+                    >
                     {data?.map((value, index) => {
                         return (
-                            <li key={index}>
+                            <List.Item key={index}>
                                 {value}
-                            </li>
+                            </List.Item>
                         )
                     })}
-                </ul>
+                </List>
             </div>
             <br />
             {/* <Grid>

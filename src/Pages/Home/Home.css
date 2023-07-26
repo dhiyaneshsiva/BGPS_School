@@ -114,6 +114,10 @@
 }
 
 
+.sec-2-left-content p {
+    padding: 1rem 2rem;
+}
+
 .sec-2-right {
     background: linear-gradient(140deg, #FEC200, #FEC200);
     width: 50%;
@@ -165,6 +169,10 @@
     width: 50%;
     color: white;
     z-index: 1;
+}
+
+.sec-2-right-para {
+    padding: 1rem 2rem;
 }
 
 /* Section 2  End */
@@ -534,6 +542,12 @@
 
     .sec-2-left-button {
         margin: auto;
+    }
+
+    .sec-2-right-content {
+        padding: 1rem 2rem;
+        left: 0;
+        width: 100%;
     }
 
     /* Section 2 End  */

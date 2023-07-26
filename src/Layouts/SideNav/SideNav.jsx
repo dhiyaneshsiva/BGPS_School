@@ -23,29 +23,68 @@ const SideNav = ({ setOpened }) => {
         {
             title: "About",
             li: [
-                'About School',
-                'Legacy',
-                'Sri Adichunchanagiri Shikshana Trust',
-                'Message From The Management Members',
-                'Message From The Principal'
+                {
+                    title: 'About School',
+                    path: `/about_founder`
+                },
+                {
+                    title: 'Legacy',
+                    path: `/legacy`
+                },
+                {
+                    title: 'Sri Adichunchanagiri Shikshana Trust',
+                    path: `/sast`
+                },
+                {
+                    title: 'Message From The Management Members',
+                    path: `/message`
+                },
+                {
+                    title: 'Message From The Principal',
+                    path: `/principal`
+                },
             ]
         },
         {
             title: 'Page Group two',
             li: [
-                'Mandatory Disclosures',
-                'Academics',
-                'Co-Curriculam',
-                'School Zone'
+                {
+                    title: `Mandatory Disclosures`,
+                    path: `/mandatory`
+                },
+                {
+                    title: 'Academics',
+                    path: ``
+                },
+                {
+                    title: 'Co-Curriculam',
+                    path: `/co_curriculam`
+                },
+                {
+                    title: 'School Zone',
+                    path: ``
+                },
             ]
         },
         {
             title: 'Page Group three',
             li: [
-                'Students Buzz',
-                'Student Life',
-                'Accolades',
-                'Admissions'
+                {
+                    title: 'Sports',
+                    path: `/sports`
+                },
+                {
+                    title: 'Student Life',
+                    path: `/student_life`
+                },
+                {
+                    title: 'Accolades',
+                    path: `/accolades`
+                },
+                {
+                    title: 'Admissions',
+                    path: `/admission`
+                },
             ]
         }
     ]
@@ -54,12 +93,12 @@ const SideNav = ({ setOpened }) => {
 
             <ul className='side-nav-list'>
                 <li onClick={hidden}>
-                    <Link to="/">
+                    <Link className="nav-links" to="/">
                         Home
                     </Link>
                 </li>
                 <li onClick={hidden}>
-                    <Link to="/about">
+                    <Link className="nav-links" to="/about">
                         About
                     </Link>
                 </li>
@@ -76,9 +115,11 @@ const SideNav = ({ setOpened }) => {
                                     </h5>
                                     {value?.li?.map((data, ind) => {
                                         return (
-                                            <li key={ind}>
-                                                <BrandCodesandbox />   {data}
-                                            </li>
+                                            <Link className="nav-links" to={data.path}>
+                                                <li key={ind} onClick={hidden}>
+                                                    <BrandCodesandbox />   {data.title}
+                                                </li>
+                                            </Link>
                                         )
                                     })}
                                 </div>

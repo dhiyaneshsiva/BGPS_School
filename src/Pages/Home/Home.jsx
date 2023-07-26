@@ -142,7 +142,7 @@ const Home = () => {
       }, 3000)
       setInterval(() => {
         localStorage.removeItem('form')
-      }, 60 * 60 * 1000)
+      }, 60 * 1000)
       window.localStorage.setItem('form', true)
     }
   }
@@ -195,7 +195,7 @@ const Home = () => {
             <br />
             <DateInput
               placeholder="Child's Date of Birth"
-              miw={410}
+              // miw={410}  
               mx="auto"
               size="md"
               valueFormat="DD MMM YYYY"
@@ -208,7 +208,7 @@ const Home = () => {
             <br />
             <Select
               clearable
-              miw={410}
+              // miw={410}
               onChange={(e) =>
                 setStudentsData({ ...studentsData, classStandard: e })
               }

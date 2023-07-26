@@ -142,3 +142,119 @@
 }
 
 /* Sec2 End */
+
+/* Media Query */
+
+@media (max-width:1400px) {
+    .schoolsports-sec-2-container {
+        background-color: rgba(255, 255, 255, 0.605);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 5rem;
+    }
+
+    .schoolsports-sec-1-container .sports-alarm {
+        right: 10%;
+        z-index: 0;
+    }
+
+    .schoolsports-sec-1-container .sports-whistle {
+        right: 20%;
+    }
+
+    .schoolsports-sec-1-content-para2,
+    .schoolsports-sec-1-content-para1 {
+        z-index: 1;
+        position: relative;
+    }
+
+    .schoolsports-sec-1-content h2,
+    .schoolsports-sec-1-content h1 {
+        z-index: 1;
+        position: relative;
+    }
+}
+
+@media(max-width:1060px) {
+    .schoolsports-sec-2-grid {
+        grid-template-columns: auto auto auto;
+        margin: auto;
+    }
+
+    .schoolsports-sec-1-content {
+        padding: 5rem;
+    }
+}
+
+
+@media(max-width:768px) {
+    .schoolsports-sec-1-content h2 {
+        font: normal bold 60px/1 'Poppins';
+        text-transform: uppercase;
+    }
+
+    .schoolsports-sec-1-content h1 {
+        font: normal bold 100px/1 'Poppins';
+        text-transform: uppercase;
+    }
+
+    .schoolsports-sec-1-container .sports-bottle {
+        width: 150px;
+    }
+
+    .schoolsports-sec-1-container .sports-alarm {
+        width: 180px;
+    }
+
+    .schoolsports-sec-1-container .sports-weight {
+        width: 80px;
+    }
+
+    .schoolsports-sec-1-container .sports-whistle {
+        width: 80px;
+    }
+
+    .schoolsports-sec-1-content-para1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .schoolsports-sec-2-container {
+        padding: 2rem;
+    }
+}
+
+
+@media(max-width:600px){
+    .schoolsports-sec-1-content {
+        padding: 2rem;
+    }
+    .schoolsports-sec-2-grid {
+        grid-template-columns: auto auto;
+    }
+    .schoolsports-sec-2-content>h1 {
+        text-align: center;
+    }
+}
+@media(max-width:500px){
+    .schoolsports-sec-1-content h1 {
+        font: normal bold 80px/1 'Poppins';
+    }
+    .schoolsports-sec-1-content h2 {
+        font: normal bold 40px/1 'Poppins';
+    }
+    .schoolsports-sec-1-container .sports-bottle {
+        width: 100px;
+    }
+
+    .schoolsports-sec-1-container .sports-alarm {
+        width: 120px;
+    }
+}
+@media(max-width:400px){
+    .schoolsports-sec-2-grid {
+        grid-template-columns: auto;
+    }
+}
+
+/* Media Query End */

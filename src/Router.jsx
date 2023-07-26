@@ -41,11 +41,6 @@ const Router = () => {
     })
     return (
         <div>
-            <div onClick={Scroll} className='scroll-btn-fixed'>
-                <div className='scroll-btn-img'>
-                    <img src={ScrollTop} alt="Top" />
-                </div>
-            </div>
             <Switch>
                 <Route exact path="/">
                     <Home />
@@ -105,6 +100,11 @@ const Router = () => {
                     <Guidelines />
                 </Route>
             </Switch>
+            <div onClick={Scroll} className='scroll-btn-fixed'>
+                <div className='scroll-btn-img'>
+                    <img src={ScrollTop} alt="Top" />
+                </div>
+            </div>
         </div>
     )
 }

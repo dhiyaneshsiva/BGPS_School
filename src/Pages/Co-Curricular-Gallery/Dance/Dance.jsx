@@ -3,18 +3,20 @@ import "../Virtual-Arts/VirtualArts.css"
 
 // Mantine UI
 import { Center } from '@mantine/core'
-import Co_Curricular_Comp from '../../../Components/Co-Curricular/Co_Curricular_Comp'
 
 // Images
 import Image1 from "../../../Assets/Dance/Image1.png"
 import Image2 from "../../../Assets/Dance/Image2.png"
 import Image3 from "../../../Assets/Dance/Image3.png"
 
+// Pages
+import CoCurricularComp from '../../../Components/Co-Curricular/Co_Curricular_Comp'
+
 const Dance = () => {
 
     useEffect(() => {
         window.scroll(0, 0)
-    })
+    }, [])
 
     const Data = [
         `The Dance classes at BGS Public School are a part of the in-house curriculum where it helps students to improve overall fitness, endurance, muscle toning and strengthening. It gives them the space to express their emotions, channel their feelings through different forms of dance and have fun with music and rhythm. Though it is a form of physical exercise, it also allows our children to connect with others, grow their confidence, and build their teamwork skills. `,
@@ -35,7 +37,7 @@ const Dance = () => {
                     </div>
                 </div>
                 <div className='virtual-arts-content'>
-                    <Co_Curricular_Comp data={Data} Image={ImageData} />
+                    <CoCurricularComp data={Data} Image={ImageData} />
                 </div>
             </div>
         </div>

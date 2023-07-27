@@ -18,7 +18,7 @@ import Yoga from "../../Assets/karate2.png"
 // Mantine UI
 import { Button, Center } from '@mantine/core'
 
-const Co_Curricular = () => {
+const CoCurricular = () => {
     useEffect(() => {
         window.scroll(0, 0)
     }, [])
@@ -135,7 +135,7 @@ const Co_Curricular = () => {
 
                 {/* Section 1 */}
 
-                <section>
+                
                     <div className="co-curricular-head">
                         <div className="co-curricular-head-content">
                             <div className="co-curricular-head-content-title">
@@ -170,13 +170,13 @@ const Co_Curricular = () => {
                         <img src={Avatar} alt='Avatar' className='Avatar' />
                         <img src={Feather} alt='Feather' className='Feather' />
                     </div>
-                </section>
+                
 
                 {/* Section 1 End */}
 
                 {/* Section 2 */}
 
-                <section>
+                
                     <div className="co-curricular-container">
                         {
                             Grid?.map((value, index) => {
@@ -209,7 +209,7 @@ const Co_Curricular = () => {
                             })
                         }
                     </div>
-                </section>
+                
 
                 {/* Section 2 end */}
 
@@ -218,4 +218,4 @@ const Co_Curricular = () => {
     )
 }
 
-export default Co_Curricular
+export default CoCurricular

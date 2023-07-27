@@ -86,7 +86,7 @@ const NavBar = () => {
         },
         {
           title: 'Academics',
-          path: ``
+          path: `/academics`
         },
         {
           title: 'Co-Curriculam',
@@ -95,6 +95,10 @@ const NavBar = () => {
         {
           title: 'School Zone',
           path: ``
+        },
+        {
+          title: 'Careers',
+          path: `/career`
         },
       ],
       handler: hidden

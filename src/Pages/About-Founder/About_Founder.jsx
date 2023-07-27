@@ -5,9 +5,12 @@ import "./About_Founder.css"
 import Founder1 from "../../Assets/profiletwo.png"
 import Founder2 from "../../Assets/profilethree.png"
 import Founder3 from "../../Assets/profileone.png"
+import { useEffect } from 'react'
 
-const About_Founder = () => {
-    window.scroll(0, 0)
+const AboutFounder = () => {
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
 
     const List = [
         `
@@ -123,4 +126,4 @@ const About_Founder = () => {
     )
 }
 
-export default About_Founder
+export default AboutFounder

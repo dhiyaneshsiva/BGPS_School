@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Accolades.css"
 
 
@@ -6,7 +6,9 @@ import "./Accolades.css"
 import Award from "../../Assets/award.png"
 
 const Accolades = () => {
-    window.scroll(0, 0)
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
     return (
         <div>
             <div className='Accolades-page'>
@@ -44,7 +46,7 @@ const Accolades = () => {
 
 
                 {/* Sectio2 */}
-                <section>
+                
                     <div className='Accolades-sec-2-container'>
                         <h1>
                             Accolades
@@ -66,7 +68,7 @@ const Accolades = () => {
                             </p>
                         </div>
                     </div>
-                </section>
+                
                 {/* Sectio2 End */}
 
             </div>

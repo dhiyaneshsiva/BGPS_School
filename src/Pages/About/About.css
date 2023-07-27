@@ -23,7 +23,7 @@
 }
 
 .about-head-right p {
-    width: 590px;
+    max-width: 590px;
     font: normal 17px/20px "Helvetica Neue";
     margin-bottom: 15px;
     color: #707070;
@@ -82,7 +82,7 @@
 }
 
 .school-left p {
-    width: 600px;
+    max-width: 600px;
     font: normal 19px/24px "Helvetica Neue";
 }
 
@@ -134,7 +134,7 @@
     position: absolute;
     bottom: 0;
     left: 45px;
-    width: 620px;
+    max-width: 620px;
 }
 
 .logo-circle {
@@ -222,12 +222,134 @@
     }
 
     .school-left p {
-        z-index: 1111;
+        z-index: 11;
         position: relative;
     }
 
     .school-right {
         z-index: 0;
+    }
+}
+
+@media(max-width:1000px) {
+    .about-section-two {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 6rem;
+        padding: 2rem;
+        margin: auto;
+        width: 100%;
+    }
+
+    .school-left,
+    .school-right {
+        max-width: 100%;
+    }
+
+    .about-head {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 2rem;
+        width: 100%;
+    }
+
+    .green-div {
+        margin-bottom: 5px;
+    }
+}
+
+@media(max-width:768px) {
+    .vision-mission-main {
+        margin: 0;
+        padding: 2rem;
+    }
+
+    .vision-mission-flex {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .about-logo-section {
+        padding: 2rem;
+        margin: 0;
+    }
+
+    .logo-main-img {
+        max-width: 500px;
+    }
+
+    .logo-circle {
+        max-width: 100px;
+        position: absolute;
+        left: 220px;
+        top: 90px;
+    }
+
+    .logo-body {
+        position: absolute;
+        bottom: 0;
+        left: 40px;
+        max-width: 450px;
+    }
+
+    .head {
+        width: 260px;
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+        z-index: 0;
+    }
+
+    .about-head-right h3 {
+        font: normal bold 45px/1 "Montserrat ";
+        text-transform: uppercase;
+        margin-bottom: 8px;
+    }
+
+    .about-head-right h2 {
+        font: normal bold 80px/1 "Montserrat";
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+
+
+}
+
+@media(max-width:500px) {
+    .yellow {
+        right: 20%;
+    }
+
+    .logo-main-img {
+        max-width: 330px;
+    }
+
+    .logo-body {
+        left: 25px;
+        max-width: 290px;
+    }
+
+    .logo-circle {
+        max-width: 80px;
+        position: absolute;
+        left: 40%;
+        top: 70px;
+    }
+
+    .vision-mission-main {
+        margin: 0;
+        padding: 2rem ;
+    }
+    .flex-card {
+        width: 100%;
+        padding: 30px 20px;
+        color: white;
+        text-align: center;
+        border-radius: 10px;
     }
 }
 

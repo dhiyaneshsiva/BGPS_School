@@ -54,7 +54,7 @@ const SideNav = ({ setOpened }) => {
                 },
                 {
                     title: 'Academics',
-                    path: ``
+                    path: `/academics`
                 },
                 {
                     title: 'Co-Curriculam',
@@ -63,6 +63,10 @@ const SideNav = ({ setOpened }) => {
                 {
                     title: 'School Zone',
                     path: ``
+                },
+                {
+                    title: 'Careers',
+                    path: `/career`
                 },
             ]
         },

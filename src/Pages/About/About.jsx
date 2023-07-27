@@ -1,11 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./About.css"
 
 // Images 
 import Avatar from "../../Assets/curricular_left.png"
 import Bgs from "../../Assets/bgs.png"
 import GreenBox from "../../Assets/green.png"
-import { useMediaQuery } from '@mantine/hooks'
 import A from '../../Assets/A.png'
 import a from "../../Assets/A-1.png"
 import B from "../../Assets/B.png"
@@ -17,13 +16,14 @@ import logo_circle from "../../Assets/logo_circle.png";
 import mission from "../../Assets/mission.png"
 import vision from "../../Assets/vision.png"
 import tick2 from "../../Assets/tick2.png"
+
+// Mantine Ui
 import { Center } from '@mantine/core'
 
 const About = () => {
-    window.scroll(0, 0)
-
-    // Mantine Query
-    const Query = useMediaQuery('(max-width:1200px)')
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
 
     // Data List
     const data = [
@@ -50,13 +50,13 @@ const About = () => {
         <div>
 
             {/* About Section 1  */}
-            <section>
+            
                 <div className="about-head">
                     <div className="about-head-left">
-                        <img className="head" src={Avatar}></img>
+                        <img alt='img' className="head" src={Avatar}></img>
                         <div className="green-div">
-                            <img className="green" src={GreenBox}></img>
-                            <img className="bgs" src={Bgs}></img>
+                            <img alt='img' className="green" src={GreenBox}></img>
+                            <img alt='img' className="bgs" src={Bgs}></img>
                         </div>
                     </div>
                     <div className="about-head-right">
@@ -88,12 +88,12 @@ const About = () => {
                         </p>
                     </div>
                 </div>
-            </section>
+            
             {/* About Section 1 End */}
 
             {/* About Section 2 */}
 
-            <section>
+            
                 <div className='about-sec-2'>
                     <div className="about-section-two">
                         <div className="school-left">
@@ -114,20 +114,20 @@ const About = () => {
                         </div>
                         <div className="school-right">
                             <div className="top-img-div">
-                                <img src={A} />
-                                <img src={a} />
-                                <img src={B} />
-                                <img src={C} />
+                                <img alt='img' src={A} />
+                                <img alt='img' src={a} />
+                                <img alt='img' src={B} />
+                                <img alt='img' src={C} />
                             </div>
                             <div className="green-div-two">
-                                <img className="green-two" src={GreenBox}></img>
-                                <img className="bgs" src={Bgs}></img>
-                                <img className="yellow" src={YellowCircle}></img>
+                                <img alt='img' className="green-two" src={GreenBox}></img>
+                                <img alt='img' className="bgs" src={Bgs}></img>
+                                <img alt='img' className="yellow" src={YellowCircle}></img>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            
 
             {/* About Section 2 End */}
 
@@ -135,12 +135,12 @@ const About = () => {
 
             {/* About Section 3 */}
 
-            <section>
+            
                 <div className="about-logo-section">
                     <div className="logo-main">
-                        <img className="logo-main-img" src={logo_main}></img>
-                        <img className="logo-circle" src={logo_circle}></img>
-                        <img className="logo-body" src={logo_body}></img>
+                        <img alt='img' className="logo-main-img" src={logo_main}></img>
+                        <img alt='img' className="logo-circle" src={logo_circle}></img>
+                        <img alt='img' className="logo-body" src={logo_body}></img>
                     </div>
                 </div>
                 <Center>
@@ -158,7 +158,7 @@ const About = () => {
                         </p>
                     </div>
                 </Center>
-            </section>
+            
 
 
             {/* About Section 3 End */}
@@ -169,7 +169,7 @@ const About = () => {
                 <div className="vision-mission-flex">
                     {data?.map((item, index) => (
                         <div key={index} className="flex-card">
-                            <img src={item.icon} />
+                            <img alt='img' src={item.icon} />
                             <h4>{item.title}</h4>
                             <p>{item.content}</p>
                         </div>

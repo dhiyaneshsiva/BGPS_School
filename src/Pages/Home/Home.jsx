@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom/cjs/react-router-dom'
 import "./Home.css"
 
 // Images
@@ -32,12 +33,14 @@ import Polygan from "../../Assets/Polygon.png"
 import { useMediaQuery, useDisclosure } from '@mantine/hooks'
 import { DateInput } from '@mantine/dates';
 import { Button, Center, Input, Modal, Select } from '@mantine/core'
+
+// Tabler Icons
 import { ChevronDown, DiscountCheck, FaceIdError } from 'tabler-icons-react'
-import { Link } from 'react-router-dom/cjs/react-router-dom'
 
 const Home = () => {
-
-  window.scroll(0, 0)
+  useEffect(() => {
+    window.scroll(0, 0)
+  }, [])
   // Toppers Data
   const data = [
     {
@@ -106,7 +109,7 @@ const Home = () => {
     },
   ];
 
-  const [marquee, setMarquee] = useState(`Admission's Open Register Now`)
+  const [marquee, setMarquee] = useState([`Admission's Open Register Now`])
   const Query = useMediaQuery('(max-width:400px)')
   const [formModal, setFormModal] = useState(true)
   const [modalOpened, { open, close }] = useDisclosure(true);
@@ -152,6 +155,22 @@ const Home = () => {
       setFormModal(false)
     }
   })
+
+
+  const MarqueeLoop = () => {
+    let result = ''
+    for (var i = 0; i <= 5; i++) {
+      result += marquee;
+      if (i < 15 - 1) {
+        for (let j = 0; j < 15; j++) {
+          result += '\u00A0';
+        }
+      }
+    }
+    return (
+      result
+    )
+  }
   return (
     <div>
       <Modal zIndex={1099} onClose={close} opened={formResultModal} centered withCloseButton={false} className='Error-modal' >
@@ -195,7 +214,6 @@ const Home = () => {
             <br />
             <DateInput
               placeholder="Child's Date of Birth"
-              // miw={410}  
               mx="auto"
               size="md"
               valueFormat="DD MMM YYYY"
@@ -208,7 +226,6 @@ const Home = () => {
             <br />
             <Select
               clearable
-              // miw={410}
               onChange={(e) =>
                 setStudentsData({ ...studentsData, classStandard: e })
               }
@@ -248,16 +265,12 @@ const Home = () => {
       </Modal>
 
       <marquee direction="left" className="marquee">
-        {marquee} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        {marquee} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        {marquee} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        {marquee} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        {marquee} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        {marquee} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        {MarqueeLoop()}
       </marquee>
+
       {/* Section 1 */}
 
-      <section className='sec-1'>
+      <div className='sec-1'>
         <div className='sec-1-left'>
           <div className='sec-1-left-1'>
             <div className='sec-1-left-1-img'>
@@ -293,69 +306,69 @@ const Home = () => {
             <img src={Peakcock} alt="Peacock" />
           </div>
         </div>
-      </section>
+      </div>
       {/* Section 1 End */}
 
       {/* Section 2 */}
 
-      <section>
-        <div className='sec-2'>
-          <div className='sec-2-left'>
-            <div className='sec-2-left-title'>
-              <h3>
-                Welcome to BGS <br />
-                Public School
-              </h3>
-            </div>
-            <div className='sec-2-left-content'>
-              <p>
-                BGS Public School, which was founded in 2006
-                by His Holiness Padma
-                Bhushana Jagadguru Sri Sri Sri Dr.Balagangadharanatha
-                Swamiji under the
-                aegis of Sri Adichunchanagiri Shikshana Trust&#174;,
-                is a co-educational day school.
-                It occupies a prominent place in the 60acres of BGS Health
-                and Educational City
-                campus on Uttarahalli Road, away from the hustle and the
-                bustle of the city but
-                also among the parent community of West and South Bangalore
-              </p>
-            </div>
-            <div className='sec-2-left-button'>
-              <button>
-                <Link style={{ textDecoration: "none", color: "black" }} to='/about'>
-                  See More
-                </Link>
-              </button>
-            </div>
+
+      <div className='sec-2'>
+        <div className='sec-2-left'>
+          <div className='sec-2-left-title'>
+            <h3>
+              Welcome to BGS <br />
+              Public School
+            </h3>
           </div>
-          <div className='sec-2-right'>
-            <div className='sec-2-right-box'>
-              <img src={green_Box} alt="box" />
-              <img src={Bgs_Letter} alt='BGS' />
-            </div>
-            <div className='sec-2-right-content'>
-              <div className='sec-2-right-title'>
-                <h1>
-                  Our Mission
-                </h1>
-              </div>
-              <div className='sec-2-right-para'>
-                To provide excellent child-centered and value-based
-                education to all the children in our care so
-                that they grow up to be knowledgeable,
-                responsive and self-confident individuals who are
-                prepared to face the challenges of life with
-                integrity and equanimity
-              </div>
-            </div>
-            <div className='sec-2-right-girl'>
-              <img src={Girl} alt='Avatar' />
-            </div>
+          <div className='sec-2-left-content'>
+            <p>
+              BGS Public School, which was founded in 2006
+              by His Holiness Padma
+              Bhushana Jagadguru Sri Sri Sri Dr.Balagangadharanatha
+              Swamiji under the
+              aegis of Sri Adichunchanagiri Shikshana Trust&#174;,
+              is a co-educational day school.
+              It occupies a prominent place in the 60acres of BGS Health
+              and Educational City
+              campus on Uttarahalli Road, away from the hustle and the
+              bustle of the city but
+              also among the parent community of West and South Bangalore
+            </p>
+          </div>
+          <div className='sec-2-left-button'>
+            <button>
+              <Link style={{ textDecoration: "none", color: "black" }} to='/about'>
+                See More
+              </Link>
+            </button>
           </div>
         </div>
-      </section>
+        <div className='sec-2-right'>
+          <div className='sec-2-right-box'>
+            <img src={green_Box} alt="box" />
+            <img src={Bgs_Letter} alt='BGS' />
+          </div>
+          <div className='sec-2-right-content'>
+            <div className='sec-2-right-title'>
+              <h1>
+                Our Mission
+              </h1>
+            </div>
+            <div className='sec-2-right-para'>
+              To provide excellent child-centered and value-based
+              education to all the children in our care so
+              that they grow up to be knowledgeable,
+              responsive and self-confident individuals who are
+              prepared to face the challenges of life with
+              integrity and equanimity
+            </div>
+          </div>
+          <div className='sec-2-right-girl'>
+            <img src={Girl} alt='Avatar' />
+          </div>
+        </div>
+      </div>
+
 
       {/* Section 2 End */}
 
@@ -363,152 +376,152 @@ const Home = () => {
 
       {/* Section 3  */}
 
-      <section>
-        <div className='sec-3'>
-          <div className='sec-3-top'>
-            <div className='sec-3-top-left'>
-              <h1>
-                School Topper's
-              </h1>
-              <p>
-                <i>
-                  Congratulate All The Students For <br />
-                  Their Outstanding Performance
-                </i>
-              </p>
-            </div>
-            <div className='sec-3-top-right'>
-              <div className='sec-3-top-right-top'>
-                <h3>
-                  CLASS
-                </h3>
-                <h1>
-                  10
-                </h1>
-                <h3>
-                  RESULTS
-                </h3>
-              </div>
-              <div className='sec-3-top-right-bottom'>
-                <h1>
-                  CBSE
-                </h1>
-              </div>
-            </div>
+
+      <div className='sec-3'>
+        <div className='sec-3-top'>
+          <div className='sec-3-top-left'>
+            <h1>
+              School Topper's
+            </h1>
+            <p>
+              <i>
+                Congratulate All The Students For <br />
+                Their Outstanding Performance
+              </i>
+            </p>
           </div>
-          <div className='sec-3-bottom'>
-            <div className='sec-3-bottom-top3'>
-              {
-                data?.map((value, index) => {
-                  return (
-                    <>
-                      <div key={index}
-                        className='sec-3-bottom-toppers-container'>
-                        <div className='sec-3-bottom-toppers-img'>
-                          <img src={value.icon} alt='Image' />
-                        </div>
-                        <h1>
-                          {value.name}
-                        </h1>
-                        <i>
-                          {value.mark}
-                        </i>
-                      </div>
-                    </>
-                  )
-                })
-              }
+          <div className='sec-3-top-right'>
+            <div className='sec-3-top-right-top'>
+              <h3>
+                CLASS
+              </h3>
+              <h1>
+                10
+              </h1>
+              <h3>
+                RESULTS
+              </h3>
             </div>
-            <div className='sec-3-bottom-toppers-2'>
-              {
-                list?.map((value, index) => {
-                  return (
-                    <>
-                      <div
-                        key={index}
-                        className='sec-3-bottom-toppers-container'>
-                        <div className='sec-3-bottom-toppers-img'>
-                          <img src={value.icon} alt='Images' />
-                        </div>
-                        <h1>
-                          {value.name}
-                        </h1>
-                        <i>
-                          {value.mark}
-                        </i>
-                      </div>
-                    </>
-                  )
-                })
-              }
+            <div className='sec-3-top-right-bottom'>
+              <h1>
+                CBSE
+              </h1>
             </div>
           </div>
         </div>
-      </section>
+        <div className='sec-3-bottom'>
+          <div className='sec-3-bottom-top3'>
+            {
+              data?.map((value, index) => {
+                return (
+                  <>
+                    <div key={index}
+                      className='sec-3-bottom-toppers-container'>
+                      <div className='sec-3-bottom-toppers-img'>
+                        <img src={value.icon} alt='Imag' />
+                      </div>
+                      <h1>
+                        {value.name}
+                      </h1>
+                      <i>
+                        {value.mark}
+                      </i>
+                    </div>
+                  </>
+                )
+              })
+            }
+          </div>
+          <div className='sec-3-bottom-toppers-2'>
+            {
+              list?.map((value, index) => {
+                return (
+                  <>
+                    <div
+                      key={index}
+                      className='sec-3-bottom-toppers-container'>
+                      <div className='sec-3-bottom-toppers-img'>
+                        <img src={value.icon} alt='Images' />
+                      </div>
+                      <h1>
+                        {value.name}
+                      </h1>
+                      <i>
+                        {value.mark}
+                      </i>
+                    </div>
+                  </>
+                )
+              })
+            }
+          </div>
+        </div>
+      </div>
+
 
       {/* Section 3 End */}
 
 
       {/* Section 4  */}
 
-      <section>
-        <div className='sec-4'>
-          <div className='sec-4-container'>
-            <div className='sec-4-container-1'>
-              <img src={Line} alt='Line' />
-            </div>
-            <div className='sec-4-container-2'>
+
+      <div className='sec-4'>
+        <div className='sec-4-container'>
+          <div className='sec-4-container-1'>
+            <img src={Line} alt='Line' />
+          </div>
+          <div className='sec-4-container-2'>
+            <h1>
+              Welcome to BGS Public School
+            </h1>
+            <i>
+              <p>
+                BGS Public School, which was founded
+                in 2006 by His Holiness Padma Bhusana
+                Jagadguru Sri Sri Sri Dr. Balagangadharantha
+                Swamiji under the aegis of Sri
+                Adichunchanagiri Shikshana Trust@,
+                is a co-educational day school. It
+                occupies a prominent place in the 60
+                acres of BGS Health and Education City
+                campus on Uttarahali Road, away from the
+                hustle and the bustle of the city but also
+                among the parent community of West adn South
+                Bangalore.
+              </p>
+            </i>
+          </div>
+          <div className='sec-4-container-3'>
+            <img src={Rectangle} alt='Img' />
+            <img src={Polygan} alt='Img' />
+          </div>
+          <div className='sec-4-container-4'>
+            <input placeholder='Type here.....' />
+            <button>
+              Submit
+            </button>
+          </div>
+          <div className='sec-4-container-5'>
+            <div className='sec-4-container-5-title'>
               <h1>
-                Welcome to BGS Public School
+                Register Now
               </h1>
-              <i>
-                <p>
-                  BGS Public School, which was founded
-                  in 2006 by His Holiness Padma Bhusana
-                  Jagadguru Sri Sri Sri Dr. Balagangadharantha
-                  Swamiji under the aegis of Sri
-                  Adichunchanagiri Shikshana Trust@,
-                  is a co-educational day school. It
-                  occupies a prominent place in the 60
-                  acres of BGS Health and Education City
-                  campus on Uttarahali Road, away from the
-                  hustle and the bustle of the city but also
-                  among the parent community of West adn South
-                  Bangalore.
-                </p>
-              </i>
             </div>
-            <div className='sec-4-container-3'>
-              <img src={Rectangle} alt='Image' />
-              <img src={Polygan} alt='Image' />
-            </div>
-            <div className='sec-4-container-4'>
-              <input placeholder='Type here.....' />
-              <button>
-                Submit
-              </button>
-            </div>
-            <div className='sec-4-container-5'>
-              <div className='sec-4-container-5-title'>
-                <h1>
-                  Register Now
-                </h1>
-              </div>
-              <div className='sec-4-container-5-form'>
-                <form>
-                  <input className='form-input' placeholder='Name' />
-                  <input className='form-input' placeholder='Email' />
-                  <input className='form-input' placeholder='Phone No' />
-                  <input className='form-input' placeholder='Message' />
-                  <button>
-                    Submit
-                  </button>
-                </form>
-              </div>
+            <div className='sec-4-container-5-form'>
+              <form>
+                <input className='form-input' placeholder='Name' />
+                <input className='form-input' placeholder='Email' />
+                <input className='form-input' placeholder='Phone No' />
+                <input className='form-input' placeholder='Message' />
+                <button>
+                  Submit
+                </button>
+              </form>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+
 
       {/* Section 4 End */}
     </div>

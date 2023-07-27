@@ -1,0 +1,100 @@
+/* Sec1 */
+.careers-sec1-container {
+    /* background-color: #618954; */
+    background: url("../../Assets//blackboard_1.jpg");
+    background-size: cover;
+    padding: 10rem;
+    /* color: black; */
+    color: white;
+    position: relative;
+}
+
+.careers-sec1-container-title h1 {
+    font: normal bold 120px 'Poppins';
+    position: relative;
+    z-index: 1;
+    padding-bottom: 1rem;
+}
+
+.careers-sec1-container-para {
+    position: relative;
+    max-width: 900px;
+    z-index: 1;
+}
+
+.careers-sec1-container-para p {
+    padding-bottom: 2rem;
+}
+
+.careers-sec1-container-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+
+
+.careers-sec1-image-grid-img {
+    max-width: 700px;
+}
+
+.careers-sec1-image-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2rem;
+    gap: 1rem;
+    max-height: 20vh;
+}
+
+.careers-sec1-image-grid-img img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Sec1 End */
+
+
+@media(max-width:1400px) {
+    .careers-sec1-container {
+        padding: 5rem;
+    }
+}
+
+@media(max-width:1000px) {
+    .careers-sec1-container-image {
+        width: 900px;
+    }
+}
+
+@media(max-width:768px) {
+    .careers-sec1-container {
+        padding: 2rem;
+    }
+
+    .careers-sec1-container-title h1 {
+        font: normal bold 60px 'Poppins';
+        position: relative;
+        z-index: 1;
+    }
+
+    .careers-sec1-container-image {
+        width: 500px;
+    }
+
+    .careers-sec1-image-grid {
+        grid-template-columns: auto auto;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .careers-sec1-container {
+        background: #618954 ;
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width:500px) {
+    .careers-sec1-image-grid {
+        grid-template-columns: auto;
+    }
+}

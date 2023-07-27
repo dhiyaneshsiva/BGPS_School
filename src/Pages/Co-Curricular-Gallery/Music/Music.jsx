@@ -3,7 +3,9 @@ import "../Virtual-Arts/VirtualArts.css"
 
 // Mantine UI
 import { Center } from '@mantine/core'
-import Co_Curricular_Comp from '../../../Components/Co-Curricular/Co_Curricular_Comp'
+
+// Page
+import CoCurricularComp from '../../../Components/Co-Curricular/Co_Curricular_Comp'
 
 // Images
 import Image1 from "../../../Assets/music.png"
@@ -14,7 +16,7 @@ const Music = () => {
 
     useEffect(() => {
         window.scroll(0, 0)
-    })
+    }, [])
 
     const Data = [
         `As per Yogic scriptures the practice of Yoga leads to the union of individual consciousness with that of the Universal Consciousness, indicating a perfect harmony between the mind and body, Man & Nature.`,
@@ -36,7 +38,7 @@ const Music = () => {
                     </div>
                 </div>
                 <div className='virtual-arts-content'>
-                    <Co_Curricular_Comp data={Data} Image={ImageData} />
+                    <CoCurricularComp data={Data} Image={ImageData} />
                 </div>
             </div>
         </div>

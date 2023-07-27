@@ -1,0 +1,165 @@
+/* Sec1 */
+
+.legacy-sec1-container {
+    background-color: #FEC200;
+    padding: 10rem;
+    position: relative;
+    color: white;
+}
+
+.legacy-sec1-container-header-image {
+    position: absolute;
+    right: 0;
+    bottom: 0%;
+    z-index: 0;
+}
+
+.legacy-sec1-container-header-para {
+    max-width: 800px;
+    padding: 2rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.legacy-sec1-container-header-para p {
+    padding-bottom: 1rem;
+}
+
+.legacy-sec1-container-header-title h1 {
+    font: normal bold 120px 'Poppins';
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+}
+
+/* Div2 */
+
+.legacy-sec1-div2 {
+    padding: 10rem;
+}
+
+.legacy-sec1-div2-container {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    padding: 5rem;
+}
+
+.legacy-sec1-div2-container {
+    display: flex;
+    gap: 2rem;
+}
+
+
+.legacy-sec1-div2-container-left {
+    width: 70%;
+}
+
+.legacy-sec1-div2-container-right {
+    width: 30%;
+}
+
+.legacy-sec1-div2-container-left-para {
+    padding: 2rem 0 0 0;
+}
+
+.legacy-sec1-div2-container-left-para p {
+    padding-bottom: 2rem;
+}
+
+.legacy-sec1-div2-container-right ul li {
+    list-style-type: none;
+    padding-bottom: 1.5rem;
+}
+
+.legacy-sec1-div2-container-right ul li a {
+    color: #261A83;
+}
+
+.legacy-sec1-div2-container-right ul li a:hover {
+    color: #FEC200;
+}
+
+/* Div2 End */
+
+/* Sec1 End */
+
+
+/* Media Query */
+
+@media(max-width:1400px) {
+    .legacy-sec1-container {
+        padding: 10rem 5rem;
+    }
+
+    .legacy-sec1-div2 {
+        padding: 5rem 2rem;
+    }
+
+    .legacy-sec1-div2-container-right ul li {
+        font: normal 15px 'Poppins';
+    }
+
+    .legacy-sec1-div2-container {
+        padding: 2rem;
+    }
+}
+
+@media(max-width:1200px) {
+    .legacy-sec1-div2-container-left {
+        width: 60%;
+    }
+
+    .legacy-sec1-div2-container-right {
+        width: 40%;
+    }
+    
+    .legacy-sec1-div2-container-right ul li {
+        padding-bottom: 1rem;
+    }
+}
+
+@media(max-width:1000px) {
+    .legacy-sec1-div2-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .legacy-sec1-div2-container-left {
+        width: 100%;
+    }
+
+    .legacy-sec1-div2-container-right {
+        width: 100%;
+    }
+}
+
+@media(max-width:768px) {
+    .legacy-sec1-container {
+        padding: 0rem;
+    }
+
+    .legacy-sec1-container-header {
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.500);
+    }
+}
+
+@media(max-width:500px) {
+    .legacy-sec1-container-header-title h1 {
+        font: normal bold 80px 'Poppins';
+    }
+
+    .legacy-sec1-container-header-para {
+        padding: 0;
+    }
+
+    .legacy-sec1-div2 {
+        padding: 2rem 1rem;
+    }
+
+    .legacy-sec1-div2-container {
+        padding: 2rem 1rem;
+    }
+    
+}
+
+/* Media Query ENd */

@@ -10,7 +10,7 @@ import Hands from "../../Assets/Hands.png"
 
 
 // Mantine UI
-import { Stepper, ThemeIcon } from '@mantine/core'
+import { Stepper } from '@mantine/core'
 
 // Tabler Icons
 import { BrightnessDown } from 'tabler-icons-react';
@@ -22,7 +22,7 @@ const Guidelines = () => {
             <div className='Guidelines-page'>
 
                 {/* Section1 */}
-                <section>
+                
                     <div className='guideline-sec-1-container'>
                         <div className='guideline-sec-1-content'>
                             <h3>
@@ -52,11 +52,11 @@ const Guidelines = () => {
                         <img src={Calender} alt='Calender' className='calender' />
                         <img src={Badge} alt='Badge' className='badge' />
                     </div>
-                </section>
+                
                 {/* Section1 End */}
 
                 {/* Section2 */}
-                <section>
+                
                     <div className='guideline-sec-2-container'>
                         <div className='guideline-sec-2-content-left'>
                             <h1>
@@ -77,12 +77,12 @@ const Guidelines = () => {
                         </div>
                         <img src={Admission2} alt='Enrollment' className='enrollment' />
                     </div>
-                </section>
+                
                 {/* Section2 End */}
 
 
                 {/* Section3 */}
-                <section>
+                
                     <div className='guideline-sec-3-container'>
                         <div className='guideline-sec-3-div'>
                             <div className='guideline-sec-3-div-hover-img1'>
@@ -166,7 +166,7 @@ const Guidelines = () => {
                             </p>
                         </div>
                     </div>
-                </section>
+                
                 {/* Section3 End */}
             </div>
         </div>

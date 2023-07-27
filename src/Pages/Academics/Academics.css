@@ -1,0 +1,504 @@
+/* Sec1 */
+
+.sec1-kindergarten-div-header {
+    background-color: #2CBDB0;
+    padding: 5rem 10rem;
+    position: relative;
+}
+
+.sec1-kindergarten-div-header-content {
+    max-width: 1000px;
+    color: white;
+    z-index: 1;
+    position: relative;
+}
+
+
+.sec1-kindergarten-div-header-content-img {
+    transform: scaleX(-1);
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    z-index: 0;
+}
+
+.sec1-kindergarten-div-header-content-title {
+    padding: 2rem 0;
+}
+
+.sec1-kindergarten-div-header-content-title h1 {
+    font: normal bold 120px 'Poppins';
+    text-transform: uppercase;
+}
+
+.sec1-kindergarten-div-header-content-para p {
+    padding: 1rem 0;
+}
+
+
+/* Div 2 */
+.sec1-kindergarten-div2-container {
+    padding: 5rem 10rem;
+}
+
+.sec3-secondary-div2-container {
+    padding: 5rem 10rem;
+}
+
+.sec1-kindergarten-div2-content {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    padding: 2rem 5rem 5rem 5rem;
+}
+
+.sec3-secondary-div2-content {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    padding: 2rem 5rem 5rem 5rem;
+}
+
+.sec1-kindergarten-div2-content-title h1 {
+    font: normal bold 40px 'Poppins';
+    text-transform: uppercase;
+    padding: 2rem 0;
+}
+
+.sec1-kindergarten-div2-content-para p {
+    padding-top: 1rem;
+    vertical-align: middle;
+}
+
+/* Div 2 End */
+
+
+/* Sec1 End */
+
+
+/* Sec2  */
+
+.sec1-primary-school-div-header {
+    background-color: #4D97F0;
+    padding: 5rem 10rem;
+    position: relative;
+    display: flex;
+    justify-content: end;
+}
+
+.sec1-primary-school-div-header-content {
+    max-width: 1000px;
+    color: white;
+    z-index: 1;
+    position: relative;
+    right: 0;
+}
+
+
+.sec1-primary-school-div-header-content-img {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    z-index: 0;
+    transform: scaleX(-1);
+}
+
+.sec1-primary-school-div-header-content-title {
+    padding: 2rem 0;
+}
+
+.sec1-primary-school-div-header-content-title h1 {
+    font: normal bold 80px 'Poppins';
+    text-transform: uppercase;
+    text-align: end;
+}
+
+.sec1-primary-school-div-header-content-para p {
+    padding: 1rem 0;
+}
+
+
+/* Div2 */
+.sec2-primary-school-container {
+    padding: 5rem 10rem;
+}
+
+.sec2-primary-school-content {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    padding: 2rem 5rem;
+}
+
+.sec2-primary-school-content-para p {
+    padding-top: 1rem;
+}
+
+.sec2-primary-school-content-list {
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+}
+
+.sec2-primary-school-content-list-left {
+    width: 50%;
+}
+
+.sec2-primary-school-content-list-left h1,
+.sec2-primary-school-content-list-right h1 {
+    padding: 2rem 0;
+}
+
+
+.sec2-primary-school-content-list-right {
+    width: 50%;
+}
+
+.sec2-primary-school-content-list-right li,
+.sec2-primary-school-content-list-left li {
+    line-height: 2rem;
+}
+
+
+/* Div2 ENd */
+/* Sec2 End */
+
+
+/* Sec3 */
+
+
+
+
+.sec3-secondary-div-header {
+    background-color: #26202E;
+    padding: 5rem 10rem;
+    position: relative;
+}
+
+.sec3-secondary-div-header-content {
+    max-width: 1000px;
+    color: white;
+    z-index: 1;
+    position: relative;
+}
+
+
+.sec3-secondary-div-header-content-img {
+    transform: scaleX(1);
+    position: absolute;
+    width: 400px;
+    bottom: 0;
+    right: 10%;
+    z-index: 0;
+}
+
+.sec3-secondary-div-header-content-title {
+    padding: 2rem 0;
+}
+
+.sec3-secondary-div-header-content-title h1 {
+    font: normal bold 80px 'Poppins';
+    text-transform: uppercase;
+}
+
+.sec3-secondary-div-header-content-para p {
+    padding: 1rem 0;
+}
+
+/* div 2 */
+
+.sec3-secondary-div2-content-dub-div1-list {
+    padding: 2rem;
+}
+
+.sec3-secondary-div2-content-dub-div1-list li {
+    line-height: 3rem;
+    list-style-type: square;
+}
+
+.sec3-secondary-div2-content-sub-div1 {
+    background-color: #E5EAF2;
+    padding: 3rem;
+    text-align: center;
+}
+
+/* div 2 End */
+
+.sec3-secondary-div2-content-sub-div2 {
+    display: flex;
+    padding: 2rem;
+    gap: 3rem;
+}
+
+.sec3-secondary-div2-content-sub-div2-left,
+.sec3-secondary-div2-content-sub-div2-right {
+    width: 50%;
+}
+
+.sec3-secondary-div2-content-sub-div2-left-para {
+    padding: 2rem 0;
+}
+
+.sec3-secondary-div2-content-sub-div2-left-title {
+    padding: 1rem 0;
+}
+
+.sec3-secondary-div2-content-sub-div2-left-para ul li {
+    padding-top: 1rem;
+    list-style-position: inside;
+    list-style-type: square;
+}
+
+.sec3-secondary-div2-content-sub-div2-right-title {
+    padding: 1rem 0;
+}
+
+.sec3-secondary-div2-content-sub-div2-right-para {
+    padding: 2rem 0;
+}
+
+.sec3-secondary-div2-content-sub-div2-right-para ul li {
+    list-style-type: none;
+}
+
+/* Sec3 End */
+
+
+/* Media Query */
+@media(max-width:1200px) {
+    .sec1-kindergarten-div-header {
+        padding: 5rem 2rem;
+    }
+
+    .sec3-secondary-div-header {
+        padding: 5rem 2rem;
+    }
+
+    .sec1-kindergarten-div-header-content-img {
+        right: 5%;
+    }
+
+    .sec1-kindergarten-div2-container {
+        padding: 5rem;
+    }
+
+    .sec3-secondary-div2-container {
+        padding: 5rem;
+    }
+
+    /* Sec 2 */
+
+    .sec1-primary-school-div-header {
+        padding: 5rem 2rem;
+        justify-content: end;
+    }
+
+    .sec2-primary-school-container {
+        padding: 2rem;
+    }
+
+    .sec2-primary-school-content {
+        padding: 2rem;
+    }
+
+    .sec1-primary-school-div-header {
+        overflow-x: hidden;
+    }
+
+    /* Sec 2 End */
+
+
+
+}
+
+
+@media(max-width:1000px) {
+    .sec1-kindergarten-div-header-content-title h1 {
+        font: normal bold 80px 'Poppins';
+    }
+
+    .sec3-secondary-div-header-content-title h1 {
+        font: normal bold 70px 'Poppins';
+    }
+
+    .sec1-kindergarten-div-header-content-title {
+        padding: 1rem 0;
+    }
+
+    .sec3-secondary-div-header-content-title {
+        padding: 1rem 0;
+    }
+
+    .sec1-kindergarten-div2-container {
+        padding: 2rem;
+    }
+
+    .sec3-secondary-div2-container {
+        padding: 2rem;
+    }
+
+    .sec1-kindergarten-div2-content {
+        padding: 2rem;
+    }
+
+    .sec3-secondary-div2-content {
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    .sec1-kindergarten-div-header-content-title h1 {
+        font: normal bold 60px 'Poppins';
+    }
+
+    .sec3-secondary-div-header-content-title h1 {
+        font: normal bold 50px 'Poppins';
+    }
+
+    .sec1-kindergarten-div2-container {
+        padding: 2rem;
+    }
+
+    .sec3-secondary-div2-container {
+        padding: 2rem;
+    }
+
+    /*Sec2  */
+
+    .sec1-primary-school-div-header-content-img {
+        max-width: 500px;
+    }
+
+    .sec2-primary-school-content-list {
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+
+    .sec2-primary-school-content-list-left,
+    .sec2-primary-school-content-list-right {
+        width: 100%;
+    }
+
+    .sec3-secondary-div2-content-sub-div2 {
+        padding: 2rem 0;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .sec3-secondary-div2-content-sub-div2-left,
+    .sec3-secondary-div2-content-sub-div2-right {
+        width: 100%;
+    }
+
+    .sec3-secondary-div2-content-sub-div2-left-para {
+        padding: 1rem 0;
+    }
+
+    .sec3-secondary-div2-content-sub-div2-right-para {
+        padding: 1rem 0;
+    }
+
+    /*Sec2 End  */
+
+}
+
+@media (max-width:500px) {
+    .sec1-kindergarten-div-header-content-title h1 {
+        font: normal bold 40px 'Poppins';
+    }
+
+    .sec3-secondary-div-header-content-title h1 {
+        font: normal bold 30px 'Poppins';
+    }
+
+    .sec1-kindergarten-div-header-content-para p {
+        padding-top: 0.2rem;
+    }
+
+    .sec1-kindergarten-div-header {
+        padding: 2rem;
+    }
+
+    .sec3-secondary-div-header {
+        padding: 2rem;
+    }
+
+    .sec1-kindergarten-div2-content {
+        padding: 1rem;
+    }
+
+    .sec3-secondary-div2-content {
+        padding: 1rem;
+    }
+
+    .sec1-kindergarten-div2-container {
+        padding: 1rem;
+    }
+
+    .sec3-secondary-div2-container {
+        padding: 1rem;
+    }
+
+    .sec1-kindergarten-div2-content-title h1 {
+        padding: 1rem 0;
+        font: normal bold 30px 'Poppins';
+    }
+
+    .sec1-kindergarten-div2-content-para p {
+        padding-bottom: 1rem;
+        padding-top: 0rem;
+    }
+
+    /* Sec2  */
+
+    .sec1-primary-school-div-header-content-title h1 {
+        font: normal bold 40px 'Poppins';
+        text-transform: uppercase;
+        text-align: end;
+    }
+
+    .sec1-primary-school-div-header {
+        padding: 2rem;
+        overflow-x: hidden;
+    }
+
+    .sec1-primary-school-div-header-content-title {
+        padding: 1rem 0;
+    }
+
+    .sec2-primary-school-container {
+        padding: 1rem;
+    }
+
+    .sec2-primary-school-content {
+        padding: 1rem;
+    }
+
+    .sec2-primary-school-content-list-left h1,
+    .sec2-primary-school-content-list-right h1 {
+        padding: 1rem 0;
+        font: normal bold 25px 'Poppins';
+    }
+
+    /* Sec2  ENd */
+
+    /* Sec 3 */
+
+    .sec3-secondary-div2-content-dub-div1-list {
+        padding: 1rem;
+    }
+
+    .sec3-secondary-div2-content-dub-div1-list li {
+        line-height: 2rem;
+        list-style-type: square;
+    }
+
+
+    .sec3-secondary-div2-content-sub-div1 {
+        background-color: #E5EAF2;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .sec3-secondary-div2-content-sub-div2 {
+        gap: 0rem;
+    }
+
+    /* Sec 3 End */
+}
+
+/* Media Query End */

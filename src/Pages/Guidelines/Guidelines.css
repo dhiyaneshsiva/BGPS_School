@@ -381,10 +381,6 @@
         padding: 0;
     }
 
-    /* .guideline-sec-1-content {
-        background-color: rgba(0, 0, 0, 0.501);
-    } */
-
     .guideline-sec-1-content h1 {
         font: normal bold 100px/1 "Poppins";
         padding: 1rem 0;
@@ -394,7 +390,6 @@
     /* Section1 End */
     .guideline-sec-2-content-right {
         padding: 2rem;
-        /* background-color: rgba(0, 0, 0, 0.501); */
     }
 
     .guideline-sec-2-content-left h1 {

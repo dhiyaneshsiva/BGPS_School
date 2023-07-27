@@ -77,7 +77,7 @@ const SchoolSports = () => {
         <div>
             <div className='schoolsports-page'>
                 {/* Section1  */}
-                <section>
+                
                     <div className='schoolsports-sec-1-container'>
                         <div className='schoolsports-sec-1-content'>
                             <h2>
@@ -104,11 +104,11 @@ const SchoolSports = () => {
                         <img src={Alarm} alt='sports-alarm' className='sports-alarm' />
                         <img src={Weight} alt='sports-weight' className='sports-weight' />
                     </div>
-                </section>
+                
                 {/* Section1 End */}
 
                 {/* Section2 */}
-                <section>
+                
                     <div className='schoolsports-sec-2-container'>
                         <div className='schoolsports-sec-2-content'>
                             <h1>
@@ -141,7 +141,7 @@ const SchoolSports = () => {
                             </p>
                         </div>
                     </div>
-                </section>
+                
                 {/* Section2 End */}
 
                 {/* Section3  */}

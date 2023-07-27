@@ -1,6 +1,5 @@
 import React from 'react'
 import "./Founders.css"
-import { Center } from '@mantine/core'
 
 
 const Founders = ({ data }) => {
@@ -12,7 +11,6 @@ const Founders = ({ data }) => {
                         <div className="founders-container-left-image">
                             <img src={data?.icon} alt="Founder" />
                         </div>
-                        {/* <img src="" alt="" /> */}
                         <p>
                             {data?.title}
                         </p>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 
 // Image
@@ -8,8 +8,8 @@ import ScrollTop from "./Assets/ScrollTop.png"
 import Home from "./Pages/Home/Home"
 import About from "./Pages/About/About"
 import Contact from "./Pages/Contact/Contact"
-import Co_Curricular from './Pages/Co-Curricular/Co_Curricular'
-import About_Founder from './Pages/About-Founder/About_Founder'
+import CoCurricular from './Pages/Co-Curricular/Co_Curricular'
+import AboutFounder from './Pages/About-Founder/About_Founder'
 import Principal from './Pages/Principal/Principal'
 import Sast from './Pages/SAST/Sast'
 import Mandatory from './Pages/Mandatory/Mandatory'
@@ -23,6 +23,9 @@ import Yoga from './Pages/Co-Curricular-Gallery/Yoga/Yoga'
 import Dance from './Pages/Co-Curricular-Gallery/Dance/Dance'
 import Karate from './Pages/Co-Curricular-Gallery/Karate/Karate'
 import Music from './Pages/Co-Curricular-Gallery/Music/Music'
+import Academics from './Pages/Academics/Academics'
+import Legacy from './Pages/Legacy/Legacy'
+import Careers from './Pages/Careers/Careers'
 
 const Router = () => {
 
@@ -55,16 +58,13 @@ const Router = () => {
                     <Mandatory />
                 </Route>
                 <Route path="/about_founder">
-                    <About_Founder />
+                    <AboutFounder />
                 </Route>
                 <Route path="/accolades">
                     <Accolades />
                 </Route>
                 <Route path="/co_curriculam">
-                    <Co_Curricular />
-                </Route>
-                <Route path="/legacy">
-                    <Guidelines />
+                    <CoCurricular />
                 </Route>
                 <Route path="/sast">
                     <Sast />
@@ -98,6 +98,15 @@ const Router = () => {
                 </Route>
                 <Route path="/admission">
                     <Guidelines />
+                </Route>
+                <Route path="/academics">
+                    <Academics />
+                </Route>
+                <Route path="/legacy">
+                    <Legacy />
+                </Route>
+                <Route path="/career">
+                    <Careers />
                 </Route>
             </Switch>
             <div onClick={Scroll} className='scroll-btn-fixed'>

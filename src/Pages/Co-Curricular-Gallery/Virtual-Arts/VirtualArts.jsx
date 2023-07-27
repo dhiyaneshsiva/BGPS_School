@@ -3,7 +3,9 @@ import "./VirtualArts.css"
 
 // Mantine UI
 import { Center } from '@mantine/core'
-import Co_Curricular_Comp from '../../../Components/Co-Curricular/Co_Curricular_Comp'
+
+// Page
+import CoCurricularComp from '../../../Components/Co-Curricular/Co_Curricular_Comp'
 
 // Images
 import Image1 from "../../../Assets/visual.png"
@@ -14,7 +16,7 @@ const VirtualArts = () => {
 
     useEffect(() => {
         window.scroll(0, 0)
-    })
+    },[])
 
     const Data = [
         `Visual Arts programme is part of the in-house curriculum where it helps students at BGS Public School to bring out their creativity as well as develop their personality. It lets them explore and perform their artistic skills, imagination and memories creatively. The skills learnt during their Art classes encourages them to integrate their learnings in other subjects. `,
@@ -36,7 +38,7 @@ const VirtualArts = () => {
                     </div>
                 </div>
                 <div className='virtual-arts-content'>
-                    <Co_Curricular_Comp data={Data} Image={ImageData} />
+                    <CoCurricularComp data={Data} Image={ImageData} />
                 </div>
             </div>
         </div>

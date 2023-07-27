@@ -265,7 +265,7 @@ const Studentlife = () => {
                 <div className="studentlife-container">
 
                     {/* Section 1 */}
-                    <section>
+                    
                         <div className="studentlife-container-top">
                             <div className="studentlife-container-top-div1">
                                 <h1>
@@ -300,18 +300,18 @@ const Studentlife = () => {
                                 </ul>
                             </div>
                         </div>
-                    </section>
+                    
                     {/* Section 1 End */}
 
                     {/* section 2 */}
-                    <section>
+                    
                         <SchoolHouse GridData={GridData} />
-                    </section>
+                    
                     {/* section 2 End */}
 
 
                     {/* Section 3 */}
-                    <section>
+                    
                         <div className="student-life-sec-3-container">
                             <div className="student-life-sec-3-container-left">
                                 <h1>
@@ -341,12 +341,12 @@ const Studentlife = () => {
                             <img src={Shadow} alt="shadow" className="shadow" />
                             <img src={StudentAvatar} alt="StudentAvatar" className='StudentAvatar' />
                         </div>
-                    </section>
+                    
                     {/* Section 3 End */}
 
                     {/* Student Grid Images */}
 
-                    <section>
+                    
                         <div className='student-council-image-gallery'>
                             <Center>
                                 <Title className='student-council-image-gallery-title'>
@@ -357,14 +357,14 @@ const Studentlife = () => {
                                 <Studentlife_Comp data={Student_Council_data} />
                             </div>
                         </div>
-                    </section>
+                    
 
                     {/* Student Grid Images end */}
 
 
                     {/* Student Club  */}
 
-                    <section>
+                    
                         <div className='student-club-conatiner'>
                             <div className='student-club-content'>
                                 <Center>
@@ -387,13 +387,13 @@ const Studentlife = () => {
                                 </p>
                             </div>
                         </div>
-                    </section>
+                    
 
                     {/* Student Club End */}
 
                     {/* section4  */}
 
-                    <section>
+                    
                         <div className='student-life-sec-4-container'>
                             <div className='student-life-sec-4-container-grid'>
                                 {DataGrid?.map((values, index) => {
@@ -415,13 +415,13 @@ const Studentlife = () => {
                                 })}
                             </div>
                         </div>
-                    </section>
+                    
 
                     {/* section4 End */}
 
                     {/* Section 5 */}
 
-                    <section>
+                    
                         <div className='student-life-sec-5-container'>
                             <div className='student-life-sec-5-container-grid'>
                                 {DataGrid2?.map((values, index) => {
@@ -441,13 +441,13 @@ const Studentlife = () => {
                                 })}
                             </div>
                         </div>
-                    </section>
+                    
 
                     {/* Section 5 End */}
 
                     {/* Section 6  */}
 
-                    {/* <section>
+                    {/* 
                         <div className='student-life-sec-6-container'>
                             <div className='student-life-sec-6-content'>
                                 <h1> School Teams</h1>
@@ -461,7 +461,7 @@ const Studentlife = () => {
                                 </p>
                             </div>
                         </div>
-                    </section> */}
+                     */}
                     {/* Section 6 End */}
                 </div>
             </div>

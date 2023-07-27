@@ -3,7 +3,6 @@ import "../Virtual-Arts/VirtualArts.css"
 
 // Mantine UI
 import { Center } from '@mantine/core'
-import Co_Curricular_Comp from '../../../Components/Co-Curricular/Co_Curricular_Comp'
 
 // Images
 import Image1 from "../../../Assets/Karate/Image1.png"
@@ -18,11 +17,14 @@ import Image9 from "../../../Assets/Karate/Image9.png"
 import Image10 from "../../../Assets/Karate/Image10.png"
 import Image11 from "../../../Assets/Karate/Image11.png"
 
+// Page
+import CoCurricularComp from '../../../Components/Co-Curricular/Co_Curricular_Comp'
+
 const Karate = () => {
 
     useEffect(() => {
         window.scroll(0, 0)
-    })
+    }, [])
 
     const Data = [
         `Self-defense is a valuable skill that protects and even raises confidence in children. It also has other advantages like honing leadership skills, developing character, and encouraging self-discipline. BGS Public School students are inculcated to be a confident Citizens and leader.`,
@@ -46,7 +48,7 @@ const Karate = () => {
                     </div>
                 </div>
                 <div className='virtual-arts-content'>
-                    <Co_Curricular_Comp data={Data} Image={ImageData} />
+                    <CoCurricularComp data={Data} Image={ImageData} />
                 </div>
             </div>
         </div>

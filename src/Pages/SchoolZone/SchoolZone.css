@@ -1,0 +1,164 @@
+/* Sec1 */
+
+
+.schoolZone-sec1-container {
+    background-color: black;
+    padding: 10rem 5rem;
+    position: relative;
+    color: white;
+}
+
+.schoolZone-sec1-content {
+    position: relative;
+    z-index: 1;
+}
+
+.schoolZone-sec1-content-title h1 {
+    font: normal bold 120px 'Poppins';
+}
+
+.schoolZone-sec1-container-img {
+    position: absolute;
+    transform: scaleX(-1);
+    bottom: 0;
+    right: 10%;
+    z-index: 0;
+}
+
+.schoolZone-sec1-content-para {
+    max-width: 800px;
+}
+
+/* Sec1 End */
+
+
+/* Sec2  */
+
+.schoolZone-sec2-container {
+    padding: 10rem;
+}
+
+.schoolZone-sec2-content {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    padding: 2rem;
+}
+
+.schoolZone-sec2-content-grid {
+    padding: 2rem 0;
+    display: grid;   
+    grid-template-columns: auto auto auto;
+    grid-auto-flow: column;
+    gap: 2rem;
+}
+
+.schoolZone-sec2-content-left-para {
+    text-align: justify;
+    padding: 1rem 0;
+}
+.schoolZone-sec2-content-left-para p{
+    padding-bottom: 1rem;
+}
+
+.schoolZone-sec2-content-right {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+
+.schoolZone-sec2-content-right-image {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+
+.schoolZone-sec2-content-grid:nth-child(2) {
+    display: flex;
+    flex-direction: row-reverse;        
+}
+
+/* Sec2 End */
+
+
+/* Media Query */
+
+
+@media(max-width:1400px) {
+    .schoolZone-sec2-container {
+        padding: 5rem;
+    }
+
+    .schoolZone-sec2-content-right-image {
+        max-width: 300px;
+        border-radius: 10px;
+    }
+}
+
+@media(max-width:1000px) {
+    .schoolZone-sec1-container {
+        padding: 5rem 2rem;
+    }
+
+    .schoolZone-sec2-content-right-image {
+        max-width: 250px;
+        border-radius: 10px;
+    }
+}
+
+@media(max-width:900px) {
+    .schoolZone-sec2-content-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .schoolZone-sec2-content-grid:nth-child(even) {
+        display: flex;
+        flex-direction: column;   
+    }
+
+    .schoolZone-sec2-content-right-image {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+}
+
+
+@media(max-width:768px) {
+    .schoolZone-sec1-content {
+        background-color: rgba(0, 0, 0, 0.500);
+    }
+
+    .schoolZone-sec1-container {
+        padding: 2rem;
+    }
+
+    .schoolZone-sec1-content-title h1 {
+        font: normal bold 80px 'Poppins';
+    }
+}
+
+@media(max-width:500px) {
+    .schoolZone-sec1-content {
+        padding: 2rem;
+    }
+
+    .schoolZone-sec1-container {
+        padding: 0rem;
+    }
+
+    .schoolZone-sec1-content-title h1 {
+        font: normal bold 60px 'Poppins';
+    }
+
+    .schoolZone-sec2-container {
+        padding: 2rem 1rem;
+    }
+    .schoolZone-sec2-content-grid {
+        gap: 0rem;
+    }
+
+    .schoolZone-sec2-content {
+        padding: 1rem;
+    }
+}
+
+/* Media Query End */

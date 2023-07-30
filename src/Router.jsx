@@ -26,6 +26,10 @@ import Music from './Pages/Co-Curricular-Gallery/Music/Music'
 import Academics from './Pages/Academics/Academics'
 import Legacy from './Pages/Legacy/Legacy'
 import Careers from './Pages/Careers/Careers'
+import SchoolZones from './Pages/SchoolZone/SchoolZones'
+import SchoolZone from './Pages/SchoolZone/SchoolZone'
+import WellBeing from './Pages/WellBeing/WellBeing'
+import Staff from './Pages/Staffs/Staff'
 
 const Router = () => {
 
@@ -107,6 +111,18 @@ const Router = () => {
                 </Route>
                 <Route path="/career">
                     <Careers />
+                </Route>
+                <Route path="/schoolzone">
+                    <SchoolZones />
+                </Route>
+                <Route path="/facilities">
+                    <SchoolZone />
+                </Route>
+                <Route path="/wellbeing">
+                    <WellBeing />
+                </Route>
+                <Route path="/Staff">
+                    <Staff />
                 </Route>
             </Switch>
             <div onClick={Scroll} className='scroll-btn-fixed'>

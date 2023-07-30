@@ -9,7 +9,7 @@ import CoCurricularComp from '../../../Components/Co-Curricular/Co_Curricular_Co
 
 // Images
 import Image1 from "../../../Assets/visual.png"
-import Image2 from "../../../Assets/VirtualArts/Image1.jpg"
+import Image2 from "../../../Assets/VirtualArts/Image1.png"
 import Image3 from "../../../Assets/VirtualArts/Image2.jpg"
 
 const VirtualArts = () => {

@@ -94,7 +94,7 @@ const NavBar = () => {
         },
         {
           title: 'School Zone',
-          path: ``
+          path: `/schoolzone`
         },
         {
           title: 'Careers',
@@ -121,6 +121,10 @@ const NavBar = () => {
         {
           title: 'Admissions',
           path: `/admission`
+        },
+        {
+          title: 'Staff Details',
+          path: `/staff`
         },
       ],
       handler: hidden

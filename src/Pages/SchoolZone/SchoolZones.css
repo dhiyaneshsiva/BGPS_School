@@ -1,0 +1,635 @@
+/* Sec1 */
+
+.schoolzones-sec1-container {
+    padding: 10rem;
+    background-color: #171717;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    color: white;
+}
+
+.schoolzones-sec1-content {
+    max-width: 700px;
+    position: relative;
+    z-index: 1;
+}
+
+.schoolzones-sec1-content-title h1 {
+    font: normal bold 180px/1 'Poppins';
+    text-transform: uppercase;
+}
+
+.schoolzones-sec1-content-title h2 {
+    font: normal bold 80px/1 'Poppins';
+    text-transform: uppercase;
+}
+
+.schoolzones-sec1-content-para {
+    padding-top: 2rem;
+    color: #707070;
+}
+
+.schoolzones-sec1-avatar {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    z-index: 0;
+}
+
+.schoolzones-sec1-rocket {
+    position: absolute;
+    top: 12%;
+    left: 30%;
+    width: 150px;
+    z-index: 0;
+}
+
+/* Sec1 End */
+
+/* Sec2  */
+
+.schoolzones-sec2-content {
+    display: flex;
+}
+
+.schoolzones-sec2-content-left {
+    width: 70%;
+    padding: 5rem;
+    background-color: #171717;
+    color: white;
+}
+
+.schoolzones-sec2-content-left-title h1 {
+    font: normal bold 80px 'Poppins';
+    z-index: 1;
+}
+
+.schoolzones-sec2-content-left-para p {
+    z-index: 1;
+    padding-top: 1rem;
+}
+
+.schoolzones-sec2-content-left-para {
+    max-width: 800px;
+    text-align: justify;
+    color: #707070;
+}
+
+.schoolzones-sec2-content-right {
+    padding: 5rem;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9454E6;
+    color: white;
+    position: relative;
+}
+
+.schoolzones-sec2-content-right ul li {
+    list-style-type: none;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 25px;
+}
+
+.schoolzones-sec3-content-right-nife {
+    bottom: 0;
+    position: absolute;
+    width: 150px;
+    right: 10%;
+    z-index: 0;
+}
+
+/* Sec2 End */
+
+
+/* Sec3  */
+
+.schoolzones-sec3-content {
+    display: flex;
+    position: relative;
+}
+
+.schoolzones-sec3-content-left {
+    width: 20%;
+    background-color: #E4CEFF;
+}
+
+.schoolzones-sec3-content-right {
+    width: 80%;
+    background-color: #171717;
+    color: white;
+    padding: 5rem 5rem 5rem 15rem;
+}
+
+.schoolzones-sec3-content-right-title h1 {
+    font: normal bold 80px/1 'Poppins';
+}
+
+.schoolzones-sec3-content-right-para {
+    padding-top: 2rem;
+    max-width: 500px;
+    color: #707070;
+}
+
+.schoolzones-sec3-content-image {
+    position: absolute;
+    max-width: 150px;
+    left: 15%;
+    top: 33%;
+}
+
+/* Sec3 End  */
+
+
+/* Sec4  */
+
+.schoolzones-sec-4-div-hover-img1-content,
+.schoolzones-sec-4-div-hover-img2-content,
+.schoolzones-sec-4-div-hover-img3-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.655);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.schoolzones-sec-4-div-hover-img1-content h1,
+.schoolzones-sec-4-div-hover-img2-content h1,
+.schoolzones-sec-4-div-hover-img3-content h1 {
+    padding: 2rem;
+    min-height: 20vh;
+    max-height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font: normal bold 25px/1 'Poppins';
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.schoolzones-sec-4-div-hover-img1-content ul,
+.schoolzones-sec-4-div-hover-img2-content ul,
+.schoolzones-sec-4-div-hover-img3-content ul {
+    width: 100%;
+}
+
+
+.schoolzones-sec-4-div-hover-img1-content ul li,
+.schoolzones-sec-4-div-hover-img2-content ul li,
+.schoolzones-sec-4-div-hover-img3-content ul li {
+    list-style-type: none;
+    text-align: start;
+    padding: 1rem 2rem;
+    margin: auto;
+}
+
+.schoolzones-sec-4-div-hover-img1-content ul li:nth-child(odd),
+.schoolzones-sec-4-div-hover-img2-content ul li:nth-child(odd),
+.schoolzones-sec-4-div-hover-img3-content ul li:nth-child(odd) {
+    background-color: #F4F4F4;
+}
+
+.guideline-sec-3-container-para {
+    width: 80%;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+/* Sec4 ENd */
+
+
+/* Sec5 */
+
+.schoolzones-sec5-content {
+    background-color: #171717;
+    display: flex;
+    padding: 10rem;
+    gap: 2rem;
+    color: white;
+}
+
+.schoolzones-sec5-content-left {
+    width: 60%;
+    border-right: 2px solid #707070;
+    padding-right: 2rem;
+}
+
+.schoolzones-sec5-content-right {
+    width: 40%;
+}
+
+.schoolzones-sec5-content-left-title h1 {
+    text-transform: uppercase;
+    font: normal bold 50px/1 'Poppins';
+}
+
+.schoolzones-sec5-content-left-para {
+    padding-top: 2rem;
+    color: #707070;
+}
+
+.schoolzones-sec5-content-right-list ul li {
+    list-style-type: none;
+    font: normal bold 25px/2 'Poppins';
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Sec5 End */
+
+
+/* Sec6 */
+
+.schoolzones-sec6-container {
+    padding: 10rem;
+}
+
+.schoolzones-sec6-content-title h1 {
+    font: normal bold 50px/1 'Poppins';
+    text-transform: uppercase;
+}
+
+.schoolzones-sec6-content-para p {
+    padding-top: 1rem;
+    text-align: justify;
+}
+
+/* Sec6 End*/
+
+.schoolzones-sec6-container {
+    cursor: pointer;
+}
+
+/* Modal */
+.schoolzones-page-modal {
+    max-width: 1000px;
+}
+
+.schoolzones-page-carousel {
+    max-height: 80vh;
+}
+
+.schoolzones-page-carousel-slide {
+    max-height: 80vh ;
+    background-color: red;
+}
+.schoolzones-page-carousel-slide img{
+    width: 100%;
+    height: auto;
+}
+
+/* Modal End */
+
+
+/* Sec7 */
+
+.schoolzones-sec7-container {
+    background-color: #171717;
+    padding: 10rem;
+    position: relative;
+}
+
+.schoolzones-sec7-content {
+    display: flex;
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.schoolzones-sec7-content-left {
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    padding: 5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.schoolzones-sec7-content-left-camera {
+    position: absolute;
+    width: 100px;
+    top: 0;
+    right: 0;
+    transform: scaleX(-1);
+}
+
+.schoolzones-sec7-content-left-shield {
+    position: absolute;
+    width: 150px;
+    top: 5%;
+    left: 5%;
+    z-index: 2;
+}
+
+.schoolzones-sec7-content-left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.schoolzones-sec7-content-left-content p {
+    padding-top: 2rem;
+}
+
+.schoolzones-sec7-content-left-content img {
+    padding-top: 3rem;
+    width: 200px;
+    z-index: 0;
+}
+
+.schoolzones-sec7-content-right {
+    width: 50%;
+    background-color: #292929;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+}
+
+.schoolzones-sec7-container-image {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+
+.schoolzones-sec7-content-right-title {
+    text-transform: uppercase;
+    font: normal bold 30px/1.2 'Poppins';
+    color: white;
+}
+
+.schoolzones-sec7-content-right-title h1:nth-child(2) {
+    color: #ED61EA;
+}
+
+.schoolzones-sec7-content-right-para ul li {
+    list-style-type: none;
+    padding-top: 1rem;
+    color: #707070;
+}
+
+/* Sec7 End */
+
+
+/* Sec8 */
+
+
+.schoolzones-sec8-container {
+    background-color: #FFC100;
+    padding: 10rem;
+}
+
+.schoolzones-sec8-content-title h1 {
+    text-transform: uppercase;
+    font: normal bold 100px 'Poppins';
+}
+
+
+
+/* Sec8 End */
+
+
+/* Media Query */
+
+@media(max-width:1200px) {
+    .schoolzones-sec5-content {
+        padding: 5rem 2rem;
+    }
+
+    .schoolzones-sec5-content-right-list ul li {
+        list-style-type: none;
+        font: normal bold 28px/2 'Poppins';
+        text-transform: uppercase;
+    }
+
+    .schoolzones-sec7-container {
+        padding: 5rem 2rem;
+    }
+}
+
+@media(max-width:1060px) {
+    .schoolzones-sec1-container {
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    .schoolzones-sec1-content {
+        background-color: rgba(0, 0, 0, 0.500);
+        padding: 5rem 2rem;
+        max-width: 100%;
+    }
+
+    .schoolzones-sec2-content-left {
+        padding: 2rem;
+    }
+
+    .schoolzones-sec2-content-right {
+        padding: 2rem;
+    }
+
+    .schoolzones-sec3-content-right {
+        padding: 5rem 5rem 5rem 8rem;
+    }
+
+    .schoolzones-sec6-container {
+        padding: 5rem 2rem;
+    }
+
+    .schoolzones-sec8-content-title h1 {
+        font: normal bold 60px 'Poppins';
+    }
+
+    .schoolzones-sec8-container {
+        padding: 5rem 2rem;
+    }
+}
+
+
+@media (max-width:768px) {
+    .schoolzones-sec1-content-title h1 {
+        font: normal bold 100px/1 'Poppins';
+    }
+
+    .schoolzones-sec1-content-title h2 {
+        font: normal bold 40px/1 'Poppins';
+    }
+
+    .schoolzones-sec1-avatar {
+        width: 150px;
+        left: 10%;
+    }
+
+    .schoolzones-sec1-rocket {
+        top: 22%;
+        left: 60%;
+        width: 50px;
+    }
+
+    .schoolzones-sec2-content {
+        flex-direction: column;
+    }
+
+    .schoolzones-sec2-content-left,
+    .schoolzones-sec2-content-right {
+        width: 100%;
+    }
+
+    .schoolzones-sec2-content-left-title h1 {
+        font: normal bold 60px 'Poppins';
+    }
+
+    .schoolzones-sec3-content {
+        flex-direction: column;
+    }
+
+    .schoolzones-sec3-content-left {
+        width: 0%;
+    }
+
+    .schoolzones-sec3-content-right {
+        width: 100%;
+        padding: 5rem;
+    }
+
+    .schoolzones-sec3-content-image {
+        max-width: 100px;
+        left: 70%;
+        z-index: -0;
+        top: 15%;
+    }
+
+    .schoolzones-sec3-content-right-title h1 {
+        font: normal bold 60px/1 'Poppins';
+    }
+
+    .schoolzones-sec5-content {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .schoolzones-sec5-content-left {
+        width: 100%;
+        border: none;
+        padding-right: 2rem;
+    }
+
+    .schoolzones-sec5-content-right {
+        width: 100%;
+    }
+
+    .schoolzones-sec7-content {
+        flex-direction: column;
+    }
+
+    .schoolzones-sec7-content-left,
+    .schoolzones-sec7-content-right {
+        width: 100%;
+    }
+
+    .schoolzones-sec6-container {
+        padding: 2rem;
+    }
+
+    .schoolzones-sec8-container {
+        padding: 2rem;
+    }
+
+    .schoolzones-sec8-content-title h1 {
+        font: normal bold 40px 'Poppins';
+    }
+
+}
+
+
+@media (max-width:500px) {
+    .schoolzones-sec1-content {
+        background-color: rgba(0, 0, 0, 0.500);
+        padding: 2rem;
+        max-width: 100%;
+    }
+
+    .schoolzones-sec1-avatar {
+        width: 150px;
+        left: 0%;
+    }
+
+    .schoolzones-sec1-rocket {
+        top: 32%;
+        left: 70%;
+        width: 50px;
+    }
+
+    .schoolzones-sec1-content-para {
+        padding-top: 0rem;
+    }
+
+    .schoolzones-sec3-content-right {
+        padding: 2rem;
+    }
+
+    .schoolzones-sec3-content-image {
+        left: 10%;
+        display: none;
+    }
+
+    .schoolzones-sec3-content-right-para {
+        padding-top: 1rem;
+    }
+
+    .schoolzones-sec5-content-left-title h1 {
+        font: normal bold 40px 'Poppins';
+    }
+
+    .schoolzones-sec5-content-right-list ul li {
+        font: normal bold 20px/2 'Poppins';
+    }
+
+    .schoolzones-sec5-content-left-para {
+        text-align: justify;
+        width: 100%;
+    }
+
+    .schoolzones-sec7-content-right-title {
+        font: normal bold 20px/1.2 'Poppins';
+    }
+
+    .schoolzones-sec6-content-title h1 {
+        font: normal bold 30px/1 'Poppins';
+    }
+
+    .schoolzones-sec8-content-title h1 {
+        font: normal bold 30px 'Poppins';
+    }
+
+    .schoolzones-sec7-container {
+        padding: 1rem;
+    }
+
+    .schoolzones-sec7-content-right {
+        padding: 1rem;
+    }
+
+    .schoolzones-sec7-content-left {
+        padding: 1rem;
+    }
+
+    .schoolzones-sec7-content-left-shield {
+        width: 100px;
+    }
+
+    .schoolzones-sec7-content-left-camera {
+        width: 80px;
+    }
+}
+
+/* Media Query ENd */

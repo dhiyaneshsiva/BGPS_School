@@ -62,7 +62,7 @@ const SideNav = ({ setOpened }) => {
                 },
                 {
                     title: 'School Zone',
-                    path: ``
+                    path: `/schoolzone`
                 },
                 {
                     title: 'Careers',
@@ -88,6 +88,10 @@ const SideNav = ({ setOpened }) => {
                 {
                     title: 'Admissions',
                     path: `/admission`
+                },
+                {
+                    title: 'Staff Details',
+                    path: `/staff`
                 },
             ]
         }

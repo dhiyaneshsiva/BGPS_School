@@ -114,7 +114,7 @@
     background-color: #f4f4f4b7;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
-    padding: 15rem 10rem;
+    padding: 10rem;
 }
 
 .guideline-sec-3-div {
@@ -516,6 +516,12 @@
         text-align: justify;
     }
 
+
+    .schoolzones-sec-4-div-hover-img1-content h1,
+    .schoolzones-sec-4-div-hover-img2-content h1,
+    .schoolzones-sec-4-div-hover-img3-content h1 {
+        min-height: 0vh;
+    }
 }
 
 

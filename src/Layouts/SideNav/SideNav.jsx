@@ -139,8 +139,8 @@ const SideNav = ({ setOpened }) => {
                     Events
                 </li>
                 <li>
-                    <a href='https://campus.uno/applicationregistration/bgsps' target='_blanl' rel='norefferer'>
-                        Application Form
+                    <a href='https://campus.uno/applicationregistration/bgsps' target='_blank' rel='noreferrer'>
+                        Apply Now
                     </a>
                 </li>
                 <li onClick={hidden}>

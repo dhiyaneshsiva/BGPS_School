@@ -27,7 +27,7 @@ const NavBar = () => {
   const Ahref = () => {
     return (
       <li>
-        Application
+        Apply Now
       </li >
     )
   }

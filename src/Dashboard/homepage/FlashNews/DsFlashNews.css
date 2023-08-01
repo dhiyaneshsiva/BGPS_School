@@ -1,0 +1,14 @@
+.ds-flashnews-page {
+    position: relative;
+}
+
+.ds-flashnews-container {
+    padding-top: 5rem;
+
+}
+
+.ds-flashnews-logout-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}

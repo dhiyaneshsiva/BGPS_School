@@ -30,6 +30,8 @@ import SchoolZones from './Pages/SchoolZone/SchoolZones'
 import SchoolZone from './Pages/SchoolZone/SchoolZone'
 import WellBeing from './Pages/WellBeing/WellBeing'
 import Staff from './Pages/Staffs/Staff'
+import Login from './Dashboard/Loginpage.jsx/Login'
+import DsFlashNews from './Dashboard/homepage/FlashNews/DsFlashNews'
 
 const Router = () => {
 
@@ -123,6 +125,12 @@ const Router = () => {
                 </Route>
                 <Route path="/Staff">
                     <Staff />
+                </Route>
+                <Route path="/login">
+                    <Login />
+                </Route>
+                <Route path="/dshome">
+                    <DsFlashNews /> 
                 </Route>
             </Switch>
             <div onClick={Scroll} className='scroll-btn-fixed'>

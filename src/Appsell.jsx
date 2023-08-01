@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 // Mantine UI
-import { AppShell, Aside, Burger, Button, Footer, Header, MediaQuery, Navbar, ScrollArea, Text } from '@mantine/core';
+import { AppShell, Burger, Header, MediaQuery, Navbar, ScrollArea, } from '@mantine/core';
 import NavBar from './Layouts/HeaderNav/NavBar';
 
 // Animation 
@@ -24,6 +24,14 @@ const Appsell = () => {
     const Query = useMediaQuery('(max-width:768px)')
 
 
+    useEffect(() => {
+        if (!Query) {
+            setOpened(false)
+        }
+    },[Query])
+
+
+
     return (
         <div>
             <AppShell
@@ -41,14 +49,14 @@ const Appsell = () => {
                 }
                 header={
                     < Header
-                        height={{ base: 70, md: 90 }}
+                        height={{ base: 50, md: 70 }}
                         style={{ background: 'linear-gradient(to right, #0D0A27, #281B89, #181250)' }} >
                         <div style={{ display: 'flex', alignItems: 'center', height: '100%' }}>
                             <MediaQuery largerThan="sm" styles={{ display: 'none' }}>
                                 <Burger
                                     opened={opened}
                                     onClick={() => setOpened((o) => !o)}
-                                    size="md"
+                                    size="sm"
                                     mr="xl"
                                     pl={20}
                                     color='white'

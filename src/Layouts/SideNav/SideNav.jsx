@@ -3,7 +3,7 @@ import "./SideNav.css"
 import { Link } from "react-router-dom"
 
 // Tabler Icons
-import { ChevronDown, ChevronRight, BrandCodesandbox } from 'tabler-icons-react';
+import { ChevronDown, ChevronRight, BrandCodesandbox, UserCircle } from 'tabler-icons-react';
 
 
 const SideNav = ({ setOpened }) => {
@@ -135,8 +135,27 @@ const SideNav = ({ setOpened }) => {
                         })
                     }
                 </ul>
+                <li>
+                    Events
+                </li>
+                <li>
+                    <a href='https://campus.uno/applicationregistration/bgsps' target='_blanl' rel='norefferer'>
+                        Application Form
+                    </a>
+                </li>
                 <li onClick={hidden}>
-                    Contact
+                    <Link to="/contact">
+                        Contact
+                    </Link>
+                </li>
+                <li onClick={hidden}>
+                    <Link to="/login">
+                        <UserCircle
+                            size={40}
+                            strokeWidth={1}
+                            color={'white'}
+                        />
+                    </Link>
                 </li>
             </ul>
         </div>

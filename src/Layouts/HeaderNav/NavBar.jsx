@@ -6,7 +6,7 @@ import { Link, useHistory } from "react-router-dom"
 import Logo from "../../Assets/logo.png"
 
 // Tabler Icons
-import { ChevronDown, BrandCodesandbox } from 'tabler-icons-react';
+import { ChevronDown, BrandCodesandbox, UserCircle } from 'tabler-icons-react';
 
 const NavBar = () => {
 
@@ -23,6 +23,18 @@ const NavBar = () => {
   }
 
   const History = useHistory()
+
+  const Ahref = () => {
+    return (
+      <li>
+        Application
+      </li >
+    )
+  }
+
+  const ApplicationForm = () => {
+    window.open('https://campus.uno/applicationregistration/bgsps', '_blank');
+  }
 
   // Nav List
   const ulList = [
@@ -43,11 +55,32 @@ const NavBar = () => {
       route: servicePath
     },
     {
+      title: 'Events',
+      handler: hidden,
+      route: '/'
+    },
+    {
+      title: Ahref(),
+      handler: ApplicationForm,
+      route: servicePath
+    },
+    {
       title: 'Contact',
       handler: hidden,
       route: '/contact'
     },
+    {
+      title: <UserCircle
+        size={40}
+        strokeWidth={1}
+        color={'white'}
+      />,
+      handler: hidden,
+      route: "/login"
+    }
   ]
+
+
 
   // Drop Down
   const dropDown = [

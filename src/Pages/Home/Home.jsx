@@ -36,6 +36,7 @@ import { Button, Center, Input, Modal, Select } from '@mantine/core'
 
 // Tabler Icons
 import { ChevronDown, DiscountCheck, FaceIdError } from 'tabler-icons-react'
+import axios from 'axios'
 
 const Home = () => {
   useEffect(() => {
@@ -125,6 +126,15 @@ const Home = () => {
     number: ''
   })
 
+  // const FlashNews = () => {
+  //   axios?.get('http://localhost:5000/news')
+  //     ?.then(result => {
+  //       const length = result.data.length - 1
+  //       setMarquee(result.data[length].news)
+  //     })
+  // }
+
+  // FlashNews()
 
   const submitForm = (e) => {
     e.preventDefault()

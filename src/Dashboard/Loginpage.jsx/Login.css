@@ -1,0 +1,14 @@
+.ds-login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.ds-login-form {
+    width: 80%;
+}
+
+.form-input {
+    padding-bottom: 1rem;
+}

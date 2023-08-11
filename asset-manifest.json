@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/BGPS_School/static/css/main.f118d81c.css",
-    "main.js": "/BGPS_School/static/js/main.2d8eeeaf.js",
+    "main.css": "/BGPS_School/static/css/main.447b5dde.css",
+    "main.js": "/BGPS_School/static/js/main.dcd507e8.js",
     "static/media/blackboard_1.jpg": "/BGPS_School/static/media/blackboard_1.b05d5e4b3facaddfc327.jpg",
     "static/media/karate2.png": "/BGPS_School/static/media/karate2.759986c7f267e2a8f839.png",
     "static/media/karate.png": "/BGPS_School/static/media/karate.37764907271c555805ec.png",
@@ -155,11 +155,11 @@
     "static/media/ScrollTop.png": "/BGPS_School/static/media/ScrollTop.c8c1cfde4305d12bf1ce.png",
     "static/media/logo_main.png": "/BGPS_School/static/media/logo_main.9241b53a80567e0fa262.png",
     "index.html": "/BGPS_School/index.html",
-    "main.f118d81c.css.map": "/BGPS_School/static/css/main.f118d81c.css.map",
-    "main.2d8eeeaf.js.map": "/BGPS_School/static/js/main.2d8eeeaf.js.map"
+    "main.447b5dde.css.map": "/BGPS_School/static/css/main.447b5dde.css.map",
+    "main.dcd507e8.js.map": "/BGPS_School/static/js/main.dcd507e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.f118d81c.css",
-    "static/js/main.2d8eeeaf.js"
+    "static/css/main.447b5dde.css",
+    "static/js/main.dcd507e8.js"
   ]
 }

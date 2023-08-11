@@ -77,71 +77,227 @@ const SchoolSports = () => {
         <div>
             <div className='schoolsports-page'>
                 {/* Section1  */}
-                
-                    <div className='schoolsports-sec-1-container'>
-                        <div className='schoolsports-sec-1-content'>
-                            <h2>
-                                School
-                            </h2>
-                            <h1>
-                                Sports
-                            </h1>
-                            <p className='schoolsports-sec-1-content-para1'>
-                                It helps in building skills.
-                            </p>
-                            <p className='schoolsports-sec-1-content-para2'>
-                                Skills like teamwork, leadership,
-                                patience, discipline, learning from
-                                failure, Sportsmanship, etc., are
-                                developed only when children play
-                                sports regularly, and these skills
-                                are equally important when it comes
-                                to studies and management.
-                            </p>
-                        </div>
-                        <img src={Bottle} alt='sports-bottle' className='sports-bottle' />
-                        <img src={Whistle} alt='sports-Whistle' className='sports-whistle' />
-                        <img src={Alarm} alt='sports-alarm' className='sports-alarm' />
-                        <img src={Weight} alt='sports-weight' className='sports-weight' />
+
+                <div className='schoolsports-sec-1-container'>
+                    <div className='schoolsports-sec-1-content'>
+                        <h2>
+                            <span
+                                data-aos="fade-right"
+                                data-aos-delay='100'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true"
+                            >
+                                S
+                            </span>
+                            <span
+                                data-aos="fade-right"
+                                data-aos-delay='300'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true"
+                            >
+                                c
+                            </span>
+                            <span
+                                data-aos="fade-right"
+                                data-aos-delay='500'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true"
+                            >
+                                h
+                            </span>
+                            <span
+                                data-aos="fade-right"
+                                data-aos-delay='700'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true"
+                            >
+                                o
+                            </span>
+                            <span
+                                data-aos="fade-right"
+                                data-aos-delay='900'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true"
+                            >
+                                o
+                            </span>
+                            <span
+                                data-aos="fade-right"
+                                data-aos-delay='1100'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true"
+                            >
+                                l
+                            </span>
+                            {/* School */}
+                        </h2>
+                        <h1>
+                            <span
+                                data-aos="fade-right"
+                                data-aos-delay='1300'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true"
+                            >
+                                s
+                            </span>
+                            <span
+                                data-aos="fade-right"
+                                data-aos-delay='1500'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true"
+                            >
+                                p
+                            </span>
+                            <span
+                                data-aos="fade-right"
+                                data-aos-delay='1700'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true"
+                            >
+                                o
+                            </span>
+                            <span
+                                data-aos="fade-right"
+                                data-aos-delay='1900'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true"
+                            >
+                                r
+                            </span>
+                            <span
+                                data-aos="fade-right"
+                                data-aos-delay='2100'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true"
+                            >
+                                t
+                            </span>
+                            <span
+                                data-aos="fade-right"
+                                data-aos-delay='2300'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true"
+                            >
+                                s
+                            </span>
+                            {/* Sports */}
+                        </h1>
+                        <p
+                            data-aos="fade-right"
+                            data-aos-delay='2500'
+                            data-aos-duration='1000'
+                            data-aos-easing="linear"
+                            data-aos-once="true"
+                            className='schoolsports-sec-1-content-para1'>
+                            It helps in building skills.
+                        </p>
+                        <p
+                            data-aos="fade-right"
+                            data-aos-delay='2700'
+                            data-aos-duration='1000'
+                            data-aos-easing="linear"
+                            data-aos-once="true"
+                            className='schoolsports-sec-1-content-para2'>
+                            Skills like teamwork, leadership,
+                            patience, discipline, learning from
+                            failure, Sportsmanship, etc., are
+                            developed only when children play
+                            sports regularly, and these skills
+                            are equally important when it comes
+                            to studies and management.
+                        </p>
                     </div>
-                
+                    <img
+                        src={Bottle} alt='sports-bottle' className='sports-bottle' />
+                    <img
+                        data-aos="zoom-in"
+                        data-aos-delay='500'
+                        data-aos-duration='1000'
+                        data-aos-easing="linear"
+                        data-aos-once="true"
+                        src={Whistle} alt='sports-Whistle' className='sports-whistle' />
+                    <img
+                        src={Alarm} alt='sports-alarm' className='sports-alarm' />
+                    <img
+                        data-aos="fade-right"
+                        data-aos-delay='500'
+                        data-aos-duration='1000'
+                        data-aos-easing="linear"
+                        data-aos-once="true"
+                        src={Weight} alt='sports-weight' className='sports-weight' />
+                </div>
+
                 {/* Section1 End */}
 
                 {/* Section2 */}
-                
-                    <div className='schoolsports-sec-2-container'>
-                        <div className='schoolsports-sec-2-content'>
-                            <h1>
-                                Games
-                            </h1>
-                            <div className='schoolsports-sec-2-grid'>
-                                {GamesList?.map((value, index) => {
-                                    return (
-                                        <div className='schoolsports-sec-2-grid-div'>
-                                            <Card key={index} className='schoolsports-sec-2-grid-card'>
-                                                <img src={value.icon} alt='Img' />
-                                            </Card>
-                                            <h1>
-                                                {value.title}
-                                            </h1>
-                                            <p>
-                                            </p>
-                                        </div>
-                                    )
-                                })}
-                            </div>
-                            <p>
-                                Our Admissions team will ensure the
-                                smoothest possible transition for your
-                                family. Kindly refer to the age-matrix
-                                for admission. This matrix is created
-                                as per the National Educational Policy
-                                and the circular issued by the Karnataka
-                                State Board of Education. (Click Age-matrix circular-2023-24.pdf for the circular)
-                            </p>
+
+                <div className='schoolsports-sec-2-container'>
+                    <div className='schoolsports-sec-2-content'>
+                        <h1
+                            data-aos="fade-right"
+                            data-aos-delay='100'
+                            data-aos-duration='1000'
+                            data-aos-easing="linear"
+                            data-aos-once="true"
+                        >
+                            Games
+                        </h1>
+                        <div className='schoolsports-sec-2-grid'>
+                            {GamesList?.map((value, index) => {
+                                return (
+                                    <div
+                                        data-aos="fade-right"
+                                        data-aos-delay={index * 200}
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                        className='schoolsports-sec-2-grid-div'>
+                                        <Card key={index} className='schoolsports-sec-2-grid-card'>
+                                            <img src={value.icon} alt='Img' />
+                                        </Card>
+                                        <h1
+                                            data-aos="fade-right"
+                                            data-aos-delay={index * 200}
+                                            data-aos-duration='1000'
+                                            data-aos-easing="linear"
+                                            data-aos-once="true">
+                                            {value.title}
+                                        </h1>
+                                        <p>
+                                        </p>
+                                    </div>
+                                )
+                            })}
                         </div>
+                        <p
+                            data-aos="fade-right"
+                            data-aos-delay='500'
+                            data-aos-duration='1000'
+                            data-aos-easing="linear"
+                            data-aos-once="true">
+                            Our Admissions team will ensure the
+                            smoothest possible transition for your
+                            family. Kindly refer to the age-matrix
+                            for admission. This matrix is created
+                            as per the National Educational Policy
+                            and the circular issued by the Karnataka
+                            State Board of Education. (Click Age-matrix circular-2023-24.pdf for the circular)
+                        </p>
                     </div>
-                
+                </div>
+
                 {/* Section2 End */}
 
                 {/* Section3  */}

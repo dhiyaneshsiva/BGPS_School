@@ -53,6 +53,22 @@
 
 /* Sec1 End */
 
+/* Contact Page */
+
+.careers-sec1-container-para address {
+    font-style: normal;
+    line-height: 2rem;
+    font: normal 25px 'Poppins';
+}
+
+.contact-page-map {
+    padding: 2rem;
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+}
+
+/* Contact Page End */
 
 @media(max-width:1400px) {
     .careers-sec1-container {
@@ -86,15 +102,31 @@
         padding: 1rem;
         gap: 1rem;
     }
+
     .careers-sec1-container {
-        background: #618954 ;
-        background-size:cover;
+        background: #618954;
+        background-size: cover;
         background-repeat: no-repeat;
     }
 }
 
 @media (max-width:500px) {
+    .careers-sec1-container-title h1 {
+        font: normal bold 50px 'Poppins';
+        position: relative;
+        z-index: 1;
+    }
     .careers-sec1-image-grid {
         grid-template-columns: auto;
+    }
+
+    .careers-sec1-container-para address {
+        line-height: 1rem;
+        font: normal 15px 'Poppins';
+    }
+
+    .contact-page-map {
+        width: 100%;
+        height: 50vh;
     }
 }

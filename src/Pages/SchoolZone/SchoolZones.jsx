@@ -99,13 +99,110 @@ const SchoolZones = () => {
                 <div className="schoolzones-sec1-container">
                     <div className="schoolzones-sec1-content">
                         <div className="schoolzones-sec1-content-title">
-                            <h2>School</h2>
+                            <h2>
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='100'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    s
+                                </span>
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='300'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    c
+                                </span>
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='500'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    h
+                                </span>
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='700'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    o
+                                </span>
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='900'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    o
+                                </span>
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='1100'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    l
+                                </span>
+                                {/* School */}
+                            </h2>
                             <h1>
-                                Zone
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='1300'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    z
+                                </span>
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='1500'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    o
+                                </span>
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='1700'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    n
+                                </span>
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='1900'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    e
+                                </span>
                             </h1>
                         </div>
                         <div className="schoolzones-sec1-content-para">
-                            <p>
+                            <p
+                                data-aos="fade-left"
+                                data-aos-delay='2100'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true"
+                            >
                                 Skills like teamwork, leadership, patience,
                                 discipline, learning from failure, Sportsmanship,
                                 etc., are developed only when children play sports
@@ -124,12 +221,107 @@ const SchoolZones = () => {
                     <div className="schoolzones-sec2-content">
                         <div className="schoolzones-sec2-content-left">
                             <div className="schoolzones-sec2-content-left-title">
-                                <h1>
-                                    Facilities
+                                <h1 style={{ textTransform: "uppercase" }}>
+                                    <span
+                                        data-aos="fade-right"
+                                        data-aos-delay='100'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        f
+                                    </span>
+                                    <span
+                                        data-aos="fade-right"
+                                        data-aos-delay='300'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        a
+                                    </span>
+                                    <span
+                                        data-aos="fade-right"
+                                        data-aos-delay='500'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        c
+                                    </span>
+                                    <span
+                                        data-aos="fade-right"
+                                        data-aos-delay='700'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        i
+                                    </span>
+                                    <span
+                                        data-aos="fade-right"
+                                        data-aos-delay='900'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        l
+                                    </span>
+                                    <span
+                                        data-aos="fade-right"
+                                        data-aos-delay='1100'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        i
+                                    </span>
+                                    <span
+                                        data-aos="fade-right"
+                                        data-aos-delay='1300'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        t
+                                    </span>
+                                    <span
+                                        data-aos="fade-right"
+                                        data-aos-delay='1500'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        i
+                                    </span>
+                                    <span
+                                        data-aos="fade-right"
+                                        data-aos-delay='1700'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        e
+                                    </span>
+                                    <span
+                                        data-aos="fade-right"
+                                        data-aos-delay='1900'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        s
+                                    </span>
+                                    {/* Facilities */}
                                 </h1>
                             </div>
                             <div className="schoolzones-sec2-content-left-para">
-                                <p>
+                                <p
+                                    data-aos="fade-right"
+                                    data-aos-delay='100'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true">
                                     The Student Council at our school aims at giving students
                                     an opportunity to develop their leadership skills by
                                     organizing and carrying out school activities and service
@@ -139,7 +331,12 @@ const SchoolZones = () => {
                                     ideas, interests or concerns in order to undertake initiatives
                                     for the benefit of the school wide community.
                                 </p>
-                                <p>
+                                <p
+                                    data-aos="fade-right"
+                                    data-aos-delay='300'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true">
                                     This council works together with an adult advisor within the
                                     framework of the organization and follows all the processes
                                     that promote the aims and objectives of the school.
@@ -155,7 +352,13 @@ const SchoolZones = () => {
                                     {
                                         ListData.map((value, index) => {
                                             return (
-                                                <li key={index}>
+                                                <li
+                                                    data-aos="fade-left"
+                                                    data-aos-delay={index * 200}
+                                                    data-aos-duration='1000'
+                                                    data-aos-easing="linear"
+                                                    data-aos-once="true"
+                                                    key={index}>
                                                     <Checks
                                                         size={25}
                                                         strokeWidth={2}
@@ -182,15 +385,27 @@ const SchoolZones = () => {
                         </div>
                         <div className="schoolzones-sec3-content-right">
                             <div className="schoolzones-sec3-content-right-title">
-                                <h1>
+                                <h1
+                                    data-aos="zoom-in"
+                                    data-aos-delay='100'
+                                    data-aos-duration='1000'
+                                    data-aos-once="true">
                                     School
                                 </h1>
-                                <h1>
+                                <h1
+                                    data-aos="zoom-in"
+                                    data-aos-delay='300'
+                                    data-aos-duration='1000'
+                                    data-aos-once="true">
                                     Timings
                                 </h1>
                             </div>
                             <div className="schoolzones-sec3-content-right-para">
-                                <p>
+                                <p
+                                    data-aos="zoom-in"
+                                    data-aos-delay='500'
+                                    data-aos-duration='1000'
+                                    data-aos-once="true">
                                     The school remains closed to students on
                                     all Second and Third Saturdays. However,
                                     the office is open on Second Saturdays.
@@ -209,17 +424,37 @@ const SchoolZones = () => {
                     <div className='guideline-sec-3-div'>
                         <div className='guideline-sec-3-div-hover-img1'>
                             <div className='schoolzones-sec-4-div-hover-img1-content'>
-                                <h1>
+                                <h1
+                                    data-aos="fade-right"
+                                    data-aos-delay='100'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true">
                                     Grades
                                 </h1>
                                 <ul>
-                                    <li>
+                                    <li
+                                        data-aos="fade-right"
+                                        data-aos-delay='300'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true">
                                         Kindergarten
                                     </li>
-                                    <li>
+                                    <li
+                                        data-aos="fade-right"
+                                        data-aos-delay='500'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true">
                                         I to V
                                     </li>
-                                    <li>
+                                    <li
+                                        data-aos="fade-right"
+                                        data-aos-delay='700'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true">
                                         VI to XII
                                     </li>
                                 </ul>
@@ -228,17 +463,35 @@ const SchoolZones = () => {
                         </div>
                         <div className='guideline-sec-3-div-hover-img2'>
                             <div className='schoolzones-sec-4-div-hover-img2-content'>
-                                <h1>
+                                <h1
+                                    data-aos="zoom-in"
+                                    data-aos-delay='100'
+                                    data-aos-duration='1000'
+                                    data-aos-once="true">
                                     Monday to Friday
                                 </h1>
                                 <ul>
-                                    <li>
+                                    <li
+                                        data-aos="zoom-in"
+                                        data-aos-delay='300'
+                                        data-aos-duration='1000'
+                                        data-aos-once="true">
                                         8:15 am to 12:30 pm
                                     </li>
-                                    <li>
+                                    <li
+                                        data-aos="zoom-in"
+                                        data-aos-delay='500'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true">
                                         8:15 am to 03:15 pm
                                     </li>
-                                    <li>
+                                    <li
+                                        data-aos="zoom-in"
+                                        data-aos-delay='700'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true">
                                         8:15 am to 03:15 pm
                                     </li>
                                 </ul>
@@ -247,17 +500,37 @@ const SchoolZones = () => {
                         </div>
                         <div className='guideline-sec-3-div-hover-img3'>
                             <div className='schoolzones-sec-4-div-hover-img3-content' >
-                                <h1>
+                                <h1
+                                    data-aos="fade-left"
+                                    data-aos-delay='100'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true">
                                     Working Saturday
                                 </h1>
                                 <ul>
-                                    <li>
+                                    <li
+                                        data-aos="fade-left"
+                                        data-aos-delay='300'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true">
                                         NA
                                     </li>
-                                    <li>
+                                    <li
+                                        data-aos="fade-left"
+                                        data-aos-delay='500'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true">
                                         NA
                                     </li>
-                                    <li>
+                                    <li
+                                        data-aos="fade-left"
+                                        data-aos-delay='700'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true">
                                         8:15 am to 12:30 pm
                                     </li>
                                 </ul>
@@ -265,7 +538,12 @@ const SchoolZones = () => {
                             {/* <img src={Calender} alt='Hand' className='guideline-sec-3-div-hover-img3-calender' /> */}
                         </div>
                     </div>
-                    <p className='guideline-sec-3-container-para'>
+                    <p
+                        data-aos="zoom-in"
+                        data-aos-delay='500'
+                        data-aos-duration='1000'
+                        data-aos-once="true"
+                        className='guideline-sec-3-container-para'>
                         The school remains closed to students on
                         all Second and Third Saturdays. However,
                         the office is open on Second Saturdays.
@@ -278,15 +556,33 @@ const SchoolZones = () => {
                     <div className="schoolzones-sec5-content">
                         <div className="schoolzones-sec5-content-left">
                             <div className="schoolzones-sec5-content-left-title">
-                                <h1>
+                                <h1
+                                    data-aos="fade-right"
+                                    data-aos-delay='100'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
                                     Student
                                 </h1>
-                                <h1>
+                                <h1
+                                    data-aos="fade-right"
+                                    data-aos-delay='300'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
                                     Well-Being
                                 </h1>
                             </div>
                             <div className="schoolzones-sec5-content-left-para">
-                                <p>
+                                <p
+                                    data-aos="fade-right"
+                                    data-aos-delay='500'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
                                     Health Education is given equal importance
                                     alongside the curriculum. It instills skills,
                                     knowledge, and a positive attitude in students.
@@ -300,7 +596,12 @@ const SchoolZones = () => {
                                     affect risk.
                                 </p>
                             </div>
-                            <Link to="/wellbeing">
+                            <Link
+                                data-aos="zoom-in"
+                                data-aos-delay='700'
+                                data-aos-duration='1000'
+                                data-aos-once="true"
+                                to="/wellbeing">
                                 See More
                             </Link>
                         </div>
@@ -309,7 +610,13 @@ const SchoolZones = () => {
                                 <ul>
                                     {ListData2.map((value, index) => {
                                         return (
-                                            <li key={index}>
+                                            <li key={index}
+                                                data-aos="fade-left"
+                                                data-aos-delay={index * 200}
+                                                data-aos-duration='1000'
+                                                data-aos-easing="linear"
+                                                data-aos-once="true"
+                                            >
                                                 <Checks
                                                     size={25}
                                                     strokeWidth={2}
@@ -330,13 +637,24 @@ const SchoolZones = () => {
                 <div className="schoolzones-sec6-container">
                     <div className="schoolzones-sec6-content">
                         <div className="schoolzones-sec6-content-title">
-                            <h1>
+                            <h1
+                                data-aos="fade-right"
+                                data-aos-delay='100'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true"
+                            >
                                 Nurture – Career Guidance
                                 Programme
                             </h1>
                         </div>
                         <div className="schoolzones-sec6-content-para">
-                            <p>
+                            <p
+                                data-aos="fade-right"
+                                data-aos-delay='300'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true">
                                 Nurture is the Career Guidance programme
                                 provided for our students of Grades IX to
                                 XII to help them to know and understand
@@ -346,7 +664,13 @@ const SchoolZones = () => {
                                 their strengths and weaknesses and helps in
                                 finding the perfect career path.
                             </p>
-                            <p>
+                            <p
+                                data-aos="fade-right"
+                                data-aos-delay='500'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true"
+                            >
                                 Nurture is the Career Guidance programme
                                 provided for our students of Grades IX to
                                 XII to help them to know and understand
@@ -376,7 +700,13 @@ const SchoolZones = () => {
                             <img src={Shield} alt="Shield" className="schoolzones-sec7-content-left-shield" />
                             <div className="schoolzones-sec7-content-left-content">
                                 <img src={GreenCheck} alt="Green-Check" className="schoolzones-sec7-content-left-greencheck" />
-                                <p>
+                                <p
+                                    data-aos="zoom-in"
+                                    data-aos-delay='100'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
                                     CCTV cameras are installed at all vantage
                                     points on the school campus.  This is
                                     monitored by the Principal and the
@@ -386,10 +716,20 @@ const SchoolZones = () => {
                         </div>
                         <div className="schoolzones-sec7-content-right">
                             <div className="schoolzones-sec7-content-right-title">
-                                <h1>
+                                <h1
+                                    data-aos="zoom-in"
+                                    data-aos-delay='300'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true">
                                     Safety And
                                 </h1>
-                                <h1>
+                                <h1
+                                    data-aos="zoom-in"
+                                    data-aos-delay='500'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true">
                                     Security
                                 </h1>
                             </div>
@@ -398,7 +738,13 @@ const SchoolZones = () => {
                                     {
                                         SecurityList.map((value, index) => {
                                             return (
-                                                <li key={index}>
+                                                <li
+                                                    data-aos="fade-left"
+                                                    data-aos-delay={index * 200}
+                                                    data-aos-duration='1000'
+                                                    data-aos-easing="linear"
+                                                    data-aos-once="true"
+                                                    key={index}>
                                                     {value}
                                                 </li>
                                             )
@@ -417,12 +763,23 @@ const SchoolZones = () => {
                 <div className="schoolzones-sec8-container">
                     <div className="schoolzones-sec8-content">
                         <div className="schoolzones-sec8-content-title">
-                            <h1>
+                            <h1
+                                data-aos="fade-right"
+                                data-aos-delay='100'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true"
+                            >
                                 Transportation
                             </h1>
                         </div>
                         <div className="schoolzones-sec8-content-para">
-                            <p>
+                            <p
+                                data-aos="fade-right"
+                                data-aos-delay='300'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true">
                                 Nurture is the Career Guidance programme
                                 provided for our students of Grades IX to
                                 XII to help them to know and understand
@@ -433,7 +790,13 @@ const SchoolZones = () => {
                                 helps in finding the perfect career path.
                             </p>
                         </div>
-                        <a href="http://bgspskengeri.edu.in/wp-content/uploads/2022/10/BGSPS-BUS-ROUTE.pdf">
+                        <a
+                            data-aos="fade-right"
+                            data-aos-delay='500'
+                            data-aos-duration='1000'
+                            data-aos-easing="linear"
+                            data-aos-once="true"
+                            href="http://bgspskengeri.edu.in/wp-content/uploads/2022/10/BGSPS-BUS-ROUTE.pdf">
                             Click here to view the Transportation route details.
                         </a>
                     </div>

@@ -73,13 +73,41 @@ const Mandatory = () => {
                     <div className="mandatory-top">
                         <div className="mandatory-top-title">
                             <h1>
-                                Mandatory
-                                Disclosures
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='100'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    Mandatory
+                                </span>
+                                <br />
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='300'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    Disclosures
+                                </span>
                             </h1>
-                            <img src={BlueTick} alt="Blue Tick" />
+                            <img
+                                data-aos="zoom-in"
+                                data-aos-delay='700'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true" src={BlueTick} alt="Blue Tick" />
                         </div>
                         <div className="mandatory-top-para">
-                            <p>
+                            <p
+                                data-aos="fade-right"
+                                data-aos-delay='500'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true"
+                            >
                                 Skills like teamwork, leadership,
                                 patience, discipline, learning from
                                 failure, Sportsmanship, etc., are
@@ -97,7 +125,13 @@ const Mandatory = () => {
                         {
                             gridImages?.map((value, index) => {
                                 return (
-                                    <div className="mandatory-bottom-grid-img" key={index}>
+                                    <div
+                                        data-aos="fade-down"
+                                        data-aos-delay={index * 200}
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                        className="mandatory-bottom-grid-img" key={index}>
                                         <img
                                             className='grid-image'
                                             ref={image1.current[index]}

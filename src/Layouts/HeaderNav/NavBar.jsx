@@ -36,6 +36,7 @@ const NavBar = () => {
     window.open('https://campus.uno/applicationregistration/bgsps', '_blank');
   }
 
+  console.log(History.location.pathname);
   // Nav List
   const ulList = [
     {
@@ -52,7 +53,7 @@ const NavBar = () => {
       title: 'School',
       icon: <ChevronDown />,
       handler: handleClick,
-      route: servicePath
+      route: History.location.pathname
     },
     {
       title: 'Events',
@@ -167,10 +168,10 @@ const NavBar = () => {
 
   // useReff
   const refValue = useRef()
+  const Path = useHistory()
 
   // HandleOutClick
   useEffect(() => {
-    setServicePath(History.location.pathname)
     const handleOutClick = (e) => {
       if (!refValue.current.contains(e.target)) {
         setHide(false)
@@ -182,24 +183,40 @@ const NavBar = () => {
     }
   })
 
+  useEffect(() => {
+    setServicePath(Path.location.pathname)
+  }, [Path.location.pathname])
+
   return (
     <>
       <div className='nav-flex'>
         <div className='Nav-logo'>
-          <img src={Logo} alt='Logo' />
+          <img
+            data-aos="fade-right"
+            data-aos-delay='200'
+            data-aos-duration="1000"
+            data-aos-once="true"
+            src={Logo} alt='Logo' />
         </div>
         <div className='Nav-list'>
           <ul>
             {
               ulList?.map((value, index) => {
+                const aosDelay = index * 200;
+                const aosDuration = 1000;
                 return (
-                  <>
-                    <li onClick={value.handler} key={index} className='Nav-lists'>
-                      <Link to={value?.route} className='router-link'>
-                        {value.title} {value.icon}
-                      </Link>
-                    </li>
-                  </>
+                  <li
+                    data-aos="fade-left"
+                    data-aos-delay={`${aosDelay}`}
+                    data-aos-duration={`${aosDuration}`}
+                    data-aos-once="true"
+                    onClick={value.handler}
+                    key={index}
+                    className='Nav-lists'>
+                    <Link to={value?.route} className='router-link'>
+                      {value.title} {value.icon}
+                    </Link>
+                  </li>
                 )
               })
             }

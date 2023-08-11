@@ -86,12 +86,22 @@ const Legacy = () => {
                         <div className='legacy-sec1-container'>
                             <div className='legacy-sec1-container-header'>
                                 <div className='legacy-sec1-container-header-title'>
-                                    <h1>
+                                    <h1
+                                        data-aos="fade-down"
+                                        data-aos-delay="100"
+                                        data-aos-duration='1000'
+                                        data-aos-once="true"
+                                    >
                                         Legacy
                                     </h1>
                                 </div>
                                 <div className='legacy-sec1-container-header-para'>
-                                    <p>
+                                    <p
+                                        data-aos="fade-right"
+                                        data-aos-delay="300"
+                                        data-aos-duration='1000'
+                                        data-aos-once="true"
+                                    >
                                         <strong style={{ fontSize: "25px" }}> BGS & SJB Group of Institutions </strong> are leading
                                         education institutions across the nation.
                                         It has a legacy of more than 40 decades with
@@ -99,7 +109,12 @@ const Legacy = () => {
                                         and is run by Sri Adichunchanagiri Shikshana
                                         Trust®.
                                     </p>
-                                    <p>
+                                    <p
+                                        data-aos="fade-right"
+                                        data-aos-delay="500"
+                                        data-aos-duration='1000'
+                                        data-aos-once="true"
+                                    >
                                         <strong style={{ fontSize: "25px" }}>BGS & SJB Group </strong> has laid considerable emphasis
                                         on imparting quality education, cutting across
                                         professional and general institutions.
@@ -107,7 +122,12 @@ const Legacy = () => {
                                         unwavering commitment to excellence and expanding
                                         the horizons of knowledge.
                                     </p>
-                                    <p>
+                                    <p
+                                        data-aos="fade-right"
+                                        data-aos-delay="700"
+                                        data-aos-duration='1000'
+                                        data-aos-once="true"
+                                    >
                                         The institutions run by Sri Adichunchanagiri Shikshana Trust®
                                         include Public, National and International schools, PU
                                         Colleges, Autonomous Arts, Science & Commerce Degree
@@ -127,12 +147,20 @@ const Legacy = () => {
                             <div className='legacy-sec1-div2-container'>
                                 <div className='legacy-sec1-div2-container-left'>
                                     <div className='legacy-sec1-div2-container-left-title'>
-                                        <h1>
+                                        <h1
+                                            data-aos="fade-down"
+                                            data-aos-delay="100"
+                                            data-aos-duration='1000'
+                                            data-aos-once="true">
                                             About BGS Group of Schools
                                         </h1>
                                     </div>
                                     <div className='legacy-sec1-div2-container-left-para'>
-                                        <p>
+                                        <p
+                                            data-aos="fade-right"
+                                            data-aos-delay="300"
+                                            data-aos-duration='1000'
+                                            data-aos-once="true">
                                             <strong style={{ fontSize: "25px" }}> BGS & SJB </strong> encourages
                                             students to cultivate a habit of creative
                                             thinking and a desire to excel at every level, with an amalgamation
@@ -140,27 +168,47 @@ const Legacy = () => {
                                             critical thinkers and life-long learners. Education transforms the
                                             students who make a difference to society and the world.
                                         </p>
-                                        <p>
+                                        <p
+                                            data-aos="fade-right"
+                                            data-aos-delay="500"
+                                            data-aos-duration='1000'
+                                            data-aos-once="true"
+                                        >
                                             The strong partnership between students, parents and teachers has
                                             helped the school achieve outstanding results in both academic and
                                             co-curricular activities. BGS is not just confined to the classroom
                                             setting. There are various clubs and enrichment activities, which
                                             provide a comprehensive educational experience to the students.
                                         </p>
-                                        <p>
+                                        <p
+                                            data-aos="fade-right"
+                                            data-aos-delay="700"
+                                            data-aos-duration='1000'
+                                            data-aos-once="true"
+                                        >
                                             <strong style={{ fontSize: "25px" }}> TO THE STUDENTS: BGS </strong>
                                             promises to help students become independent,
                                             responsible and reliable citizens with high standards of behaviour
                                             and exceptional character.
                                         </p>
-                                        <p>
+                                        <p
+                                            data-aos="fade-right"
+                                            data-aos-delay="900"
+                                            data-aos-duration='1000'
+                                            data-aos-once="true"
+                                        >
                                             <strong style={{ fontSize: "25px" }}>   TO THE PARENTS: BGS </strong>
                                             promises parents that it will provide their
                                             children with an inspiring and engaging learning environment,
                                             with a sound programme in all areas of study, with feedback and
                                             transparency in all student dealings.
                                         </p>
-                                        <p>
+                                        <p
+                                            data-aos="fade-right"
+                                            data-aos-delay="1100"
+                                            data-aos-duration='1000'
+                                            data-aos-once="true"
+                                        >
                                             <strong style={{ fontSize: "25px" }}> TO THE TEACHERS: BGS </strong>
                                             promises to listen to the teachers’ thoughts,
                                             encourage their creativity, believe in their efforts and ideas,
@@ -174,7 +222,14 @@ const Legacy = () => {
                                     <ul>
                                         {LinkList.map((value, index) => {
                                             return (
-                                                <li key={index}>
+                                                <li
+                                                    key={index}
+                                                    data-aos="fade-left"
+                                                    data-aos-delay={index * 200}
+                                                    data-aos-duration='1000'
+                                                    data-aos-easing="linear"
+                                                    data-aos-once="true"
+                                                >
                                                     <a href={value.link}> {value.title} </a>
                                                 </li>
                                             )

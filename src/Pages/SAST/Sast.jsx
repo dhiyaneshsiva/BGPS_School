@@ -69,8 +69,40 @@ const Sast = () => {
                     <div className="sast-container-top">
                         <div className="sast-container-top-title">
                             <h1>
-                                Sri Adichunchanagiri
-                                Shikshana Trust®
+                                <span
+                                    data-aos="fade-down"
+                                    data-aos-delay='100'
+                                    data-aos-duration='1000'
+                                    data-aos-once="true"
+                                >
+                                    Sri
+                                </span>
+                                &nbsp;
+                                <span
+                                    data-aos="fade-down"
+                                    data-aos-delay='300'
+                                    data-aos-duration='1000'
+                                    data-aos-once="true"
+                                >
+                                    Adichunchanagiri
+                                </span>
+                                &nbsp;
+                                <span
+                                    data-aos="fade-down"
+                                    data-aos-delay='500'
+                                    data-aos-duration='1000'
+                                    data-aos-once="true">
+                                    Shikshana
+                                </span>
+                                &nbsp;
+                                <span
+                                    data-aos="fade-up"
+                                    data-aos-delay='700'
+                                    data-aos-duration='1000'
+                                    data-aos-once="true"
+                                >
+                                    Trust®
+                                </span>
                             </h1>
                         </div>
                         <div className="sast-container-top-list">
@@ -78,7 +110,13 @@ const Sast = () => {
                                 {
                                     listTop?.map((value, index) => {
                                         return (
-                                            <li key={index}>
+                                            <li key={index}
+                                                data-aos="fade-right"
+                                                data-aos-delay={index * 200}
+                                                data-aos-duration='1000'
+                                                data-aos-easing="linear"
+                                                data-aos-once="true"
+                                            >
                                                 {value}
                                             </li>
                                             // <BoldSpecificWord key={index} text={value} wordsToBold={wordsToBold} />
@@ -94,7 +132,75 @@ const Sast = () => {
                     <div className="sast-container-bottom">
                         <div className="sast-container-bottom-title">
                             <h1>
-                                Initially the Trust was formed with the aim and objectives as follows:
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='100'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    Initially
+                                </span>
+                                &nbsp;
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='300'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    the
+                                </span>
+                                &nbsp;
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='500'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    Trust
+                                </span>
+                                &nbsp;
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='700'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true">
+                                    was
+                                    formed
+                                </span>
+                                &nbsp;
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='900'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true">
+                                    with the
+                                </span>
+                                &nbsp;
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='1100'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true">
+                                    aim
+                                    and
+                                </span>
+                                &nbsp;
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='1300'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true">
+                                    objectives
+                                    as
+                                    follows:
+                                </span>
                             </h1>
                         </div>
                         <div className="sast-container-bottom-list">
@@ -107,7 +213,13 @@ const Sast = () => {
                                 {
                                     listBottom?.map((value, index) => {
                                         return (
-                                            <List.Item key={index}>
+                                            <List.Item key={index}
+                                                data-aos="fade-right"
+                                                data-aos-delay={index * 200}
+                                                data-aos-duration='1000'
+                                                data-aos-easing="linear"
+                                                data-aos-once="true"
+                                            >
                                                 {value}
                                             </List.Item>
                                         )

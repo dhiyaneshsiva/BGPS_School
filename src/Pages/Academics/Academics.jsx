@@ -8,9 +8,9 @@ import Avatar3 from "../../Assets/avatar.png"
 
 const Academics = () => {
 
-    useEffect(()=>{
-        window.scroll(0,0)
-    },[])
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
 
     const kindergartenPara = [
         ` The Kindergarten programme at BGS PS invites children to
@@ -185,20 +185,134 @@ const Academics = () => {
                             <div className='sec1-kindergarten-div-header-content'>
                                 <div className='sec1-kindergarten-div-header-content-title'>
                                     <h1>
-                                        Kindergarten
+                                        <span
+                                            data-aos="fade-right"
+                                            data-aos-delay='100'
+                                            data-aos-duration='1000'
+                                            data-aos-easing="linear"
+                                            data-aos-once="true"
+                                        >
+                                            k
+                                        </span>
+                                        <span
+                                            data-aos="fade-right"
+                                            data-aos-delay='300'
+                                            data-aos-duration='1000'
+                                            data-aos-easing="linear"
+                                            data-aos-once="true"
+                                        >
+                                            i
+                                        </span>
+                                        <span
+                                            data-aos="fade-right"
+                                            data-aos-delay='500'
+                                            data-aos-duration='1000'
+                                            data-aos-easing="linear"
+                                            data-aos-once="true"
+                                        >
+                                            n
+                                        </span>
+                                        <span
+                                            data-aos="fade-right"
+                                            data-aos-delay='700'
+                                            data-aos-duration='1000'
+                                            data-aos-easing="linear"
+                                            data-aos-once="true"
+                                        >
+                                            d
+                                        </span>
+                                        <span
+                                            data-aos="fade-right"
+                                            data-aos-delay='900'
+                                            data-aos-duration='1000'
+                                            data-aos-easing="linear"
+                                            data-aos-once="true"
+                                        >
+                                            e
+                                        </span>
+                                        <span
+                                            data-aos="fade-right"
+                                            data-aos-delay='1100'
+                                            data-aos-duration='1000'
+                                            data-aos-easing="linear"
+                                            data-aos-once="true"
+                                        >
+                                            r
+                                        </span>
+                                        <span
+                                            data-aos="fade-right"
+                                            data-aos-delay='1300'
+                                            data-aos-duration='1000'
+                                            data-aos-easing="linear"
+                                            data-aos-once="true"
+                                        >
+                                            g
+                                        </span>
+                                        <span
+                                            data-aos="fade-right"
+                                            data-aos-delay='1500'
+                                            data-aos-duration='1000'
+                                            data-aos-easing="linear"
+                                            data-aos-once="true">
+                                            a
+                                        </span>
+                                        <span
+                                            data-aos="fade-right"
+                                            data-aos-delay='1700'
+                                            data-aos-duration='1000'
+                                            data-aos-easing="linear"
+                                            data-aos-once="true">
+                                            r
+                                        </span>
+                                        <span
+                                            data-aos="fade-right"
+                                            data-aos-delay='1900'
+                                            data-aos-duration='1000'
+                                            data-aos-easing="linear"
+                                            data-aos-once="true">
+                                            d
+                                        </span>
+                                        <span
+                                            data-aos="fade-right"
+                                            data-aos-delay='2100'
+                                            data-aos-duration='1000'
+                                            data-aos-easing="linear"
+                                            data-aos-once="true">
+                                            e
+                                        </span>
+                                        <span
+                                            data-aos="fade-right"
+                                            data-aos-delay='2300'
+                                            data-aos-duration='1000'
+                                            data-aos-easing="linear"
+                                            data-aos-once="true">
+                                            n
+                                        </span>
                                     </h1>
                                 </div>
                                 <div className='sec1-kindergarten-div-header-content-para'>
                                     {kindergartenPara.map((value, index) => {
                                         return (
-                                            <p key={index}>
+                                            <p
+                                                data-aos="fade-right"
+                                                data-aos-delay={index * 200}
+                                                data-aos-duration='1000'
+                                                data-aos-easing="linear"
+                                                data-aos-once="true"
+                                                key={index}>
                                                 {value}
                                             </p>
                                         )
                                     })}
                                 </div>
                             </div>
-                            <img src={Avatar1} alt='img'
+                            <img
+                                data-aos="zoom-in"
+                                data-aos-delay='100'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true"
+                                src={Avatar1} alt='img'
                                 className='sec1-kindergarten-div-header-content-img' />
                         </div>
                     </div>
@@ -214,7 +328,13 @@ const Academics = () => {
                                     return (
                                         <div key={index}>
                                             <div className='sec1-kindergarten-div2-content-title'>
-                                                <h1>
+                                                <h1
+                                                    data-aos="fade-right"
+                                                    data-aos-delay='100'
+                                                    data-aos-duration='1000'
+                                                    data-aos-easing="linear"
+                                                    data-aos-once="true"
+                                                >
                                                     {value?.title}
                                                 </h1>
                                             </div>
@@ -222,7 +342,12 @@ const Academics = () => {
                                                 {
                                                     value?.para?.map((para, id) => {
                                                         return (
-                                                            <p key={id}>
+                                                            <p key={id}
+                                                                data-aos="fade-right"
+                                                                data-aos-delay={id * 200}
+                                                                data-aos-duration='1000'
+                                                                data-aos-easing="linear"
+                                                                data-aos-once="true">
                                                                 {para}
                                                             </p>
                                                         )
@@ -241,30 +366,219 @@ const Academics = () => {
 
 
                 {/* Section2 */}
-                
-                    <div className='sec1-primary-school-container'>
-                        <div className='sec1-primary-school-div-header'>
-                            <div className='sec1-primary-school-div-header-content'>
-                                <div className='sec1-primary-school-div-header-content-title'>
-                                    <h1>
-                                        Primary & Middle School
-                                    </h1>
-                                </div>
-                                <div className='sec1-primary-school-div-header-content-para'>
-                                    {primaryPara.map((value, index) => {
-                                        return (
-                                            <p key={index}>
-                                                {value}
-                                            </p>
-                                        )
-                                    })}
-                                </div>
+
+                <div className='sec1-primary-school-container'>
+                    <div className='sec1-primary-school-div-header'>
+                        <div className='sec1-primary-school-div-header-content'>
+                            <div className='sec1-primary-school-div-header-content-title'>
+                                <h1>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='100'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        p
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='300'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        r
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='500'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        i
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='700'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        m
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='900'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        a
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='1100'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        r
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='1300'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        y
+                                    </span>
+                                    &nbsp;
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='1500'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        &
+                                    </span>
+                                    &nbsp;
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='1700'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        m
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='1900'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        i
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='2100'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        d
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='2300'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        d
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='2500'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        l
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='2700'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        e
+                                    </span>
+                                    <br />
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='100'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        s
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='300'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        c
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='500'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        h
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='700'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        o
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='900'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        o
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='1100'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        l
+                                    </span>
+                                    {/* Primary & Middle School */}
+                                </h1>
                             </div>
-                            <img src={Avatar2} alt='img'
-                                className='sec1-primary-school-div-header-content-img' />
+                            <div className='sec1-primary-school-div-header-content-para'>
+                                {primaryPara.map((value, index) => {
+                                    return (
+                                        <p
+                                            data-aos="fade-left"
+                                            data-aos-delay={index * 200}
+                                            data-aos-duration='1000'
+                                            data-aos-easing="linear"
+                                            data-aos-once="true"
+                                            key={index}>
+                                            {value}
+                                        </p>
+                                    )
+                                })}
+                            </div>
                         </div>
+                        <img src={Avatar2} alt='img'
+                            className='sec1-primary-school-div-header-content-img' />
                     </div>
-                
+                </div>
+
 
 
                 {/* Div 2 */}
@@ -273,7 +587,13 @@ const Academics = () => {
                         <div className='sec2-primary-school-content-para'>
                             {Sec2Div2Para.map((value, index) => {
                                 return (
-                                    <p key={index}>
+                                    <p
+                                        data-aos="fade-right"
+                                        data-aos-delay={index * 200}
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                        key={index}>
                                         {value}
                                     </p>
                                 )
@@ -284,14 +604,25 @@ const Academics = () => {
                                 {ListLeft?.map((value, index) => {
                                     return (
                                         <div key={index}>
-                                            <h1>
+                                            <h1
+                                                data-aos="zoom-in"
+                                                data-aos-delay='100'
+                                                data-aos-duration='1000'
+                                                data-aos-easing="linear"
+                                                data-aos-once="true">
                                                 {value?.title}
                                             </h1>
                                             <ol>
                                                 {
                                                     value?.li.map((item, id) => {
                                                         return (
-                                                            <li key={id}>
+                                                            <li
+                                                                data-aos="fade-right"
+                                                                data-aos-delay={id * 300}
+                                                                data-aos-duration='1000'
+                                                                data-aos-easing="linear"
+                                                                data-aos-once="true"
+                                                                key={id}>
                                                                 {item}
                                                             </li>
                                                         )
@@ -307,14 +638,25 @@ const Academics = () => {
                                 {ListRight?.map((value, index) => {
                                     return (
                                         <div key={index}>
-                                            <h1>
+                                            <h1
+                                                data-aos="fade-left"
+                                                data-aos-delay='100'
+                                                data-aos-duration='1000'
+                                                data-aos-easing="linear"
+                                                data-aos-once="true">
                                                 {value?.title}
                                             </h1>
                                             <ol>
                                                 {
                                                     value?.li.map((item, id) => {
                                                         return (
-                                                            <li key={id}>
+                                                            <li
+                                                                data-aos="fade-left"
+                                                                data-aos-delay={id * 300}
+                                                                data-aos-duration='1000'
+                                                                data-aos-easing="linear"
+                                                                data-aos-once="true"
+                                                                key={id}>
                                                                 {item}
                                                             </li>
                                                         )
@@ -334,115 +676,469 @@ const Academics = () => {
 
 
                 {/* Section3 */}
-                
-                    <div className='sec3-secondary-container'>
-                        <div className='sec3-secondary-div-header'>
-                            <div className='sec3-secondary-div-header-content'>
-                                <div className='sec3-secondary-div-header-content-title'>
-                                    <h1>
-                                        Secondary & Senior Secondary School
-                                    </h1>
-                                </div>
-                                <div className='sec3-secondary-div-header-content-para'>
-                                    {secondaryPara.map((value, index) => {
+
+                <div className='sec3-secondary-container'>
+                    <div className='sec3-secondary-div-header'>
+                        <div className='sec3-secondary-div-header-content'>
+                            <div className='sec3-secondary-div-header-content-title'>
+                                <h1>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='100'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        s
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='300'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        e
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='500'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        c
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='700'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        o
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='900'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        n
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='1100'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        d
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='1300'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        a
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='1500'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        r
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='1700'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        y
+                                    </span>
+                                    &nbsp;
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='1900'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        &
+                                    </span>
+                                    &nbsp;
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='2100'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        s
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='2300'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        e
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='2500'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        n
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='2700'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        i
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='2900'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        o
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='3000'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        r
+                                    </span>
+                                    <br />
+
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='100'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        s
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='300'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        e
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='500'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        c
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='700'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        o
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='900'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        n
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='1100'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        d
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='1300'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        a
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='1500'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        r
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='1700'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        y
+                                    </span>
+                                    &nbsp;
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='1900'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        s
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='2100'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        c
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='2300'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        h
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='2500'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        o
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='2700'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        o
+                                    </span>
+                                    <span
+                                        data-aos="fade-left"
+                                        data-aos-delay='2900'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        l
+                                    </span>
+                                    {/* Secondary & Senior Secondary School */}
+                                </h1>
+                            </div>
+                            <div className='sec3-secondary-div-header-content-para'>
+                                {secondaryPara.map((value, index) => {
+                                    return (
+                                        <p
+                                            data-aos="fade-left"
+                                            data-aos-delay={index * 200}
+                                            data-aos-duration='1000'
+                                            data-aos-easing="linear"
+                                            data-aos-once="true"
+                                            key={index}>
+                                            {value}
+                                        </p>
+                                    )
+                                })}
+                            </div>
+                        </div>
+                        <img src={Avatar3} alt='img'
+                            className='sec3-secondary-div-header-content-img' />
+                    </div>
+                </div>
+                {/* Div2 */}
+                <div className='sec3-secondary-div2-container'>
+                    <div className='sec3-secondary-div2-content'>
+                        <div className='sec3-secondary-div2-content-dub-div1'>
+                            <div className='sec3-secondary-div2-content-dub-div1-title'>
+                                <h1
+                                    data-aos="fade-right"
+                                    data-aos-delay='100'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true">
+                                    Subjects for Grades IX & X:
+                                </h1>
+                            </div>
+                            <div className='sec3-secondary-div2-content-dub-div1-list'>
+                                <ul>
+                                    {sec3List1.map((value, index) => {
                                         return (
-                                            <p key={index}>
+                                            <li
+                                                data-aos="fade-right"
+                                                data-aos-delay={index * 200}
+                                                data-aos-duration='1000'
+                                                data-aos-easing="linear"
+                                                data-aos-once="true"
+                                                key={index}>
                                                 {value}
-                                            </p>
+                                            </li>
                                         )
                                     })}
-                                </div>
+                                </ul>
                             </div>
-                            <img src={Avatar3} alt='img'
-                                className='sec3-secondary-div-header-content-img' />
                         </div>
-                    </div>
-                    {/* Div2 */}
-                    <div className='sec3-secondary-div2-container'>
-                        <div className='sec3-secondary-div2-content'>
-                            <div className='sec3-secondary-div2-content-dub-div1'>
-                                <div className='sec3-secondary-div2-content-dub-div1-title'>
-                                    <h1>
-                                        Subjects for Grades IX & X:
+                        <div className='sec3-secondary-div2-content-sub-div1'>
+                            <h1
+                                data-aos="zoom-in"
+                                data-aos-delay='100'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true"
+                            >
+                                Streams offered in Grade IX and Grade XII
+                            </h1>
+                        </div>
+                        <div className='sec3-secondary-div2-content-sub-div2'>
+                            <div className='sec3-secondary-div2-content-sub-div2-left'>
+                                <div className='sec3-secondary-div2-content-sub-div2-left-title'>
+                                    <h1
+                                        data-aos="fade-right"
+                                        data-aos-delay='100'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true">
+                                        Science stream
                                     </h1>
                                 </div>
-                                <div className='sec3-secondary-div2-content-dub-div1-list'>
+                                <div className='sec3-secondary-div2-content-sub-div2-left-para'>
+                                    <h3
+                                        data-aos="fade-right"
+                                        data-aos-delay='300'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true">
+                                        There are two programmes offered under the Science stream.
+                                    </h3>
                                     <ul>
-                                        {sec3List1.map((value, index) => {
-                                            return (
-                                                <li key={index}>
-                                                    {value}
-                                                </li>
-                                            )
-                                        })}
+                                        <li
+                                            data-aos="fade-right"
+                                            data-aos-delay='500'
+                                            data-aos-duration='1000'
+                                            data-aos-easing="linear"
+                                            data-aos-once="true">
+                                            Integrated course (partnered with Aakash institute)
+                                            – Aakash Institute has partnered with BGS PS to provide
+                                            an integrated teaching approach and train them to
+                                            compete in the IIT-JEE and NEET.
+                                        </li>
+                                        <li
+                                            data-aos="fade-right"
+                                            data-aos-delay='700'
+                                            data-aos-duration='1000'
+                                            data-aos-easing="linear"
+                                            data-aos-once="true">
+                                            Non-integrated course
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className='sec3-secondary-div2-content-sub-div2-left-para'>
+                                    <h3
+                                        data-aos="fade-right"
+                                        data-aos-delay='100'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true">
+                                        Groups offered for both the programmes will be the same.
+                                    </h3>
+                                    <ul>
+                                        <li
+                                            data-aos="fade-right"
+                                            data-aos-delay='300'
+                                            data-aos-duration='1000'
+                                            data-aos-easing="linear"
+                                            data-aos-once="true"
+                                        >
+                                            Group 1 – Physics, Chemistry, Mathematics & optional
+                                            subject (Biology or Computer Science or Physical Education)
+                                        </li>
+                                        <li
+                                            data-aos="fade-right"
+                                            data-aos-delay='500'
+                                            data-aos-duration='1000'
+                                            data-aos-easing="linear"
+                                            data-aos-once="true">
+                                            Group 2 – Physics, Chemistry, Biology, & optional subject
+                                            (Mathematics or Physical Education)
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
-                            <div className='sec3-secondary-div2-content-sub-div1'>
-                                <h1>
-                                    Streams offered in Grade IX and Grade XII
-                                </h1>
-                            </div>
-                            <div className='sec3-secondary-div2-content-sub-div2'>
-                                <div className='sec3-secondary-div2-content-sub-div2-left'>
-                                    <div className='sec3-secondary-div2-content-sub-div2-left-title'>
-                                        <h1>
-                                            Science stream
-                                        </h1>
-                                    </div>
-                                    <div className='sec3-secondary-div2-content-sub-div2-left-para'>
-                                        <h3>
-                                            There are two programmes offered under the Science stream.
-                                        </h3>
-                                        <ul>
-                                            <li>
-                                                Integrated course (partnered with Aakash institute)
-                                                – Aakash Institute has partnered with BGS PS to provide
-                                                an integrated teaching approach and train them to
-                                                compete in the IIT-JEE and NEET.
-                                            </li>
-                                            <li>
-                                                Non-integrated course
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className='sec3-secondary-div2-content-sub-div2-left-para'>
-                                        <h3>
-                                            Groups offered for both the programmes will be the same.
-                                        </h3>
-                                        <ul>
-                                            <li>
-                                                Group 1 – Physics, Chemistry, Mathematics & optional
-                                                subject (Biology or Computer Science or Physical Education)
-                                            </li>
-                                            <li>
-                                                Group 2 – Physics, Chemistry, Biology, & optional subject
-                                                (Mathematics or Physical Education)
-                                            </li>
-                                        </ul>
-                                    </div>
+                            <div className='sec3-secondary-div2-content-sub-div2-right'>
+                                <div className='sec3-secondary-div2-content-sub-div2-right-title'>
+                                    <h1
+                                        data-aos="fade-left"
+                                        data-aos-delay='100'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true">
+                                        Science stream
+                                    </h1>
                                 </div>
-                                <div className='sec3-secondary-div2-content-sub-div2-right'>
-                                    <div className='sec3-secondary-div2-content-sub-div2-right-title'>
-                                        <h1>
-                                            Science stream
-                                        </h1>
-                                    </div>
-                                    <div className='sec3-secondary-div2-content-sub-div2-right-para'>
-                                        <ul>
-                                            <li>
-                                                Group 3 – Economics, Accountancy, Business Studies and
-                                                Optional subject (Applied Mathematics/Computer Science/
-                                                Physical Education)
-                                            </li>
-                                        </ul>
-                                    </div>
+                                <div className='sec3-secondary-div2-content-sub-div2-right-para'>
+                                    <ul>
+                                        <li
+                                            data-aos="fade-left"
+                                            data-aos-delay='300'
+                                            data-aos-duration='1000'
+                                            data-aos-easing="linear"
+                                            data-aos-once="true"
+                                        >
+                                            Group 3 – Economics, Accountancy, Business Studies and
+                                            Optional subject (Applied Mathematics/Computer Science/
+                                            Physical Education)
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    {/* Div2 End */}
-                
+                </div>
+                {/* Div2 End */}
+
                 {/* Section3 End */}
 
             </div>

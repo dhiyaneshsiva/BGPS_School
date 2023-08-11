@@ -338,9 +338,16 @@ const Staff = () => {
                         {
                             ImageData?.map((value, index) => {
                                 return (
-                                    <Card className="staffdetails-grid-card">
+                                    <Card
+                                        data-aos="fade-right"
+                                        key={index}
+                                        data-aos-delay={index * 100}
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                        className="staffdetails-grid-card">
                                         <Card.Section>
-                                            <img src={value?.image} alt='Staff-Image' />
+                                            <img src={value?.image} alt='Staff' />
                                         </Card.Section>
                                         <h3>
                                             {value?.name}

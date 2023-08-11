@@ -135,81 +135,127 @@ const CoCurricular = () => {
 
                 {/* Section 1 */}
 
-                
-                    <div className="co-curricular-head">
-                        <div className="co-curricular-head-content">
-                            <div className="co-curricular-head-content-title">
-                                Co-Curricular
-                            </div>
-                            <div className="co-curricular-head-content-para">
-                                <h5>It helps in building skills.</h5>
-                                <p>
-                                    Skills like teamwork, leadership, patience,
-                                    discipline, learning from failure, Sportsmanship,
-                                    etc., are developed only when children play
-                                    sports regularly, and these skills are equally
-                                    important when it comes to studies and management.
-                                </p>
-                            </div>
-                            <div className="co-curricular-head-content-grid">
-                                <ul>
-                                    {ListGrid?.map((value, index) => {
-                                        return (
-                                            <>
-                                                <li key={index}>
-                                                    <img src={value.icon} alt="Play-Icons" />
-                                                    <p>{value.count}</p>
-                                                    <h5>{value.title}</h5>
-                                                </li>
-                                            </>
-                                        )
-                                    })}
-                                </ul>
-                            </div>
+
+                <div className="co-curricular-head">
+                    <div className="co-curricular-head-content">
+                        <div
+                            data-aos="zoom-in"
+                            data-aos-delay='100'
+                            data-aos-duration='1000'
+                            data-aos-easing="linear"
+                            data-aos-once="true"
+                            className="co-curricular-head-content-title">
+                            Co-Curricular
                         </div>
-                        <img src={Avatar} alt='Avatar' className='Avatar' />
-                        <img src={Feather} alt='Feather' className='Feather' />
+                        <div className="co-curricular-head-content-para">
+                            <h5
+                                data-aos="fade-left"
+                                data-aos-delay='300'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true"
+                            >It helps in building skills.</h5>
+                            <p
+                                data-aos="fade-left"
+                                data-aos-delay='500'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true">
+                                Skills like teamwork, leadership, patience,
+                                discipline, learning from failure, Sportsmanship,
+                                etc., are developed only when children play
+                                sports regularly, and these skills are equally
+                                important when it comes to studies and management.
+                            </p>
+                        </div>
+                        <div className="co-curricular-head-content-grid">
+                            <ul>
+                                {ListGrid?.map((value, index) => {
+                                    return (
+                                        <>
+                                            <li
+                                                data-aos="fade-right"
+                                                data-aos-delay={index * 200}
+                                                data-aos-duration='1000'
+                                                data-aos-easing="linear"
+                                                data-aos-once="true"
+                                                key={index}>
+                                                <img src={value.icon} alt="Play-Icons" />
+                                                <p>{value.count}</p>
+                                                <h5>{value.title}</h5>
+                                            </li>
+                                        </>
+                                    )
+                                })}
+                            </ul>
+                        </div>
                     </div>
-                
+                    <img src={Avatar} alt='Avatar' className='Avatar' />
+                    <img src={Feather} alt='Feather' className='Feather' />
+                </div>
+
 
                 {/* Section 1 End */}
 
                 {/* Section 2 */}
 
-                
-                    <div className="co-curricular-container">
-                        {
-                            Grid?.map((value, index) => {
-                                return (
-                                    <div key={index} className='co-curricular-container-display'>
-                                        <div className="co-curricular-container-img">
-                                            <img src={value.icon} alt="Content" />
-                                        </div>
-                                        <div className="co-curricular-container-content">
-                                            <div>
-                                                <h2>
-                                                    {value.title}
-                                                </h2>
 
-                                                <p>
-                                                    {value.para}
-                                                </p>
-                                                <br />
-                                                <Center>
-                                                    <Link className="router-link" to={value.path}>
-                                                        <Button className='co-curricular-container-see-more-btn'>
-                                                            See More
-                                                        </Button>
-                                                    </Link>
-                                                </Center>
-                                            </div>
+                <div className="co-curricular-container">
+                    {
+                        Grid?.map((value, index) => {
+                            return (
+                                <div key={index} className='co-curricular-container-display'>
+                                    <div className="co-curricular-container-img">
+                                        <img
+                                            data-aos="zoom-in"
+                                            data-aos-delay='100'
+                                            data-aos-duration='1000'
+                                            data-aos-easing="linear"
+                                            data-aos-once="true"
+                                            src={value.icon} alt="Content" />
+                                    </div>
+                                    <div className="co-curricular-container-content">
+                                        <div>
+                                            <h2
+                                                data-aos="fade-left"
+                                                data-aos-delay={index * 200}
+                                                data-aos-duration='1000'
+                                                data-aos-easing="linear"
+                                                data-aos-once="true"
+                                            >
+                                                {value.title}
+                                            </h2>
+                                            <p
+                                                data-aos="fade-left"
+                                                data-aos-delay={index * 200}
+                                                data-aos-duration='1000'
+                                                data-aos-easing="linear"
+                                                data-aos-once="true"
+                                            >
+                                                {value.para}
+                                            </p>
+                                            <br />
+                                            <Center>
+                                                <Link className="router-link" to={value.path}>
+                                                    <Button
+                                                        data-aos="zoom-in"
+                                                        data-aos-delay={index * 200}
+                                                        data-aos-duration='1000'
+                                                        data-aos-easing="linear"
+                                                        data-aos-once="true"
+                                                        className='co-curricular-container-see-more-btn'>
+                                                        See More
+                                                    </Button>
+                                                </Link>
+                                            </Center>
                                         </div>
                                     </div>
-                                )
-                            })
-                        }
-                    </div>
-                
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+
 
                 {/* Section 2 end */}
 

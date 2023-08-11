@@ -35,11 +35,80 @@ const Careers = () => {
                         <div className='careers-sec1-content'>
                             <div className='careers-sec1-container-title'>
                                 <h1>
-                                    Careers
+                                    <span
+                                        data-aos="fade-right"
+                                        data-aos-delay='100'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        C
+                                    </span>
+                                    <span
+                                        data-aos="fade-right"
+                                        data-aos-delay='300'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        a
+                                    </span>
+                                    <span
+                                        data-aos="fade-right"
+                                        data-aos-delay='500'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        r
+                                    </span>
+                                    <span
+                                        data-aos="fade-right"
+                                        data-aos-delay='700'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        e
+                                    </span>
+                                    <span
+                                        data-aos="fade-right"
+                                        data-aos-delay='900'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        e
+                                    </span>
+                                    <span
+                                        data-aos="fade-right"
+                                        data-aos-delay='1100'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        r
+                                    </span>
+                                    <span
+                                        data-aos="fade-right"
+                                        data-aos-delay='1300'
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                    >
+                                        s
+                                    </span>
+                                    {/* Careers */}
                                 </h1>
                             </div>
                             <div className='careers-sec1-container-para'>
-                                <p>
+                                <p
+                                    data-aos="fade-right"
+                                    data-aos-delay='100'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
                                     We at the BGS Public School are institutions of
                                     excellence built on the trinity of exceptional
                                     curriculum, outstanding co-curricular, and deep
@@ -49,7 +118,13 @@ const Careers = () => {
                                     by teachers to become confident young adults, by
                                     identifying their individual unique potentials.
                                 </p>
-                                <p>
+                                <p
+                                    data-aos="fade-right"
+                                    data-aos-delay='300'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
                                     The BGS Public School invites you to become an integral
                                     part of our endeavor to shape and mold young minds. You
                                     will be joining an institution with a wholehearted
@@ -59,13 +134,25 @@ const Careers = () => {
                                     ones. If education is a subject you are passionate
                                     about, do reach out to us to indicate your interest.
                                 </p>
-                                <p>
+                                <p
+                                    data-aos="fade-right"
+                                    data-aos-delay='500'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
                                     We are an equal opportunity employer, and our school is
                                     equipped with the latest in state-of-the-art educational
                                     aids. We promise attractive remuneration packages for our
                                     staff along with growth opportunities.
                                 </p>
-                                <p>
+                                <p
+                                    data-aos="fade-right"
+                                    data-aos-delay='700'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
                                     We are always looking for exceptional people who will
                                     enrich our school environment. If you think you have the
                                     experience and attitude to make a critical difference,
@@ -80,7 +167,13 @@ const Careers = () => {
                             ImageGrid.map((value, index) => {
                                 return (
                                     <div className='careers-sec1-image-grid-img'>
-                                        <img key={index} src={value} alt='img' />
+                                        <img
+                                            data-aos="fade-right"
+                                            data-aos-delay={index * 200}
+                                            data-aos-duration='1000'
+                                            data-aos-easing="linear"
+                                            data-aos-once="true"
+                                            key={index} src={value} alt='img' />
                                     </div>
                                 )
                             })

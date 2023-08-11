@@ -36,7 +36,9 @@ import { Button, Center, Input, Modal, Select } from '@mantine/core'
 
 // Tabler Icons
 import { ChevronDown, DiscountCheck, FaceIdError } from 'tabler-icons-react'
-import axios from 'axios'
+
+// Typical
+import Typical from "react-typical"
 
 const Home = () => {
   useEffect(() => {
@@ -147,16 +149,42 @@ const Home = () => {
       }, 3000)
     }
     else {
-      setErrors(false)
-      setFormResultModal(true)
-      setFormModal(false)
-      setInterval(() => {
-        setFormResultModal(false)
-      }, 3000)
-      setInterval(() => {
-        localStorage.removeItem('form')
-      }, 60 * 1000)
-      window.localStorage.setItem('form', true)
+      const { name, classStandard, dateOfBirth, parentsName, emailId, number } = studentsData
+      const FetchAPI = fetch('https://bgspcontactform-default-rtdb.firebaseio.com/BGSP.json',
+        {
+          method: "POST",
+          header: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            Name: name,
+            Date_of_Birth: dateOfBirth,
+            Adimission_Standard: classStandard,
+            Parents_Name: parentsName,
+            Email_id: emailId,
+            Contact_Number: number,
+            Form_Submited_Date: new Date()
+          })
+        })
+      if (FetchAPI) {
+        setErrors(false)
+        setFormResultModal(true)
+        setFormModal(false)
+        setInterval(() => {
+          setFormResultModal(false)
+        }, 3000)
+        setInterval(() => {
+          localStorage.removeItem('form')
+        }, 60 * 1000)
+        window.localStorage.setItem('form', true)
+      }
+      else {
+        setErrors(true)
+        setFormResultModal(true)
+        setInterval(() => {
+          setFormResultModal(false)
+        }, 3000)
+      }
     }
   }
 
@@ -181,9 +209,72 @@ const Home = () => {
       result
     )
   }
+
+
+  // Register Data
+  const [registerDetails, setRegisterDetails] = useState({
+    name: '',
+    email: '',
+    number: '',
+    message: '',
+  })
+
+  const handleRegister = (e) => {
+    e.preventDefault()
+    if (registerDetails.email === '' || registerDetails.name === '' ||
+      registerDetails.message === '' || registerDetails.number === "") {
+      setErrors(true)
+      setFormResultModal(true)
+      setInterval(() => {
+        setFormResultModal(false)
+      }, 3000)
+    }
+    else {
+      const {
+        name,
+        email,
+        number,
+        message } = registerDetails
+      const FetchAPI = fetch('https://bdspregisterform-default-rtdb.firebaseio.com/BGSP.json',
+        {
+          method: "POST",
+          header: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            Name: name,
+            Email_id: email,
+            Contact_Number: number,
+            Message: message,
+            Form_Submited_Date: new Date()
+          })
+        }
+      ).finally(() => setRegisterDetails({
+        name: '',
+        email: '',
+        number: '',
+        message: '',
+      }))
+      if (FetchAPI) {
+        setErrors(false)
+        setFormResultModal(true)
+        setInterval(() => {
+          setFormResultModal(false)
+        }, 3000)
+      }
+      else {
+        setErrors(true)
+        setFormResultModal(true)
+        setInterval(() => {
+          setFormResultModal(false)
+        }, 3000)
+      }
+    }
+  }
   return (
     <div>
-      <Modal zIndex={1099} onClose={close} opened={formResultModal} centered withCloseButton={false} className='Error-modal' >
+      <Modal
+        zIndex={1099} onClose={close} opened={formResultModal} centered withCloseButton={false} className='Error-modal' >
         <Center>
           {
             errors ? (
@@ -284,27 +375,54 @@ const Home = () => {
         <div className='sec-1-left'>
           <div className='sec-1-left-1'>
             <div className='sec-1-left-1-img'>
-              <img src={Logo} alt='Logo' />
+              <img
+                data-aos="fade-right"
+                data-aos-delay="100"
+                data-aos-duration='1000'
+                data-aos-once="true"
+                src={Logo} alt='Logo' />
             </div>
             <div className='sec-1-left-1-content'>
-              <p>
+              <p
+                data-aos="fade-right"
+                data-aos-delay="100"
+                data-aos-duration='1000'
+                data-aos-once="true">
                 Sri Adichanagiri
               </p>
-              <p>
+              <p data-aos="fade-right"
+                data-aos-delay="300"
+                data-aos-duration='1000'
+                data-aos-once="true">
                 B G S Public School
               </p>
-              <p>
+              <p data-aos="fade-right"
+                data-aos-delay="500"
+                data-aos-duration='1000'
+                data-aos-once="true">
                 Affiliated To CSE New Delhi,
                 Affiliation NO. 830254
               </p>
             </div>
           </div>
           <div className='sec-1-left-2'>
-            <h2>"Service to mankind </h2>
-            <h2> &nbsp;is service to God"</h2>
+            <h2
+              data-aos="fade-right"
+              data-aos-delay="700"
+              data-aos-duration='1000'
+              data-aos-once="true">"Service to mankind </h2>
+            <h2
+              data-aos="fade-right"
+              data-aos-delay="900"
+              data-aos-duration='1000'
+              data-aos-once="true"> &nbsp;is service to God"</h2>
           </div>
           <div className='sec-1-left-3'>
-            <p>
+            <p
+              data-aos="fade-right"
+              data-aos-delay="1100"
+              data-aos-duration='1000'
+              data-aos-once="true">
               BGS Public School, which was founded in 2006 by His Holiness Padma {Query ? "" : <br />}
               Bhushana Jadaguru Sri Sri Sri Dr. Balagangadharanatha Swamiji {Query ? "" : <br />}
               under the aegis of Sri Adichunchanagiri Shikshana Trust, {Query ? "" : <br />}
@@ -313,7 +431,12 @@ const Home = () => {
         </div>
         <div className='sec-1-right'>
           <div className='sec-1-right-peacock'>
-            <img src={Peakcock} alt="Peacock" />
+            <img
+              data-aos="zoom-in-up"
+              data-aos-delay="1300"
+              data-aos-duration='1000'
+              data-aos-once="true"
+              src={Peakcock} alt="Peacock" />
           </div>
         </div>
       </div>
@@ -325,13 +448,21 @@ const Home = () => {
       <div className='sec-2'>
         <div className='sec-2-left'>
           <div className='sec-2-left-title'>
-            <h3>
+            <h3
+              data-aos="fade-right"
+              data-aos-delay="100"
+              data-aos-duration='1000'
+              data-aos-once="true">
               Welcome to BGS <br />
               Public School
             </h3>
           </div>
           <div className='sec-2-left-content'>
-            <p>
+            <p
+              data-aos="fade-right"
+              data-aos-delay="300"
+              data-aos-duration='1000'
+              data-aos-once="true">
               BGS Public School, which was founded in 2006
               by His Holiness Padma
               Bhushana Jagadguru Sri Sri Sri Dr.Balagangadharanatha
@@ -346,7 +477,11 @@ const Home = () => {
             </p>
           </div>
           <div className='sec-2-left-button'>
-            <button>
+            <button
+              data-aos="fade-right"
+              data-aos-delay="500"
+              data-aos-duration='1000'
+              data-aos-once="true">
               <Link style={{ textDecoration: "none", color: "black" }} to='/about'>
                 See More
               </Link>
@@ -355,16 +490,34 @@ const Home = () => {
         </div>
         <div className='sec-2-right'>
           <div className='sec-2-right-box'>
-            <img src={green_Box} alt="box" />
-            <img src={Bgs_Letter} alt='BGS' />
+            <img
+              data-aos="zoomi-in"
+              data-aos-delay="100"
+              data-aos-duration='1000'
+              data-aos-once="true"
+              src={green_Box} alt="box" />
+            <img
+              data-aos="zoomi-in"
+              data-aos-delay="300"
+              data-aos-duration='1000'
+              data-aos-once="true"
+              src={Bgs_Letter} alt='BGS' />
           </div>
           <div className='sec-2-right-content'>
             <div className='sec-2-right-title'>
-              <h1>
+              <h1
+                data-aos="fade-left"
+                data-aos-delay="100"
+                data-aos-duration='1000'
+                data-aos-once="true">
                 Our Mission
               </h1>
             </div>
-            <div className='sec-2-right-para'>
+            <div className='sec-2-right-para'
+              data-aos="fade-left"
+              data-aos-delay="300"
+              data-aos-duration='1000'
+              data-aos-once="true">
               To provide excellent child-centered and value-based
               education to all the children in our care so
               that they grow up to be knowledgeable,
@@ -374,7 +527,12 @@ const Home = () => {
             </div>
           </div>
           <div className='sec-2-right-girl'>
-            <img src={Girl} alt='Avatar' />
+            <img
+              data-aos="zoom-in-up"
+              data-aos-delay="500"
+              data-aos-duration='1000'
+              data-aos-once="true"
+              src={Girl} alt='Avatar' />
           </div>
         </div>
       </div>
@@ -390,11 +548,20 @@ const Home = () => {
       <div className='sec-3'>
         <div className='sec-3-top'>
           <div className='sec-3-top-left'>
-            <h1>
+            <h1
+              data-aos="fade-down"
+              data-aos-delay="100"
+              data-aos-duration='1000'
+              data-aos-once="true"
+            >
               School Topper's
             </h1>
             <p>
-              <i>
+              <i
+                data-aos="fade-down"
+                data-aos-delay="300"
+                data-aos-duration='1000'
+                data-aos-once="true">
                 Congratulate All The Students For <br />
                 Their Outstanding Performance
               </i>
@@ -402,18 +569,34 @@ const Home = () => {
           </div>
           <div className='sec-3-top-right'>
             <div className='sec-3-top-right-top'>
-              <h3>
+              <h3
+                data-aos="zoom-in"
+                data-aos-delay="500"
+                data-aos-duration='1000'
+                data-aos-once="true">
                 CLASS
               </h3>
-              <h1>
+              <h1
+                data-aos="zoom-in"
+                data-aos-delay="700"
+                data-aos-duration='1000'
+                data-aos-once="true">
                 10
               </h1>
-              <h3>
+              <h3
+                data-aos="zoom-in"
+                data-aos-delay="900"
+                data-aos-duration='1000'
+                data-aos-once="true">
                 RESULTS
               </h3>
             </div>
             <div className='sec-3-top-right-bottom'>
-              <h1>
+              <h1
+                data-aos="zoom-in"
+                data-aos-delay="1100"
+                data-aos-duration='1000'
+                data-aos-once="true">
                 CBSE
               </h1>
             </div>
@@ -423,21 +606,29 @@ const Home = () => {
           <div className='sec-3-bottom-top3'>
             {
               data?.map((value, index) => {
+                const aosConfig = {
+                  dataAos: "fade-down",
+                  dataAosDelay: index * 200,
+                  dataAosDuration: '1000',
+                }
                 return (
-                  <>
-                    <div key={index}
-                      className='sec-3-bottom-toppers-container'>
-                      <div className='sec-3-bottom-toppers-img'>
-                        <img src={value.icon} alt='Imag' />
-                      </div>
-                      <h1>
-                        {value.name}
-                      </h1>
-                      <i>
-                        {value.mark}
-                      </i>
+                  <div key={index}
+                    data-aos={aosConfig.dataAos}
+                    data-aos-delay={aosConfig.dataAosDelay}
+                    data-aos-duration={aosConfig.dataAosDuration}
+                    data-aos-once="true"
+                    data-aos-easing="linear"
+                    className='sec-3-bottom-toppers-container'>
+                    <div className='sec-3-bottom-toppers-img'>
+                      <img src={value.icon} alt='Imag' />
                     </div>
-                  </>
+                    <h1>
+                      {value.name}
+                    </h1>
+                    <i>
+                      {value.mark}
+                    </i>
+                  </div>
                 )
               })
             }
@@ -445,22 +636,30 @@ const Home = () => {
           <div className='sec-3-bottom-toppers-2'>
             {
               list?.map((value, index) => {
+                const aosConfig = {
+                  dataAos: "fade-down",
+                  dataAosDelay: index * 200,
+                  dataAosDuration: '1000',
+                }
                 return (
-                  <>
-                    <div
-                      key={index}
-                      className='sec-3-bottom-toppers-container'>
-                      <div className='sec-3-bottom-toppers-img'>
-                        <img src={value.icon} alt='Images' />
-                      </div>
-                      <h1>
-                        {value.name}
-                      </h1>
-                      <i>
-                        {value.mark}
-                      </i>
+                  <div
+                    data-aos={aosConfig.dataAos}
+                    data-aos-delay={aosConfig.dataAosDelay}
+                    data-aos-duration={aosConfig.dataAosDuration}
+                    data-aos-once="true"
+                    data-aos-easing="linear"
+                    key={index}
+                    className='sec-3-bottom-toppers-container'>
+                    <div className='sec-3-bottom-toppers-img'>
+                      <img src={value.icon} alt='Images' />
                     </div>
-                  </>
+                    <h1>
+                      {value.name}
+                    </h1>
+                    <i>
+                      {value.mark}
+                    </i>
+                  </div>
                 )
               })
             }
@@ -518,11 +717,28 @@ const Home = () => {
               </h1>
             </div>
             <div className='sec-4-container-5-form'>
-              <form>
-                <input className='form-input' placeholder='Name' />
-                <input className='form-input' placeholder='Email' />
-                <input className='form-input' placeholder='Phone No' />
-                <input className='form-input' placeholder='Message' />
+              {console.log(registerDetails)}
+              <form onSubmit={(e) => handleRegister(e)}>
+                <input
+                  onChange={(e) => setRegisterDetails({ ...registerDetails, name: e.target.value })}
+                  className='form-input'
+                  value={registerDetails.name}
+                  placeholder='Name' />
+                <input
+                  onChange={(e) => setRegisterDetails({ ...registerDetails, email: e.target.value })}
+                  className='form-input'
+                  value={registerDetails.email}
+                  placeholder='Email' />
+                <input
+                  onChange={(e) => setRegisterDetails({ ...registerDetails, number: e.target.value })}
+                  className='form-input'
+                  value={registerDetails.number}
+                  placeholder='Phone No' />
+                <input
+                  onChange={(e) => setRegisterDetails({ ...registerDetails, message: e.target.value })}
+                  className='form-input'
+                  value={registerDetails.message}
+                  placeholder='Message' />
                 <button>
                   Submit
                 </button>

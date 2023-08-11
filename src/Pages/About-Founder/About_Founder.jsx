@@ -82,14 +82,29 @@ const AboutFounder = () => {
             <div className="about-founder-page">
                 <div className="about-founder-container">
                     <div className="about-founder-container-top">
-                        <h2>
+                        <h2
+                            data-aos="fade-down"
+                            data-aos-delay='100'
+                            data-aos-duration='1000'
+                            data-aos-easing="linear"
+                            data-aos-once="true">
                             Message From The Management Members
                         </h2>
                         <ul>
                             {
                                 List?.map((value, index) => {
+                                    const aosConfig = {
+                                        delay: index * 200
+                                    }
                                     return (
-                                        <li key={index}>
+                                        <li
+                                            key={index}
+                                            data-aos="fade-right"
+                                            data-aos-delay={aosConfig.delay}
+                                            data-aos-duration='1000'
+                                            data-aos-easing="linear"
+                                            data-aos-once="true"
+                                        >
                                             {value}
                                         </li>
                                     )
@@ -98,23 +113,33 @@ const AboutFounder = () => {
                         </ul>
                     </div>
                     <div className="about-founder-container-bottom">
-                        <h1>
+                        <h1
+                            data-aos="fade-down"
+                            data-aos-delay='100'
+                            data-aos-duration='1000'
+                            data-aos-easing="linear"
+                            data-aos-once="true"
+                        >
                             About the Founder
                         </h1>
                         <div className="about-founder-container-bottom-grid">
                             {
                                 Founders?.map((value, index) => {
                                     return (
-                                        <>
-                                            <div key={index} className="about-founder-container-bottom-grid-box">
-                                                <div className="about-founder-container-bottom-grid-box-img">
-                                                    <img src={value.icon} alt="Founders" />
-                                                </div>
-                                                <p>
-                                                    {value.title}
-                                                </p>
+                                        <div
+                                            data-aos="fade-up"
+                                            data-aos-delay={`${index * 200}`}
+                                            data-aos-duration='1000'
+                                            data-aos-easing="linear"
+                                            data-aos-once="true"
+                                            key={index} className="about-founder-container-bottom-grid-box">
+                                            <div className="about-founder-container-bottom-grid-box-img">
+                                                <img src={value.icon} alt="Founders" />
                                             </div>
-                                        </>
+                                            <p>
+                                                {value.title}
+                                            </p>
+                                        </div>
                                     )
                                 })
                             }
@@ -122,7 +147,7 @@ const AboutFounder = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

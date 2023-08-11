@@ -265,204 +265,348 @@ const Studentlife = () => {
                 <div className="studentlife-container">
 
                     {/* Section 1 */}
-                    
-                        <div className="studentlife-container-top">
-                            <div className="studentlife-container-top-div1">
-                                <h1>
-                                    Student Life
-                                </h1>
-                                <p>
-                                    Skills like teamwork, leadership, patience,
-                                    discipline, learning from failure, Sportsmanship,
-                                    etc., are developed only when children play sports
-                                    regularly, and these skills are equally important
-                                    when it comes to studies and management.
-                                </p>
-                            </div>
-                            <div className="studentlife-container-top-div2">
-                                <ul>
-                                    {
-                                        list?.map((value, index) => {
-                                            return (
-                                                <li key={index}
-                                                    ref={listNumber.current[index]}
-                                                    onMouseOver={() => setCurrentNumberList(index)}>
-                                                    <h2>
-                                                        {value.title}
-                                                    </h2>
-                                                    <p>
-                                                        {value.nameValue}
-                                                    </p>
-                                                </li>
-                                            )
-                                        })
-                                    }
-                                </ul>
-                            </div>
+
+                    <div className="studentlife-container-top">
+                        <div className="studentlife-container-top-div1">
+                            <h1>
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='100'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    s
+                                </span>
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='300'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    t
+                                </span>
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='500'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    u
+                                </span>
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='700'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    d
+                                </span>
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='900'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    e
+                                </span>
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='1100'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    n
+                                </span>
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='1300'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    t
+                                </span>
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='1500'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    s
+                                </span>
+                                &nbsp;
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='1700'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    l
+                                </span>
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='1900'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    i
+                                </span>
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='2100'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    f
+                                </span>
+                                <span
+                                    data-aos="fade-right"
+                                    data-aos-delay='2300'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                >
+                                    e
+                                </span>
+                                {/* Student Life */}
+                            </h1>
+                            <p
+                                data-aos="fade-right"
+                                data-aos-delay='2500'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true">
+                                Skills like teamwork, leadership, patience,
+                                discipline, learning from failure, Sportsmanship,
+                                etc., are developed only when children play sports
+                                regularly, and these skills are equally important
+                                when it comes to studies and management.
+                            </p>
                         </div>
-                    
+                        <div className="studentlife-container-top-div2">
+                            <ul>
+                                {
+                                    list?.map((value, index) => {
+                                        return (
+                                            <li
+                                                data-aos="fade-right"
+                                                data-aos-delay={index * 300}
+                                                data-aos-duration='1000'
+                                                data-aos-easing="linear"
+                                                data-aos-once="true"
+                                                key={index}
+                                                ref={listNumber.current[index]}
+                                                onMouseOver={() => setCurrentNumberList(index)}>
+                                                <h2>
+                                                    {value.title}
+                                                </h2>
+                                                <p>
+                                                    {value.nameValue}
+                                                </p>
+                                            </li>
+                                        )
+                                    })
+                                }
+                            </ul>
+                        </div>
+                    </div>
+
                     {/* Section 1 End */}
 
                     {/* section 2 */}
-                    
-                        <SchoolHouse GridData={GridData} />
-                    
+
+                    <SchoolHouse GridData={GridData} />
+
                     {/* section 2 End */}
 
 
                     {/* Section 3 */}
-                    
-                        <div className="student-life-sec-3-container">
-                            <div className="student-life-sec-3-container-left">
-                                <h1>
-                                    Student Council
-                                </h1>
-                                <p>
-                                    The Student Council at our school
-                                    aims at giving students an opportunity
-                                    to develop their leadership skills by
-                                    organizing and carrying out school
-                                    activities and service projects. In
-                                    addition to planning events that contribute
-                                    to school spirit and community welfare,
-                                    the student council is the voice of the
-                                    student body. They help in sharing student
-                                    ideas, interests or concerns in order to
-                                    undertake initiatives for the benefit of
-                                    the school wide community.
-                                </p>
-                                <p>
-                                    This council works together with an adult
-                                    advisor within the framework of the organization
-                                    and follows all the processes that promote
-                                    the aims and objectives of the school.
-                                </p>
-                            </div>
-                            <img src={Shadow} alt="shadow" className="shadow" />
-                            <img src={StudentAvatar} alt="StudentAvatar" className='StudentAvatar' />
+
+                    <div className="student-life-sec-3-container">
+                        <div className="student-life-sec-3-container-left">
+                            <h1
+                                data-aos="fade-right"
+                                data-aos-delay='300'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true"
+                            >
+                                Student Council
+                            </h1>
+                            <p
+                                data-aos="fade-right"
+                                data-aos-delay='500'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true"
+                            >
+                                The Student Council at our school
+                                aims at giving students an opportunity
+                                to develop their leadership skills by
+                                organizing and carrying out school
+                                activities and service projects. In
+                                addition to planning events that contribute
+                                to school spirit and community welfare,
+                                the student council is the voice of the
+                                student body. They help in sharing student
+                                ideas, interests or concerns in order to
+                                undertake initiatives for the benefit of
+                                the school wide community.
+                            </p>
+                            <p
+                                data-aos="fade-right"
+                                data-aos-delay='700'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true">
+                                This council works together with an adult
+                                advisor within the framework of the organization
+                                and follows all the processes that promote
+                                the aims and objectives of the school.
+                            </p>
                         </div>
-                    
+                        <img src={Shadow} alt="shadow" className="shadow" />
+                        <img src={StudentAvatar} alt="StudentAvatar" className='StudentAvatar' />
+                    </div>
+
                     {/* Section 3 End */}
 
                     {/* Student Grid Images */}
 
-                    
-                        <div className='student-council-image-gallery'>
-                            <Center>
-                                <Title className='student-council-image-gallery-title'>
-                                    The Student Council
-                                </Title>
-                            </Center>
-                            <div className='student-council-image-gallery-grid'>
-                                <Studentlife_Comp data={Student_Council_data} />
-                            </div>
+
+                    <div className='student-council-image-gallery'>
+                        <Center>
+                            <Title
+                                data-aos="fade-right"
+                                data-aos-delay='100'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true"
+                                className='student-council-image-gallery-title'>
+                                The Student Council
+                            </Title>
+                        </Center>
+                        <div className='student-council-image-gallery-grid'>
+                            <Studentlife_Comp data={Student_Council_data} />
                         </div>
-                    
+                    </div>
+
 
                     {/* Student Grid Images end */}
 
 
                     {/* Student Club  */}
 
-                    
-                        <div className='student-club-conatiner'>
-                            <div className='student-club-content'>
-                                <Center>
-                                    <Title className='student-club-conatiner-title'>
-                                        School Clubs
-                                    </Title>
-                                </Center>
-                                <p>
-                                    School clubs are one of the mechanisms that can
-                                    provide spaces for students to participate,
-                                    acquire life skills and strengthen their voice
-                                    and institutions. Our school clubs provide a
-                                    safe space for learners to nurture and develop
-                                    life skills to make informed life choices.
-                                    Through participating in club activities, the
-                                    students learn to prioritize and manage time well,
-                                    gain insights into possible career aspirations and
-                                    therefore contribute to the overall well-rounded
-                                    learning experience both in and outside of school.
-                                </p>
-                            </div>
+
+                    <div className='student-club-conatiner'>
+                        <div className='student-club-content'>
+                            <Center>
+                                <Title
+                                    data-aos="fade-right"
+                                    data-aos-delay='100'
+                                    data-aos-duration='1000'
+                                    data-aos-easing="linear"
+                                    data-aos-once="true"
+                                    className='student-club-conatiner-title'>
+                                    School Clubs
+                                </Title>
+                            </Center>
+                            <p
+                                data-aos="fade-right"
+                                data-aos-delay='300'
+                                data-aos-duration='1000'
+                                data-aos-easing="linear"
+                                data-aos-once="true"
+                            >
+                                School clubs are one of the mechanisms that can
+                                provide spaces for students to participate,
+                                acquire life skills and strengthen their voice
+                                and institutions. Our school clubs provide a
+                                safe space for learners to nurture and develop
+                                life skills to make informed life choices.
+                                Through participating in club activities, the
+                                students learn to prioritize and manage time well,
+                                gain insights into possible career aspirations and
+                                therefore contribute to the overall well-rounded
+                                learning experience both in and outside of school.
+                            </p>
                         </div>
-                    
+                    </div>
+
 
                     {/* Student Club End */}
 
                     {/* section4  */}
 
-                    
-                        <div className='student-life-sec-4-container'>
-                            <div className='student-life-sec-4-container-grid'>
-                                {DataGrid?.map((values, index) => {
-                                    return (
-                                        <Card
-                                            className='student-life-sec-4-container-grid-card'
-                                            key={index}>
-                                            <Card.Section style={{ borderRadius: "10px" }}>
-                                                <Image className='student-life-sec-4-container-grid-card-img' src={values.img} alt='img' />
-                                            </Card.Section>
-                                            <h1>
-                                                {values.title}
-                                            </h1>
-                                            <p style={{textAlign:"justify"}}>
-                                                {values.para}
-                                            </p>
-                                        </Card>
-                                    )
-                                })}
-                            </div>
+
+                    <div className='student-life-sec-4-container'>
+                        <div className='student-life-sec-4-container-grid'>
+                            {DataGrid?.map((values, index) => {
+                                return (
+                                    <Card
+                                        data-aos="fade-right"
+                                        data-aos-delay={index * 300}
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                        className='student-life-sec-4-container-grid-card'
+                                        key={index}>
+                                        <Card.Section style={{ borderRadius: "10px" }}>
+                                            <Image className='student-life-sec-4-container-grid-card-img' src={values.img} alt='img' />
+                                        </Card.Section>
+                                        <h1>
+                                            {values.title}
+                                        </h1>
+                                        <p style={{ textAlign: "justify" }}>
+                                            {values.para}
+                                        </p>
+                                    </Card>
+                                )
+                            })}
                         </div>
-                    
+                    </div>
+
 
                     {/* section4 End */}
 
                     {/* Section 5 */}
 
-                    
-                        <div className='student-life-sec-5-container'>
-                            <div className='student-life-sec-5-container-grid'>
-                                {DataGrid2?.map((values, index) => {
-                                    return (
-                                        <Card className='student-life-sec-5-container-grid-card' key={index}>
-                                            <Card.Section style={{ borderRadius: "10px" }}>
-                                                <Image className='student-life-sec-4-container-grid-card-img' src={values?.img} alt='img' />
-                                            </Card.Section>
-                                            <h1>
-                                                {values?.title}
-                                            </h1>
-                                            <p style={{textAlign:"justify"}}>
-                                                {values?.para}
-                                            </p>
-                                        </Card>
-                                    )
-                                })}
-                            </div>
+
+                    <div className='student-life-sec-5-container'>
+                        <div className='student-life-sec-5-container-grid'>
+                            {DataGrid2?.map((values, index) => {
+                                return (
+                                    <Card
+                                        data-aos="fade-right"
+                                        data-aos-delay={index * 300}
+                                        data-aos-duration='1000'
+                                        data-aos-easing="linear"
+                                        data-aos-once="true"
+                                        className='student-life-sec-5-container-grid-card' key={index}>
+                                        <Card.Section style={{ borderRadius: "10px" }}>
+                                            <Image className='student-life-sec-4-container-grid-card-img' src={values?.img} alt='img' />
+                                        </Card.Section>
+                                        <h1>
+                                            {values?.title}
+                                        </h1>
+                                        <p style={{ textAlign: "justify" }}>
+                                            {values?.para}
+                                        </p>
+                                    </Card>
+                                )
+                            })}
                         </div>
-                    
-
-                    {/* Section 5 End */}
-
-                    {/* Section 6  */}
-
-                    {/* 
-                        <div className='student-life-sec-6-container'>
-                            <div className='student-life-sec-6-content'>
-                                <h1> School Teams</h1>
-                                <p>
-                                    Our Admissions team will ensure the
-                                    smoothest possible transition for your family.
-                                    Kindly refer to the age-matrix for admission.
-                                    This matrix is created as per the National Educational
-                                    Policy and the circular issued by the Karnataka
-                                    State Board of Education. (Click Age-matrix circular-2023-24.pdf for the circular)
-                                </p>
-                            </div>
-                        </div>
-                     */}
-                    {/* Section 6 End */}
+                    </div>
                 </div>
             </div>
         </div>
